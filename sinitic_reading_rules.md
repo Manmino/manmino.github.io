@@ -34,7 +34,7 @@ The only exception is made for Labials, who are depalatalized before /a/, /w/, o
 
 Below is the table that show how different interactions between divisions, rounding (referred to being "open" or "closed" by contemporaries), and actual specific vowel-coda combinations all come together to create a specific reading for Manmino. 
 
-| Approx. MC vowel value | 1st Div | ∅   | 1st Div | ^w   | 2nd Div | ∅   | 2nd Div | ^w  | 3rd Div | ∅   | 3rd Div | ^w   | 4th Div | ∅   | 4th Div | ^w  |
+| MC vowel value (reconstructed) | 1st Div | ∅   | 1st Div | ^w   | 2nd Div | ∅   | 2nd Div | ^w  | 3rd Div | ∅   | 3rd Div | ^w   | 4th Div | ∅   | 4th Div | ^w  |
 | ---------------------- | ------- | --- | ------- | ---- | ------- | --- | ------- | --- | ------- | --- | ------- | ---- | ------- | --- | ------- | --- |
 | 果 (a)                | 歌       | a   | 戈       | wa   |         |     |         |     | 戈       | a   | 戈       | wa   |         |     |         |     |
 | 假 (a:)               |         |     |         |      | 麻       | a   | 麻       | wa  | 麻       | a   |         |      |         |     |         |     |
@@ -55,4 +55,13 @@ Below is the table that show how different interactions between divisions, round
 | 曾 (əŋ/k)               | 登       | eng | 登       | ong  |         |     |         |     | 蒸       | eng | 蒸       | ong  |         |     |         |   |
 | 通 (əwŋ/k)              | 東, 冬   | ong |         |      |         |     |         |     | 東, 鍾   | ong |         |      |         |     |         |     |
 
-As one may observe, the interactions are highly irregular.
+As one may observe, the interactions are highly irregular due to there being no concensus on how to reunite the vowels among various Sino-Xenic readings: 
+Generally, finals with /\*a/ vowels were rendered as /a/.
+If they were palatalized both before and after the nucleus, they were instead rendered as /ja/ or /e/.
+If they were rounded vowels, /wa/, /we/, /e/, /o/, were all considered as options, based on a rough analysis of descendant readings.
+Similarly, finals with /\*ə/ vowels were rendered as /o/ or /e/, 
+but the combination of palatalization and rounding resulted in there being no one pattern: they too were rendered based on a rough analysis of descendant readings.
+The values provided in this table may not match what is on the dictionary, 
+as exceptions are made for individual characters at the moment.
+This document may be subject to change as we get more community feedback on how our Sino-Xenic vocabulary should sound.
+
