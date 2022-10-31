@@ -1,5 +1,5 @@
-1. [Rules for Rendering Sinitic Vocabulary in Manmino](https://github.com/Manmino/manmino.github.io/blob/main/sinitic_reading_rules.md#Rules_for_Rendering_Sinitic_Vocabulary_in_Manmino)
-2. [만민어 한자음 표기법](https://github.com/Manmino/manmino.github.io/blob/main/sinitic_reading_rules.md#만민어_한자음_표기법)
+1. [Rules for Rendering Sinitic Vocabulary in Manmino](https://github.com/Manmino/manmino.github.io/blob/main/sinitic_reading_rules.md#Rules-for-Rendering-Sinitic-Vocabulary-in-Manmino)
+2. [만민어 한자음 표기법](https://github.com/Manmino/manmino.github.io/blob/main/sinitic_reading_rules.md#만민어-한자음-표기법)
 
 # Rules for Rendering Sinitic Vocabulary in Manmino
 
