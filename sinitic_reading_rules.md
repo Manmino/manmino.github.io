@@ -8,7 +8,7 @@ Considering that the ancestral form to most readings of Sinitic characters stems
 (Middle Chinese being a term for the language spoken during Tang Dynasty to the Song Dynasty),
 Manmino uses a reconstructed version of early Middle Chinese phonology called the _Qieyun System_ to derive its own rendition.
 
-In the Qieyun System, a character is classified by a variety of factors, such as tone, vowel qualities, and initials.
+In the Qieyun System, character are classified by a variety of factors, such as tone, vowel qualities, and initials.
 Below are the 38 categories that are used for classifying the initials, and how Manmino interprets them. Blanks are considered null initials. 
 
 |                     | Tenuis Stop |   | Aspirated Stop |   | Voiced Stop |   | Nasal |   | Tenuis Fricative |   | Voiced Fricative |   | Approximant |   |
@@ -36,33 +36,23 @@ Below is the table that show how different interactions between divisions, round
 
 | Approx. MC vowel value | 1st Div | ∅   | 1st Div | ^w   | 2nd Div | ∅   | 2nd Div | ^w  | 3rd Div | ∅   | 3rd Div | ^w   | 4th Div | ∅   | 4th Div | ^w  |
 | ---------------------- | ------- | --- | ------- | ---- | ------- | --- | ------- | --- | ------- | --- | ------- | ---- | ------- | --- | ------- | --- |
-| a                      | 歌       | a   | 戈       | wa   |         |     |         |     | 戈       | a   | 戈       | wa   |         |     |         |     |
-| a:                     |         |     |         |      | 麻       | a   | 麻       | wa  | 麻       | a   |         |      |         |     |         |     |
-| ə                      | 模       | o   |         |      |         |     |         |     | 魚       | o   | 虞       | u    |         |     |         |     |
-| aj                     | 咍       | ay  | 灰       | way  | 皆       | ay  | 皆       | way | 祭       | ey  | 祭       | wey  | 齊       | ey  | 齊     | wey |
-| aj                     | 泰       | ay  | 泰       | way  | 夬       | ay  | 夬       | way |         |     |         |      | 祭       | ey  | 祭     | wey |
-| aj                     |         |     |         |      | 佳       | ay  | 佳       | way |         |     |         |      |         |     |         |     |
-| i                      |         |     |         |      |         |     |         |     | 支       | i   | 支       | wi   |         |     |         |     |
-| i                      |         |     |         |      |         |     |         |     | 脂       | i   | 脂       | yuy  |         |     |         |     |
-| i                      |         |     |         |      |         |     |         |     | 之       | i   |         |      |         |     |         |     |
-| i                      |         |     |         |      |         |     |         |     | 微       | i   | 微       | wi   |         |     |         |     |
-| aw                     | 豪       | aw  |         |      | 肴       | aw  |         |     | 宵       | yaw |         |      | 蕭       | yaw |         |     |
-| əw                     | 侯       | ow  |         |      |         |     |         |     | 尤       | yu  |         |      |         |     |         |     |
-| əw                     |         |     |         |      |         |     |         |     | 幽       | yu  |         |      |         |     |         |     |
-| am/p                   | 覃       | am  |         |      | 咸       | am  |         |     | 鹽       | em  |         |      | 添       | em  |         |     |
-| am/p                   | 談       | am  |         |      | 銜       | am  |         |     | 嚴       | em  | 凡       | om   |         |     |         |     |
-| əm/p                   |         |     |         |      |         |     |         |     | 侵       | im  |         |      |         |     |         |     |
-| an/t                   | 寒       | an  | 桓       | wan  | 山       | an  | 山       | wan | 元       | an  | 元       | wan  | 仙       | en  | 仙       | wen |
-| an/t                   |         |     |         |      | 刪       | an  | 刪       | wan | 仙       | en  | 仙       | wen  | 先       | en  | 先       | wen |
-| ən/t                   | 痕       | on  | 魂       | on   |         |     |         |     | 臻       | in  | 諄       | yun  |         |     |         |     |
-| ən/t                   |         |     |         |      |         |     |         |     | 眞       | in  | 眞       | yun  |         |     |         |     |
-| ən/t                   |         |     |         |      |         |     |         |     | 欣       | in  | 文       | un   |         |     |         |     |
-| aŋ/k                   | 唐       | ang | 唐       | wang |         |     |         |     | 陽       | ang | 陽       | wang |         |     |         |     |
-| ajŋ/k                  |         |     |         |      | 庚       | eng | 庚       | ong | 庚       | eng | 庚       | eng  |         |     |         |     |
-| ajŋ/k                  |         |     |         |      | 耕       | eng | 耕       | ong | 清       | eng | 清       | eng  | 青       | eng | 青       | eng |
-| əŋ/k                   | 登       | eng | 登       | ong  |         |     |         |     | 蒸       | eng | 蒸       | ong  |         |     |         |     |
-| awŋ/k                  |         |     |         |      | 江       | ang |         |     |         |     |         |      |         |     |         |     |
-| əwŋ/k                  | 東       | ong |         |      |         |     |         |     | 東       | ong |         |      |         |     |         |     |
-| əwŋ/k                  | 冬       | ong |         |      |         |     |         |     | 鍾       | ong |         |      |         |     |         |     |
+| 果 (a)                | 歌       | a   | 戈       | wa   |         |     |         |     | 戈       | a   | 戈       | wa   |         |     |         |     |
+| 假 (a:)               |         |     |         |      | 麻       | a   | 麻       | wa  | 麻       | a   |         |      |         |     |         |     |
+| 遇 (ə)                | 模       | o   |         |      |         |     |         |     | 魚       | o   | 虞       | u    |         |     |         |     |
+| 蟹 (aj)              | 咍, 泰 | ay  | 灰, 泰  | way  | 皆, 夬, 佳 | ay  | 皆, 夬, 佳 | way | 祭       | ey  | 祭       | wey  | 齊, 祭    | ey  | 齊, 祭 | wey |
+| 止 (i)                |         |     |         |      |         |     |         |     | 支, 微, 之 | i   | 支, 微   | wi   |         |     |         |     |
+| 止 (i)                 |         |     |         |      |         |     |         |     | 脂       | i   | 脂       | yuy  |         |     |         |     |
+| 效 (aw)               | 豪       | aw  |         |      | 肴       | aw  |         |     | 宵       | yaw |         |      | 蕭       | yaw |         |     |
+| 流 (əw)                | 侯       | ow  |         |      |         |     |         |     | 尤, 幽   | yu  |         |      |         |     |         |     |
+| 咸 (am/p)              | 覃, 談    | am  |         |      | 咸, 銜   | am  |         |     | 鹽, 嚴   | em  | 凡      | om  | 添       | em  |         |     |
+| 深 (əm/p)              |         |     |         |      |         |     |         |     | 侵       | im  |         |      |         |     |         |     |
+| 山 (an/t)             | 寒     | an  | 桓       | wan  | 山, 刪  | an  | 山, 刪   | wan | 元, 仙    | an  | 元, 仙    | wan  | 仙, 先   | en  | 仙, 先   | wen |
+| 臻 (ən/t)              | 痕       | on  | 魂       | on   |         |     |       |     | 臻, 眞, 欣 | in  | 諄, 眞   | yun  |         |     |         |     |
+| 臻 (ən/t)              |         |     |         |      |         |     |         |     |        |      | 文       | un   |         |     |         |     |
+| 宕 (aŋ/k)             | 唐       | ang | 唐       | wang |         |     |         |     | 陽       | ang | 陽       | wang |         |     |         |     |
+| 江 (awŋ/k)             |         |     |         |      | 江       | ang |         |     |         |     |         |      |         |     |         |     |
+| 梗 (ajŋ/k)            |         |     |         |      | 庚, 耕    | eng | 庚,耕  | ong | 庚, 清   | eng | 庚, 清    | eng  | 青      |  eng   |  青  | eng  |
+| 曾 (əŋ/k)               | 登       | eng | 登       | ong  |         |     |         |     | 蒸       | eng | 蒸       | ong  |         |     |         |   |
+| 通 (əwŋ/k)              | 東, 冬   | ong |         |      |         |     |         |     | 東, 鍾   | ong |         |      |         |     |         |     |
 
 As one may observe, the interactions are highly irregular.
