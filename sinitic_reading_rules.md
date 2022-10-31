@@ -84,7 +84,7 @@ This document may be subject to change as we get more community feedback on how 
 절운 계열 시스템에서 각 한자는 성조, 모음 성질, 성모(聲母)등에 따라 정리된다.
 다음은 38가지 성모의 분류 및 각 성모의 만민어 독법이다. 빈 공간은 성모 자음이 없는것으로 간주한다.
 
-|                     | Tenuis Stop |   | Aspirated Stop |   | Voiced Stop |   | Nasal |   | Tenuis Fricative |   | Voiced Fricative |   | Approximant |   |
+|                     | 무기음 |   | 유기음 |   | 유성음 |   | 비음 |   | 무기 마찰음 |   | 유기 마찰음 |   | 접근음 |   |
 | ------------------- | ----------- | - | -------------- | - | ----------- | - | ----- | - | ---------------- | - | ---------------- | - | ----------- | - |
 | 순음                | 幫           | b | 滂             | p | 並          | b | 明     | m |                  |   |                  |   |             |   |
 | 치경 파열음    | 端           | d | 透              | t | 定           | d | 泥     | n |                  |   |                  |   |             |   |
