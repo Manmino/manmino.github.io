@@ -31,9 +31,7 @@
 address,area,article,aside,audio,blockquote,datalist,details,dl,fieldset,figure,form,iframe,img,input,meter,nav,ol,optgroup,option,output,p,pre,progress,ruby,section,table,textarea,ul,video{
 	margin-bottom:
 	}
-button,html,input,select{
-	font-family:var(--nc-font-sans)
-	}
+button,html,input,select{font-family:var(--nc-font-sans)}
 body{
 	margin:0 auto;
 	max-width:750px;
@@ -54,21 +52,19 @@ h1,h2,h3,h4,h5,h6{
 	color:var(--nc-tx-1);
 	padding-top:1rem
 	}
-h1,h2,h3{
-	color:var(--nc-tx-1);
-	padding-bottom:2px;
-	margin-bottom:8px;
-	border-bottom:1px solid var(--nc-bg-2)
-	}
-h1{font-size:2.25rem}
-h2{font-size:1.75rem}
-h3{font-size:1.50rem}
-h4,h5,h6{
-	margin-bottom:.3rem
-	}
-h4{font-size:1.25rem}
-h5{font-size:1rem}
-h6{font-size:.75rem}
+	h1,h2,h3{
+		color:var(--nc-tx-1);
+		padding-bottom:.125rem;
+		margin-bottom:.5rem;
+		border-bottom:1px solid var(--nc-bg-2)
+		}
+		h1{font-size:2.25rem}
+		h2{font-size:1.75rem}
+		h3{font-size:1.50rem}
+	h4,h5,h6{margin-bottom:.25rem}
+		h4{font-size:1.25rem}
+		h5{font-size:1rem}
+		h6{font-size:.75rem}
 a{color:var(--nc-lk-1)}
 a:hover{color:var(--nc-lk-2)}
 abbr:hover{cursor:help}
@@ -113,7 +109,7 @@ a button[disabled],button[disabled],input[type=button][disabled],input[type=rese
 	cursor:default;
 	opacity:.5;
 	cursor:not-allowed
-}
+	}
 .button:focus,.button:hover,button:focus,button:hover,input[type=button]
 :focus,input[type=button]
 :hover,input[type=reset]
@@ -198,7 +194,7 @@ tr:nth-child(2n){background:var(--nc-bg-2)}
 table caption{
 		font-weight:700;
 		margin-bottom:.0rem
-	}
+		}
 textarea{max-width:100%}
 ol,ul{padding-left:3rem}
 li{margin-top:.25rem}
@@ -226,20 +222,20 @@ img{max-width:100%}
 #myBtn {
 		position: fixed; 			/* Fixed/sticky position */
 		bottom: 2%; 				/* Place the button at the bottom of the page */
-		right: 5%; 					/* Place the button 30px from the right */
+		right: 5%; 				/* Place the button 30px from the right */
 		z-index: 99; 				/* Make sure it does not overlap */
 		border: none; 				/* Remove borders */
 		outline: none; 				/* Remove outline */
-		background-color: #36C9C5;	/* Set a background color */
+		background-color: #36C9C5;		/* Set a background color */
 		color: white; 				/* Text color */
 		cursor: pointer;			/* Add a mouse pointer on hover */
 		padding: 1rem; 				/* Some padding */
-		border-radius: 2rem;		/* Rounded corners */
+		border-radius: 2rem;			/* Rounded corners */
 		font-size: 18px; 			/* Increase font size */
 	}
 	
 #myBtn:hover {
-		background-color: gold;	 	/* Add a gold background on hover */
+		background-color: gold;	 		/* Add a gold background on hover */
 	}
 @media print{   
 		.no-print, .no-print *
