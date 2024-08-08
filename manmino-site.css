@@ -24,12 +24,12 @@
 		--nc-lk-2:#0070F3;
 		--nc-lk-tx:#FFFFFF;
 		--nc-ac-1:#7928CA;
-		--nc-ac-tx:#FFFFFF
+		--nc-ac-tx:#FFFFFF;
 		}
 	}
 *{margin:0;padding:0}
 address,area,article,aside,audio,blockquote,datalist,details,dl,fieldset,searchfield,figure,form,iframe,img,input,meter,nav,ol,optgroup,option,output,p,pre,progress,ruby,section,table,results_table,textarea,ul,video{
-	margin-bottom:
+	margin-bottom:0rem;
 	}
 button,searchbutton,html,input,select{font-family:var(--nc-font-sans)}
 body{
@@ -103,12 +103,10 @@ a button,button,searchbutton,input[type=button],input[type=reset],input[type=sub
 	border-radius:4px;
 	box-sizing:border-box;
 	cursor:pointer;
-	color:var(--nc-lk-tx)
 	}
 a button[disabled],button[disabled],searchbutton[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{
 	cursor:default;
 	opacity:.5;
-	cursor:not-allowed
 	}
 .button:focus,.button:hover,button:focus,button:hover,.searchbutton:focus,.searchbutton:hover,searchbutton:focus,.searchbutton:hover,input[type=button]
 :focus,input[type=button]
@@ -244,5 +242,3 @@ img{max-width:100%}
 			display: none !important;
 		}
 	}
-
-
