@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manmino: Grammar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+	<link rel="stylesheet" href="https://manmino.github.io/manmino-site.css">
+	<script>
+		// Get the button:
+		let mybutton = document.getElementById("myBtn");
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		} 
+	</script>
+</head>
+<!--OLD STYLE
+	<style>
+		body {
+			background-color: #EFE8D8;
+			padding: 1%;
+			width: 70%;
+			margin: 0 auto;
+			font-family: "Noto Sans", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: 325;
+			font-style: normal;
+			font-variation-settings: "wdth" 100;
+			}
+
+		p {
+			font-size: 20px;
+			margin: 15px;
+		}
+
+		a {
+			color: #151515
+		}
+		header	{
+			background-color:#FFF8E8;
+			border-bottom:1px solid #DFD8C8;
+			padding:2rem 1.5rem;
+			margin:-2rem calc(0px - (50vw - 50%)) 2rem;
+			padding-left:calc(50vw - 50%);
+			padding-right:calc(50vw - 50%);
+			}
+		footer	{
+			background-color:#FFF8E8;
+			border-top:1px solid #DFD8C8;
+			padding:2rem 1.5rem;
+			margin:2rem calc(0px - (50vw - 50%)) -2rem;
+			padding-left:calc(50vw - 50%);
+			padding-right:calc(50vw - 50%);
+			}	
+
+		@media (prefers-color-scheme: dark) {
+			body {
+				background: #151515;
+				color: #dcb;
+			}
+
+			a {
+				text-decoration: none;
+				color: #ebc752
+			}
+		}
+
+		h1,
+		h2,
+		h3 {
+			margin-top: 20px;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		td,
+		th {
+			border: 1px solid rgba(128, 128, 128, 0.5);
+			padding: 5px;
+		}
+		
+		
+	</style>-->
+
+<!--Commented Out Style for Testing Purposes
+<style>
+		:root{
+			--nc-font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+			--nc-font-mono:Consolas,monaco,'Ubuntu Mono','Liberation Mono','Courier New',Courier,monospace;
+			--nc-tx-1:#010000;
+			--nc-tx-2:#1B1A1A;
+			--nc-bg-1:#F2EFEF;
+			--nc-bg-2:#E8E5E5;
+			--nc-bg-3:#D8D6D6;
+			--nc-lk-1:#0070F3;
+			--nc-lk-2:#0366D6;
+			--nc-lk-tx:#FFFFFF;
+			--nc-ac-1:#D6D600;
+			--nc-ac-tx:#EFEFF2
+			}
+		
+	@media (prefers-color-scheme:dark){
+		:root{
+			--nc-tx-1:#FFFFFF;
+			--nc-tx-2:#EFEEEE;
+			--nc-bg-1:#010000;
+			--nc-bg-2:#121111;
+			--nc-bg-3:#232222;
+			--nc-lk-1:#3291FF;
+			--nc-lk-2:#0070F3;
+			--nc-lk-tx:#FFFFFF;
+			--nc-ac-1:#7928CA;
+			--nc-ac-tx:#FFFFFF
+			}
+		}
+	*{margin:0;padding:0}
+	address,area,article,aside,audio,blockquote,datalist,details,dl,fieldset,figure,form,iframe,img,input,meter,nav,ol,optgroup,option,output,p,pre,progress,ruby,section,table,textarea,ul,video{
+		margin-bottom:
+		}
+	button,html,input,select{
+		font-family:var(--nc-font-sans)
+		}
+	body{
+		margin:0 auto;
+		max-width:750px;
+		padding:2rem;
+		border-radius:6px;
+		overflow-x:hidden;
+		background:var(--nc-bg-1);
+		color:var(--nc-tx-2);
+		font-size:1rem;
+		line-height:1.7
+		}
+	::selection{
+		background:var(--nc-ac-1);
+		color:var(--nc-ac-tx)
+		}
+	h1,h2,h3,h4,h5,h6{
+		line-height:2;
+		color:var(--nc-tx-1);
+		padding-top:1rem
+		}
+	h1,h2,h3{
+		color:var(--nc-tx-1);
+		padding-bottom:2px;
+		margin-bottom:8px;
+		border-bottom:1px solid var(--nc-bg-2)
+		}
+	h1{font-size:2.25rem}
+	h2{font-size:1.75rem}
+	h3{font-size:1.50rem}
+	h4,h5,h6{
+		margin-bottom:.3rem
+		}
+	h4{font-size:1.25rem}
+	h5{font-size:1rem}
+	h6{font-size:.75rem}
+	a{color:var(--nc-lk-1)}
+	a:hover{color:var(--nc-lk-2)}
+	abbr:hover{cursor:help}
+	blockquote{
+		padding:1.5rem;
+		background:var(--nc-bg-2);
+		border-left:5px solid var(--nc-bg-3)}
+	abbr{cursor:help}
+	blockquote :last-child{
+		padding-bottom:0;margin-bottom:0
+		}
+	header{background:var(--nc-bg-2);
+	border-bottom:1px solid var(--nc-bg-3);
+	padding:2rem 1.5rem;
+	margin:-2rem calc(0px - (50vw - 50%)) 2rem;
+	padding-left:calc(50vw - 50%);
+	padding-right:calc(50vw - 50%)}
+	header h1,header h2,header h3{
+		padding-bottom:0;
+		border-bottom:0}
+	header>:first-child{
+		margin-top:0;
+		padding-top:0
+		}
+	header>:last-child{margin-bottom:0}
+	a button,button,input[type=button],input[type=reset],input[type=submit]{
+		font-size:1rem;
+		display:inline-block;
+		padding:6px 12px;
+		text-align:center;
+		text-decoration:none;
+		white-space:nowrap;
+		background:var(--nc-lk-1);
+		color:var(--nc-lk-tx);
+		border:0;
+		border-radius:4px;
+		box-sizing:border-box;
+		cursor:pointer;
+		color:var(--nc-lk-tx)
+		}
+	a button[disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{
+		cursor:default;
+		opacity:.5;
+		cursor:not-allowed
+	}
+	.button:focus,.button:hover,button:focus,button:hover,input[type=button]
+	:focus,input[type=button]
+	:hover,input[type=reset]
+	:focus,input[type=reset]
+	:hover,input[type=submit]
+	:focus,input[type=submit]
+	:hover{background:var(--nc-lk-2)}
+	code,kbd,pre,samp{font-family:var(--nc-font-mono)}
+	code,kbd,pre,samp{
+			background:var(--nc-bg-2);
+			border:1px solid var(--nc-bg-3);
+			border-radius:4px;
+			padding:3px 6px;
+			font-size:.9rem
+		}
+	kbd{border-bottom:3px solid var(--nc-bg-3)}
+	pre{padding:1rem 1.4rem;max-width:100%;overflow:auto}
+	pre code{
+			background:inherit;
+			font-size:inherit;
+			color:inherit;
+			border:0;
+			padding:0;
+			margin:0
+		}
+	code pre{
+			display:inline;
+			background:inherit;
+			font-size:inherit;
+			color:inherit;
+			border:0;
+			padding:0;
+			margin:0
+		}
+	details{
+			padding:.6rem 1rem;
+			background:var(--nc-bg-2);
+			border:1px solid var(--nc-bg-3);
+			border-radius:4px
+		}
+	summary{
+			cursor:pointer;
+			font-weight:700
+		}
+	details[open]{padding-bottom:.75rem}
+	details[open] summary{margin-bottom:6px}
+	details[open]>:last-child{margin-bottom:0}
+	dt{font-weight:700}
+	dd::before{content:'→ '}
+	hr{
+			border:0;
+			border-bottom:1px solid var(--nc-bg-3);
+			margin:1rem auto
+		}
+	fieldset{
+			margin-top:1rem;
+			padding:2rem;
+			border:1px solid var(--nc-bg-3);
+			border-radius:4px
+		}
+	legend{padding:auto .5rem}
+	table{
+			border-collapse:collapse;
+			padding:1rem;
+			display: block;
+			overflow-x: auto;
+			margin-left: -1rem !important;
+			margin-right: -4rem  !important;
+			margin-top:0;
+			margin-bottom:0;
+		}
+	td,th{
+			border:1px solid var(--nc-bg-3);
+			text-align:left;
+			padding:.5rem;
+			overflow: hidden;
+			white-space: nowrap;
+			justify-content: center;
+		}
+	th{background:var(--nc-bg-2)}
+	tr:nth-child(2n){background:var(--nc-bg-2)}
+	table caption{
+			font-weight:700;
+			margin-bottom:.0rem
+		}
+	textarea{max-width:100%}
+	ol,ul{padding-left:3rem}
+	li{margin-top:.25rem}
+	ol ol,ol ul,ul ol,ul ul{
+			margin-bottom:0;
+			margin-left: 0;
+			}
+	p{text-indent: 2em}
+	mark{
+			padding:3px 6px;
+			background:var(--nc-ac-1);
+			color:var(--nc-ac-tx)
+		}
+	input,select,textarea{
+			padding:6px 12px;
+			margin-bottom:.5rem;
+			background:var(--nc-bg-2);
+			color:var(--nc-tx-2);
+			border:1px solid var(--nc-bg-3);
+			border-radius:4px;
+			box-shadow:none;
+			box-sizing:border-box
+		}
+	img{max-width:100%}
+	#myBtn {
+			position: fixed; 			/* Fixed/sticky position */
+			bottom: 2%; 				/* Place the button at the bottom of the page */
+			right: 5%; 					/* Place the button 30px from the right */
+			z-index: 99; 				/* Make sure it does not overlap */
+			border: none; 				/* Remove borders */
+			outline: none; 				/* Remove outline */
+			background-color: #36C9C5;	/* Set a background color */
+			color: white; 				/* Text color */
+			cursor: pointer;			/* Add a mouse pointer on hover */
+			padding: 1rem; 				/* Some padding */
+			border-radius: 2rem;		/* Rounded corners */
+			font-size: 18px; 			/* Increase font size */
+		}
+		
+	#myBtn:hover {
+			background-color: gold;	 	/* Add a gold background on hover */
+		}
+	@media print{   
+			.no-print, .no-print *
+			{
+				display: none !important;
+			}
+		}
+</style>
+-->
+<button onclick	="topFunction()" id="myBtn" title="Go to top" class='no-print'> ▲ </button> 
+
+<body>
+	<header>
+	<h1>Manmino</h1>
+		<p>Auxiliary Language of Asia</p>
+	</header>
+	<h1>The Grammar of Manmino</h1>
+		<p><em>2nd Edition</em></p>
+		<a href="https://manmino.github.io/index.html">Return to the main page</a>
+	<fieldset>
+	<legend><strong>Index:</strong></p></legend>
+		<ol start="0">
+			<li><a href="#foreword">Kata Pengantar</a></li>
+			<li><a href="#the-alphabet-and-sound-system">The Alphabet and Sound System</a><br>
+				1.1 <a href="#the-consonants">The Consonants</a><br>
+				1.2 <a href="#the-vowels">The Vowels</a><br>
+				1.3 <a href="#phonology-explanation">Phonology Explanation</a></li>
+			<li><a href="#particles">Particles</a><br>
+				2.1 <a href="#noun-particles">Noun Particles</a><br>
+				2.2 <a href="#verb-modifiers">Verb Modifiers</a><br>
+				2.3 <a href="#word-function-modifiers">Word Function Modifiers</a><br>
+				2.4 <a href="#independent-particles">Independent Particles</a><br>
+				2.5. <a href="#pronouns">Pronouns</a></li>
+			<li><a href="#vocabulary">Vocabulary</a><br>
+				3.1 <a href="#loaning-from-classical-chinese">Loaning from Classical Chinese</a><br>
+				3.2 <a href="#loaning-from-latin">Loaning from Latin</a><br>
+				3.3 <a href="#loaning-from-sanskrit">Loaning from Sanskrit</a><br>
+				3.4 <a href="#loaning-words-from-other-languages">Loaning Words from Other Languages</a></li>
+			<li><a href="#grammar">Grammar</a><br>
+				4.1 <a href="#general-syntax">General Syntax</a><br>
+				4.2 <a href="#honorifics">Honorifics</a><br>
+				4.3 <a href="#numbers">Numbers</a></li>
+		</ol>
+	</fieldset>
+    <h2 id="foreword">0. Kata Pengantar</h2>
+        <p>Manmino adalah bahasa bantu rekayasa yang dirancang untuk kawasan Asia Timur. 
+          Tujuannya adalah menjembatani keragaman budaya yang luas namun tak terelakkan saling terhubung—dari Jepang hingga Myanmar, 
+          dan dari Mongolia hingga Indonesia. Dengan menggunakan inventaris fonetik yang seimbang dan tidak terlalu memihak kelompok bahasa tertentu, 
+          struktur kalimat Subjek-Objek-Verba (SOV) yang aglutinatif namun analitik dengan fleksibilitas tinggi, 
+          serta kosa kata yang diambil dari campuran bahasa-bahasa penting secara historis maupun kontemporer seperti Bahasa Tionghoa Klasik dan Sanskerta, 
+          Manmino bertujuan menjadi bahasa yang bernuansa namun mudah digunakan bagi masyarakat Asia Timur.</p>
+        <p>Tujuan utama Manmino adalah menumbuhkan rasa kesatuan di Asia Timur yang mampu melampaui ketegangan dan persaingan historis di kawasan ini. 
+          Bahasa ini diciptakan sebagai wadah komunikasi internasional yang lebih mudah diakses daripada bahasa Inggris, 
+          serta mendorong aliran bebas informasi dan ide lintas batas budaya, bahasa, 
+          dan pemerintahan—dengan cara yang menghindari dominasi satu pihak tunggal dalam ranah seni dan intelektual kawasan tersebut.</p>
+        <p>Seperti kata seorang Pan-Asia ideologis seratus tahun lalu, 
+          “Kesuksesan datang dari persatuan dan kekalahan datang dari perpecahan—itulah hukum alam yang diketahui semua.” 
+          Tim Manmino berharap bahwa dengan mempelajari dan menggunakan bahasa ini, 
+          masyarakat Asia Timur dapat bekerja sama untuk menciptakan dan membagikan pencapaian seni dan intelektual yang luar biasa.</p>
+
+    <h2 id="the-alphabet-and-sound-system">1. Alfabet dan Sistem Bunyi</h2>
+        <p>Manmino ditulis menggunakan Alfabet Latin (Latin Aksala atau Latin Munji dalam Manmino), 
+          sebuah sistem yang sudah dikenal luas di kawasan Asia Timur dan Asia Tenggara. 
+          Dalam situasi terbatas di mana Alfabet Latin tidak dapat digunakan karena alasan tertentu, 
+          penulisan dapat menggunakan Manmino Aksala, yaitu sistem aksara mirip abugida yang secara khusus dirancang untuk bahasa Manmino.</p>
+        
+        <p>Alfabet Manmino (Manmino Aksala) menggunakan huruf-huruf berikut:</p>
+        <p>A B C D E F G H I J K L M N O P S T U W Y</p>
+        <p>a b c d e f g h i j k l m n o p s t u w y ’</p>
+        
+        <h3 id="the-consonants">1.1 Konsonan</h3>
+            <p>Manmino memiliki konsonan-konsonan berikut:</p>
+            
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th align="center">Labial</th><th align="center">Koronal</th><th align="center">Palatal</th><th align="center">Velar</th><th align="center">Glotal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Nasalis</td><td align="center">m</td><td align="center">n</td><td align="center"></td><td align="center">ng /ŋ/<sup>1</sup></td><td align="center"></td></tr>
+                <tr><td>Letup (Suara Kuat)<sup>2</sup></td><td align="center">p /p<sup>h</sup>/</td><td align="center">t /t<sup>h</sup>/</td><td align="center"></td><td align="center">k /k<sup>h</sup>/</td><td align="center">’ /ʔ/<sup>3</sup></td></tr>
+                <tr><td>Letup (Suara Lemah)</td><td align="center">b</td><td align="center">d</td><td align="center"></td><td align="center">g</td><td align="center"></td></tr>
+                <tr><td>Letup Gesek (Suara Kuat)</td><td align="center"></td><td align="center"></td><td align="center">c /tɕ<sup>h</sup>/</td><td align="center"></td><td align="center"></td></tr>
+                <tr><td>Letup Gesek (Suara Lemah)</td><td align="center"></td><td align="center"></td><td align="center">j /dʑ/</td><td align="center"></td><td align="center"></td></tr>
+                <tr><td>Gesek</td><td align="center">f /ɸ ~ f/</td><td align="center">s /ɕ/</td><td align="center"></td><td align="center"></td><td align="center">h /x ∼ h/</td></tr>
+                <tr><td>Lateral</td><td align="center"></td><td align="center">l</td><td align="center"></td><td align="center"></td><td align="center"></td></tr>
+                <tr><td>Semivokal</td><td align="center"></td><td align="center"></td><td align="center">y /j/</td><td align="center">w</td><td align="center"></td></tr>
+              </tbody>
+            </table>
+            
+            <ol>
+            <li>Fonem [ŋ] tidak dapat digunakan sebagai konsonan awal.</li>
+            <li>Realiasi pasti dari konsonan suara kuat dan lemah sengaja dibiarkan tidak terdefinisi karena perbedaan preferensi di wilayah Asia Timur Raya.</li>
+            <li>Letupan glotal dapat digunakan secara opsional untuk membedakan kata-kata tertentu, tetapi tidak dianggap sebagai fonem dalam Manmino.</li>
+            <li>⟨s⟩ dilafalkan sebagai [ɕ] ketika berada di depan ⟨y⟩ atau ⟨i⟩ karena proses palatalisasi.</li>
+            <li>Dari semua konsonan dalam Manmino, hanya nasalis [m], [n], [ŋ], letup non-glotal suara kuat [p], [t], [k], dan lateral [l] yang dapat digunakan sebagai suara akhir (coda).</li>
+            <li>Huruf Latin lain yang tidak dicantumkan di sini, seperti ⟨q⟩, ⟨x⟩, dan ⟨z⟩, dapat digunakan untuk menulis nama diri.</li>
+            </ol>
+
+    <h3 id="the-vowels">1.2 Vokal</h3>
+        <p>Manmino memiliki lima vokal: a, e, i, o, u. Manmino juga memperbolehkan penggunaan diftong dan triftong berikut.</p>
+        
+        <table>
+            <thead>
+                <tr><th></th><th>-∅<sup>1</sup></th><th>-w</th><th>-y</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>a-</td>   <td></td>    <td>aw</td>  <td>ay</td>    </tr>
+                <tr><td>wa-</td>  <td>wa</td>  <td>waw</td>  <td>way</td>  </tr>
+                <tr><td>ya-</td>  <td>ya</td>  <td>yaw</td>  <td>yay</td>  </tr>
+                <tr><td>o-</td>   <td></td>    <td>ow</td>  <td>oy</td>    </tr>
+                <tr><td>yo-</td>  <td>yo</td>  <td>yow</td>  <td></td>     </tr>
+                <tr><td>e-</td>    <td></td>    <td>ew</td>   <td>ey</td>  </tr>
+                <tr><td>ye-<sup>2</sup></td><td>ye</td><td>yew</td><td>yey</td></tr>
+                <tr>
+                    <td>we-</td>
+                    <td>we</td>
+                    <td></td>
+                    <td>wey</td>
+                </tr>
+                <tr>
+                    <td>yu-</td>
+                    <td>yu</td>
+                    <td></td>
+                    <td>yuy</td>
+                </tr>
+                <tr>
+                    <td>wi-</td>
+                    <td>wi</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <ol>
+            <li>Konsonan tidak boleh muncul setelah ⟨w⟩ atau ⟨y⟩, tetapi boleh muncul setelah ⟨u⟩ atau ⟨i⟩.</li>
+            <li>Di depan vokal ⟨e⟩, ⟨y⟩ hanya diperbolehkan sebagai konsonan awal dan bukan sebagai luncuran (glide). Pengecualian satu-satunya adalah setelah ⟨s⟩.</li>
+        </ol>
+
+    <h3 id="phonology-explanation">1.3 Penjelasan Fonologi</h3>
+        <p>Secara keseluruhan, inventaris fonetik Manmino dikembangkan dengan pendekatan yang netral. 
+          Setelah memperoleh data inventaris fonetik dari 20 bahasa utama di kawasan Asia Timur Raya, 
+          inventaris fonetik masing-masing bahasa dicatat dan diberikan nilai yang setara dengan akar pangkat tiga dari jumlah penuturnya. 
+          Kemudian seluruh inventaris fonetik dijumlahkan, dan fonem-fonem yang memiliki nilai melebihi titik tengah dipilih, sedangkan sisanya dieliminasi.</p>
+        
+        <p>Dengan menggunakan fonem-fonem yang telah disebutkan di atas, Manmino menerapkan struktur suku kata C1VC2. C1 tidak termasuk [ŋ], 
+          dan C2 dibatasi pada nasal [m], [n], [ŋ], letup non-glotal suara kuat [p], [t], [k], serta lateral aproksiman [l]. 
+          Letupan glotal hanya diperlukan dalam tutur hati-hati, sehingga dalam penggunaan sehari-hari dapat dianggap sebagian besar non-fonemik.</p>
+        
+        <p>Untuk mengakomodasi lebih banyak variasi penutur dan mempercepat kelancaran berbicara, 
+          Manmino memperbolehkan pengucapan alofonis yang fleksibel untuk beberapa digraf. Aturan-aturannya adalah sebagai berikut:</p>
+        
+        <ul>
+            <li><strong>Asimilasi Nasal:</strong> Jika coda nasal ⟨m⟩, ⟨n⟩, ⟨ng⟩ diikuti oleh letup atau letup gesek dengan tempat artikulasi berbeda, 
+              coda nasal tersebut dapat diartikulasikan mengikuti tempat artikulasi konsonan berikutnya, alih-alih tempat artikulasi aslinya. 
+              Sebagai contoh, digraf ⟨mk⟩ dapat diucapkan sebagai [ŋk] alih-alih [mk]. Untuk aturan ini, konsonan palatal dianggap sebagai bagian dari konsonan koronal.</li>
+            <li><strong>Asimilasi Letup Ganda:</strong> Jika coda letup ⟨p⟩, ⟨t⟩, ⟨k⟩ diikuti oleh konsonan letup sebagai konsonan awal suku kata berikutnya, 
+              maka coda tersebut dapat dihilangkan. Dalam kasus ini, jika konsonan awal berikutnya adalah suara lemah, konsonan tersebut dikuatkan (fortifikasi).</li>
+            <li><strong>Aturan Asimilasi ⟨ph⟩:</strong> Kelompok konsonan ⟨ph⟩ dapat diucapkan sebagai /f/.</li>
+            <li><strong>Aturan Palatalisasi ⟨ty/dy⟩:</strong> Digraf ⟨ty⟩ dan ⟨dy⟩ dapat dipalatalisasi menjadi /tɕ/ dan /dʑ/ masing-masing.</li>
+            <li><strong>Aturan Asimilasi ⟨kh⟩:</strong> Kelompok konsonan ⟨kh⟩ dapat diucapkan sebagai /h/.</li>
+        </ul>
+        
+        <p>Jika terjadi kebingungan, disarankan untuk memperjelas pengucapan Anda sebaik mungkin, 
+          baik dengan menyisipkan vokal tambahan, atau dengan menghindari penggunaan aturan-aturan di atas dan memilih untuk berbicara lebih lambat.</p>
+
+    <h2 id="particles">2. Partikel</h2>
+        <p>Dalam Manmino, fungsi sebuah kata sebagai nomina, verba, adjektiva, atau adverbia terutama ditentukan melalui posisi dan partikel, 
+          baik yang berupa prefiks maupun sufiks. Oleh karena itu, dalam Manmino, kata-kata secara terpisah tidak diklasifikasikan sebagai nomina, verba, atau kata sifat, 
+          melainkan sebagai objek dan konsep, tindakan dan fenomena, serta kualitas. Fungsi mereka sebagai nomina, verba, adjektiva, 
+          atau adverbia ditentukan oleh partikel yang mengelilinginya.</p>
+        
+        <h3 id="noun-particles">2.1 Partikel Nomina</h3>
+        <p>Nomina dalam Manmino ditandai dengan partikel sufiks berikut yang menentukan fungsi dari nomina tersebut.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th align="center">Partikel</th>
+                    <th align="center">Fungsi</th>
+                    <th>Deskripsi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center"><em>na</em></td>
+                    <td align="center">Topik</td>
+                    <td>Menandai frasa nomina sebagai topik dalam kalimat.<br>
+                        Digunakan untuk menekankan bahwa kata tersebut merupakan ide yang sudah diperkenalkan sebelumnya.<br>
+                        Meskipun partikel ini paling sering menggantikan partikel subjek,<br>
+                        partikel ini juga dapat menggantikan partikel lain seperti <em>-lu</em> atau <em>-ne</em>.</td>
+                </tr>
+                <tr>
+                    <td align="center"><em>ga</em></td>
+                    <td align="center">Nominatif</td>
+                    <td>Menandai nomina sebagai subjek dalam kalimat.<br>
+                        Umumnya hanya digunakan jika kata tersebut perlu ditandai secara khusus sebagai ide baru.</td>
+                </tr>
+                <tr>
+                    <td align="center"><em>lu</em></td>
+                    <td align="center">Akusatif</td>
+                    <td>Menandai nomina sebagai objek langsung dalam kalimat.<br>
+                        Penggunaannya bersifat opsional ketika urutan kata adalah Subjek-Objek-Verba, tetapi menjadi wajib dalam urutan lain.</td>
+                </tr>
+                <tr>
+                    <td align="center"><em>ji*</em></td>
+                    <td align="center">Genitif</td>
+                    <td>Menandai nomina sebagai pemilik dalam frasa nomina berikutnya.</td>
+                </tr>
+                <tr>
+                    <td align="center"><em>ne</em><sup>1</sup></td>
+                    <td align="center">Datif/Instrumental</td>
+                    <td>Menandai nomina sebagai objek tidak langsung dalam kalimat.<br>
+                        Setara dengan "kepada" dalam bahasa Indonesia jika merujuk pada target tindakan.</td>
+                </tr>
+                <tr>
+                    <td align="center"><em>ne</em><sup>2</sup></td>
+                    <td align="center">Agen Pasif</td>
+                    <td>Menandai nomina sebagai agen dalam konstruksi suara pasif.<br>
+                        Setara dengan preposisi "oleh".</td>
+                </tr>
+                <tr>
+                    <td align="center"><em>bat</em></td>
+                    <td align="center">Ablatif</td>
+                    <td>Menandai nomina sebagai asal dari tindakan verba.<br>
+                        Setara dengan "dari" dalam bahasa Indonesia.</td>
+                </tr>
+                <tr>
+                    <td align="center"><em>bang</em></td>
+                    <td align="center">Lativ</td>
+                    <td>Menandai nomina sebagai tujuan dari tindakan verba.<br>
+                        Setara dengan "ke" dalam bahasa Indonesia ketika merujuk pada lokasi.</td>
+                </tr>
+                <tr>
+                    <td align="center"><em>la</em></td>
+                    <td align="center">Referensial</td>
+                    <td>Menandai klausa sebelumnya sebagai informasi yang berasal dari pihak kedua (tidak langsung).</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p>*: <em>ji</em> juga memiliki fungsi lain dalam mengubah fungsi kata. Lihat bagian 2.3.</p>
+        
+        <p>Nomina dalam Manmino juga memiliki keunikan dengan tidak membedakan jumlah maupun gender: 
+          pluralitas dalam Manmino dapat ditegaskan melalui reduplikasi nomina atau dengan penggunaan sufiks <em>-tat</em>.</p>
+
+    <h3 id="verb-modifiers">2.2 Modifikator Verba</h3>
+        <p>Verba dalam Manmino dapat diberi partikel opsional untuk menandai berbagai aspek, 
+            dengan urutan informasi sebagai berikut:</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th align="center">Valensi</th>
+                    <th align="center">Kesopanan</th>
+                    <th align="center">Tempus - Aspek</th>
+                    <th align="center">Modus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center"><em>li / hi</em></td>
+                    <td align="center"><em>si</em></td>
+                    <td align="center"><em>jung / le / kalu</em></td>
+                    <td align="center"><em>ya / ye / ka / ne</em></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <ul>
+            <li><strong>Valensi</strong></li>
+            <ul>
+                <li><em>Pasif</em> <em>li</em> mengubah verba sehingga subjek tidak lagi melakukan tindakan, 
+                    melainkan tindakan tersebut dilakukan terhadap subjek.</li>
+                <li><em>Kausatif</em> <em>hi</em> mengubah verba sehingga subjek tidak lagi melakukan tindakan sendiri, 
+                    melainkan menyebabkan pihak lain melakukan tindakan tersebut.</li>
+            </ul>
+            <li><strong>Kesopanan</strong></li>
+            <ul>
+                <li><em>si</em> adalah salah satu cara penutur Manmino menunjukkan rasa hormat kepada subjek.</li>
+            </ul>
+            <li><strong>Tempus-Aspek</strong></li>
+            <ul>
+                <li><em>Progresif</em> <em>jung</em> menandai bahwa suatu tindakan sedang berlangsung pada waktu yang dirujuk 
+                    (diasumsikan saat ini jika tidak dinyatakan sebaliknya).</li>
+                <li><em>Perfektif</em> <em>le</em> menandai bahwa tindakan telah selesai dilakukan (biasanya di masa lalu).</li>
+                <li><em>Prospektif</em> <em>kalu</em> menandai bahwa tindakan belum terjadi, 
+                    baik karena bersifat hipotetis maupun karena akan dilakukan di masa depan. 
+                    (Dalam linguistik formal, ini disebut sebagai irrealis.)</li>
+                <li>Dalam Manmino, tempus dan aspek tidak dibedakan secara ketat bila berdiri sendiri. 
+                    Namun, ketika partikel ini ditumpuk, partikel pertama menandai aspek, dan partikel kedua menandai tempus.</li>
+            </ul>
+            <li><strong>Modus</strong></li>
+            <ul>
+                <li><em>Ekslamatif</em> <em>ya</em> menandai frasa sebagai seruan.</li>
+                <li><em>Interogatif</em> <em>ka</em> menandai kalimat sebagai pertanyaan kuat.</li>
+                <li><em>Usul/Saran</em> <em>ne</em> menandai kalimat sebagai pertanyaan lemah atau sebuah saran.</li>
+                <li><em>Imperatif</em> <em>ye</em> menandai verba sebagai perintah.</li>
+            </ul>
+        </ul>
+        
+        <p>Perlu dicatat bahwa versi-versi awal Manmino mendeskripsikan penandaan waktu yang mendahului penandaan aspek, 
+            tetapi kini sistem tersebut telah diubah untuk lebih mencerminkan sistem tumpukan tempus-aspek dalam bahasa Korea, 
+            yang menjadi sumber inspirasi sistem ini.</p>
+
+    <h3 id="word-function-modifiers">2.3 Modifikator Fungsi Kata</h3>
+        <p>Seperti telah disebutkan sebelumnya, dalam Manmino, semua kata dasar diklasifikasikan sebagai 
+            Tindakan dan Fenomena, Objek dan Konsep, atau Kualitas. 
+            Secara umum, masing-masing kategori tersebut berkorespondensi dengan verba, nomina, serta adjektiva atau adverbia. 
+            Namun, sering kali terdapat kasus di mana suatu kata tidak digunakan dengan cara yang paling alami untuk maknanya. 
+            Dalam kasus seperti itu, kata tersebut umumnya harus menggunakan partikel bantu atau verba bantu agar dapat berfungsi dengan benar. 
+            Modifikatornya adalah sebagai berikut:</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th align="center"></th>
+                    <th align="center">Verba</th>
+                    <th align="center">Nomina</th>
+                    <th align="center">Adverbia</th>
+                    <th align="center">Adjektiva</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center">Tindakan dan Fenomena</td>
+                    <td align="center">∅</td>
+                    <td align="center"><em>-em</em></td>
+                    <td align="center">∅<sup>1</sup></td>
+                    <td align="center">-<em>ji</em><sup>2</sup></td>
+                </tr>
+                <tr>
+                    <td align="center">Objek dan Konsep</td>
+                    <td align="center"><em>heng</em></td>
+                    <td align="center">∅</td>
+                    <td align="center"><em>-yang</em></td>
+                    <td align="center"><em>-dek</em></td>
+                </tr>
+                <tr>
+                    <td align="center">Kualitas</td>
+                    <td align="center"><em>cey</em></td>
+                    <td align="center"><em>-em</em></td>
+                    <td align="center">∅</td>
+                    <td align="center">∅</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <ol>
+            <li>Sebuah tindakan atau fenomena, atau frasa yang dipimpin oleh tindakan atau fenomena yang "digunakan sebagai adverbia" 
+                (seperti klausa adverbial), diekspresikan dalam bentuk "rantai verba", 
+                di mana kata-kata kepala dapat disusun berdampingan tanpa modifikasi untuk membentuk frasa verba penuh.</li>
+            <li>Inilah cara pembentukan frasa yang mendeskripsikan frasa nomina lain (Klausa Relatif).</li>
+        </ol>
+        
+        <p>Perlu dicatat bahwa versi-versi sebelumnya dari Manmino menggunakan partikel <em>-syang</em> 
+            untuk menandai Objek/Konsep sebagai adverbia, 
+            tetapi kini diubah menjadi <em>-yang</em> untuk mempermudah pengucapan 
+            dan lebih mencerminkan penggunaan umum dalam Bahasa Tionghoa Klasik dan Bahasa Jepang. 
+            Juga dicatat bahwa versi terdahulu menggunakan partikel terpisah <em>-in</em> 
+            untuk mengubah tindakan perfektif menjadi adjektiva, 
+            tetapi kini digantikan dengan konstruksi <em>-le-ji</em>. 
+            Dengan pola serupa, tindakan yang telah dijadikan nomina 
+            dapat menandai keperfektifan dengan konstruksi <em>-le-em</em>, atau disingkat menjadi <em>-lem</em>.
+        </p>
+        
+        <p>Negasi juga merupakan jenis modifikator fungsi kata yang unik, 
+            karena merupakan satu-satunya partikel prefiks dalam Manmino. 
+            Manmino menegasikan verba dengan <em>but-</em>, 
+            dan menegasikan adjektiva dan adverbia dengan <em>bi-</em>. 
+            Bentuk <em>but-cey</em> dapat disingkat menjadi <em>bey</em>.
+        </p>
+
+    <h3 id="independent-particles">2.4 Partikel Independen</h3>
+        <p>Dalam Manmino, terdapat juga partikel yang berfungsi secara independen dari kata apa pun, 
+            dan tidak terikat langsung pada frasa tertentu. 
+            Partikel ini dapat berfungsi sebagai konjungsi koordinatif yang menghubungkan klausa-klausa, 
+            atau digunakan di awal kalimat sebagai penanda fungsi untuk frasa berikutnya.</p>
+        
+        <p>Konjungsi Koordinatif dalam Manmino adalah konjungsi yang menghubungkan dua klausa independen.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Konjungsi <br> Koordinatif</th>
+                    <th>Deskripsi</th>
+                    <th>Contoh</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center"><em>i</em></td>
+                    <td>Konjungsi kumulatif.<br>Setara dengan “dan”.</td>
+                    <td><em>A sik i ta sik.</em><br>Saya makan dan dia makan.</td>
+                </tr>
+                <tr>
+                    <td align="center"><em>nyak</em></td>
+                    <td>Konjungsi subjungtif atau hipotetis.<br>Setara dengan “jika”.</td>
+                    <td><em>A sik nyak ta sik.</em><br>Saya makan jika dia makan.</td>
+                </tr>
+                <tr>
+                    <td align="center"><em>dan</em></td>
+                    <td>Konjungsi adversatif.<br>Setara dengan “tetapi”.</td>
+                    <td><em>A sik dan ta but sik.</em><br>Saya makan tetapi dia tidak makan.</td>
+                </tr>
+                <tr>
+                    <td align="center"><em>butdan</em></td>
+                    <td>Konjungsi kontra-adversatif.<br>Setara dengan “meskipun”.</td>
+                    <td><em>A sik butdan ta sik.</em><br>Saya makan meskipun dia makan.</td>
+                </tr>
+                <tr>
+                    <td align="center"><em>syuy</em></td>
+                    <td>Konjungsi konsesif.<br>Setara dengan “bahkan jika”.</td>
+                    <td><em>A sik syuy ta sik.</em><br>Saya makan bahkan jika dia makan.</td>
+                </tr>
+                <tr>
+                    <td align="center"><em>hok</em></td>
+                    <td>Konjungsi alternatif.<br>Setara dengan “atau”.</td>
+                    <td><em>A sik hok ta sik.</em><br>Saya makan atau dia makan.</td>
+                </tr>
+                <tr>
+                    <td align="center"><em>pi</em></td>
+                    <td>Konjungsi komparatif.<br>Tidak memiliki padanan langsung dalam bahasa Inggris.</td>
+                    <td><em>A sik pi ta da sik.</em><br>Jika dibandingkan dengan saya makan, dia makan lebih banyak.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p>Konjungsi Subordinatif dalam Manmino adalah konjungsi yang menghubungkan satu klausa independen dengan klausa lainnya 
+            (baik independen maupun dependen).</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Konjungsi <br> Subordinatif</th>
+                    <th>Deskripsi</th>
+                    <th>Contoh</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center"><em>hwa</em></td>
+                    <td>Konjungsi kumulatif.<br>Setara dengan “dengan”.<br>Tidak dapat digunakan untuk menghubungkan dua klausa independen.</td>
+                    <td><em>A sik hwa ta.</em><br>Saya makan dengan dia.</td>
+                </tr>
+                <tr>
+                    <td align="center"><em>wi</em></td>
+                    <td>Konjungsi objektif.<br>Setara dengan “untuk”.</td>
+                    <td><em>A sik wi ta.</em><br>Saya makan untuk dia.</td>
+                </tr>
+                <tr>
+                    <td align="center"><em>yu</em></td>
+                    <td>Konjungsi kausatif.<br>Setara dengan “karena”.</td>
+                    <td><em>A sik yu ta sik.</em><br>Saya makan karena dia makan.</td>
+                </tr>
+                <tr>
+                    <td align="center"><em>geng</em></td>
+                    <td>Konjungsi instrumental.<br>Setara dengan “melalui”.</td>
+                    <td><em>A sik geng ta.</em><br>Saya makan melalui dia.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p>Partikel-partikel fungsional ini juga dapat dinegasi dengan <em>but-</em>. 
+            Dalam kasus tersebut, diasumsikan bahwa kalimat berikutnya akan memperjelas hubungan pragmatis 
+            antara subjek dan frasa verba yang mengikuti.</p>
+
+    <h3 id="pronouns">2.5 Pronouns</h3>
+    <p>Manmino has a simple system of pronouns. 
+		In terms of personal pronouns, 
+		Manmino has the first person pronoun <em>a</em>, 
+		the second person pronoun <em>ni</em>, 
+		and the third person pronoun <em>ta</em>. 
+		There are also <em>kun</em>, <em>nyang</em>, <em>ini</em>, 
+		which are gendered and intimate alternatives to the second or third person pronouns. 
+		Each corresponds to male, female, and neuter.
+    </p>
+    <p>Manmino has a modular system for generating other pronouns. 
+		Manmino pronouns have the following demonstrative parameters: 
+		first person proximal <em>ko</em>, non-first person proximal <em>co</em>, distal <em>yo</em>,
+        interrogative <em>ha</em>, existential <em>hok</em>, universal <em>man</em>, negative <em>mu</em>, and alternative <em>ta</em>. 
+		These can be optionally suffixed to specify noun class of the target being demonstrated. 
+		Nonhuman objects are suffixed with <em>-ka</em>, people are suffixed with <em>-nin</em>, 
+		times are suffixed with <em>-si</em>, places are suffixed with <em>-di</em>, 
+		causes are suffixed with <em>-yu</em>, and method is suffixed with <em>-i</em>. 
+		It is noted that many universal pronouns do not use the standard target specifying suffixes 
+		due to prevailing pre-existing words in Sinoxenic languages.
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>1st <br>Proximal</th>
+                <th>Non-1st <br>Proximal</th>
+                <th>Distal</th>
+                <th>Interrogative</th>
+                <th>Particular</th>
+                <th>Universal</th>
+                <th>Negative</th>
+                <th>Alternative</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>‘this’</td>
+                <td>‘that’</td>
+                <td>‘yon’</td>
+                <td>‘which’</td>
+                <td>‘certain’</td>
+                <td>‘all’</td>
+                <td>‘none’</td>
+                <td>‘other’</td>
+            </tr>
+            <tr>
+                <td>General</td>
+                <td><em>ko</em></td>
+                <td><em>co</em></td>
+                <td><em>yo</em></td>
+                <td><em>ha</em></td>
+                <td><em>hok</em></td>
+                <td><em>man</em></td>
+                <td><em>mu</em></td>
+                <td><em>ta</em></td>
+            </tr>
+            <tr>
+                <td>Object</td>
+                <td><em>koko</em></td>
+                <td><em>coko</em></td>
+                <td><em>yoko</em></td>
+                <td><em>haka</em></td>
+                <td><em>hokko</em></td>
+                <td><em>manmut*</em></td>
+                <td><em>muku</em></td>
+                <td><em>taka</em></td>
+            </tr>
+            <tr>
+                <td><em>Person</em></td>
+                <td><em>konin</em></td>
+                <td><em>conin</em></td>
+                <td><em>yonin</em></td>
+                <td><em>hanin</em></td>
+                <td><em>hoknin</em></td>
+                <td><em>manmin*</em></td>
+                <td><em>munin</em></td>
+                <td><em>tanin</em></td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td><em>kosi</em></td>
+                <td><em>cosi</em></td>
+                <td><em>yosi</em></td>
+                <td><em>hasi</em></td>
+                <td><em>hoksi</em></td>
+                <td><em>syangsi*</em></td>
+                <td><em>musi</em></td>
+                <td><em>tasi</em></td>
+            </tr>
+            <tr>
+                <td>Place</td>
+                <td><em>kodi</em></td>
+                <td><em>codi</em></td>
+                <td><em>yodi</em></td>
+                <td><em>hadi</em></td>
+                <td><em>hokdi</em></td>
+                <td><em>manbang*</em></td>
+                <td><em>mudi</em></td>
+                <td><em>tadi</em></td>
+            </tr>
+            <tr>
+                <td>Reason</td>
+                <td><em>koyu</em></td>
+                <td><em>coyu</em></td>
+                <td><em>yoyu</em></td>
+                <td><em>hayu</em></td>
+                <td><em>hokyu</em></td>
+                <td><em>manyu</em></td>
+                <td><em>muyu</em></td>
+                <td><em>tayu</em></td>
+            </tr>
+            <tr>
+                <td>Method</td>
+                <td><em>ko’i</em></td>
+                <td><em>co’i</em></td>
+                <td><em>yo’i</em></td>
+                <td><em>ha’i</em></td>
+                <td><em>hok’i</em></td>
+                <td><em>man’i</em></td>
+                <td><em>mu’i</em></td>
+                <td><em>ta’i</em></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 id="vocabulary">3. Vocabulary</h2>
+    <p>Vocabulary in Manmino comes from a variety of different languages. 
+		While some words are defined in the dictionary,
+        Manmino generally has an open-ended vocabulary where words can come from any language, 
+		although words with widespread recognition are preferred over words used only in individual languages, 
+		and monosyllabic words should be avoided except for the most basic words. 
+		There are six different categories for where words can come from, 
+		with different situations calling for different source languages. 
+		These recommendations should not be considered to be exact rules, 
+		but should be interpreted flexibly according to the needs of the language.
+	</p>
+    <p>The first category is of words of Sinitic origin. 
+		Generally, this refers to words from Classical Chinese which was the spoken language of Tang dynasty China 
+		and the traditional written lingua franca of China, Japan, Korea, and Vietnam. 
+		Manmino users are recommended to loan words from the Sinitic category 
+		when it comes to matters of Daoism, Confucianism, politics, diplomacy, economics, or other similar topics, 
+		and are recommended to avoid loaning words from the Sinitic category when it comes to names of plants or animals. 
+		It is also recommended that if creating new words not sourced from another language, 
+		users of Manmino should utilize Sinitic stems following established
+        conventions for creating Classical Sinitic words, in the interest of compactness.
+	</p>
+    <p>The second category is words of Sanskrit origin. 
+		While South Asia, the place where Sanskrit is native to, is not directly in the scope of Manmino, 
+		many languages in Southeast Asia consider Sanskrit and Pali as prestige languages due to Buddhism. 
+		Even in the Confucian realm of Vietnam, China, Korea, and Japan, 
+		Sanskrit had some vocabulary influences. 
+		As such, Sanskrit is an important language in the Manmino world, explaining its inclusion. 
+		Manmino users are especially recommended to loan words from Sanskrit 
+		when it comes to matters of Indic religions and philosophy.
+    </p>
+    <p>The third category is words of Korean or Japanese origin. 
+		While Korean and Japanese have no proven relationship, 
+		they are well known to share many mutual similarities in grammar as well as some similarities of vocabulary in their shared sprachbund, 
+		and are, as such, considered to be in one category. 
+		There is no specific rules for how to adapt a word from this category 
+		as the cognates they share are too irregular to create definitive rules for 
+		(hence why they are still considered language isolates). 
+		Manmino users are recommended to use words of this category when it comes to matters of nature in cooler temperate climates, 
+		as well as words pertaining to the natural world in general, 
+		and whenever else there is a found overlap between Korean and Japanese.
+	</p>
+    <p>The fourth category is words of Austroasian origin. 
+		Unlike the general usage of the term “Austroasian” in most other academic contexts, 
+		in discussion of Manmino, Austroasia refers to all of continental Southeast Asia, 
+		including the Thailand, Laos, Cambodia, and Myanmar. 
+		Continental Southeast Asia, or Austroasia, also forms a sprachbund 
+		where various languages share words either from genetic reasons or from exchange. 
+		Like as is the case for the Koreo-Japonic Sprachbund, 
+		the cognates they share are also too irregular to create definitive rules for adapting.
+        Manmino users are recommended to use words of this category 
+		when it comes to matters of nature of warmer tropical climates, 
+		as well as words pertaining to the natural world in general, 
+		and whenever else there is a found overlap among Austroasian languages.
+	</p>
+    <p>The fifth category is words of Austronesian origin. 
+		The Austronesian language family is the dominant language family in most of Maritime Southeast Asia, 
+		and today spans Indonesia, Philippines, Malaysia, Brunei, and to a certain extent, Taiwan, Singapore, among other nations. 
+		The languages of the Austronesian family often share cognates, 
+		and as such the shared vocabulary should be used whenever possible, 
+		especially in matters of navigation or the natural world in general.
+	</p>
+    <p>The sixth category is words of external origin. 
+		These words are from languages primarily spoken outside the Manmino realm, such as Arabic, Spanish, or English. 
+		They are generally words that refer to information-era technologies,
+        Abrahamic faiths, or other words that generally have not been nativized in Asia. 
+		Outside of those specific scopes, it is not recommended to use these words 
+		unless there are no other words in the Manmino source languages that would work.
+	</p>
+    <h3 id="loaning-from-classical-chinese">3.1 Loaning from Classical Chinese</h3>
+    <p>Words that are derived from Classical Chinese, 
+		or new words coined through processes followed in Classical Chinese,
+        cannot be loaned solely based on one modern pronunciation of one language, 
+		but instead must be loaned based on a simplified version of the pronunciation they would have had during the Chinese Tang Dynasty,
+		as that is the origin from which almost all modern readings derive from.</p>
+    <p>In Classical Chinese, most common use characters were classified by initial consonants and their “rime”, 
+		which is a combination of vowel and final consonant. 
+		This information is attested to in literature such as the <em>Qieyun</em> and the <em>Yunjing</em>. 
+		In the first table, the correspondences between Classical Chinese Initials and modern Manmino consonant values are given.
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th align="center">Plain</th>
+                <th align="center">Aspirated</th>
+                <th align="center">Voiced</th>
+                <th align="center">Nasal</th>
+                <th align="left">Approximant</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bilabial</td>
+                <td align="center">幫 b</td>
+                <td align="center">滂 p</td>
+                <td align="center">並 b</td>
+                <td align="center">明 m</td>
+                <td align="left"></td>
+            </tr>
+            <tr>
+                <td>Alveolar</td>
+                <td align="center">端 d</td>
+                <td align="center">透 t</td>
+                <td align="center">定 d</td>
+                <td align="center">泥 n</td>
+                <td align="left"></td>
+            </tr>
+            <tr>
+                <td>Alveolar Affricate</td>
+                <td align="center">精 j</td>
+                <td align="center">清 c</td>
+                <td align="center">從 j</td>
+                <td align="center"></td>
+                <td align="left"></td>
+            </tr>
+            <tr>
+                <td>Alveolar Fricative</td>
+                <td align="center">心 s</td>
+                <td align="center"></td>
+                <td align="center">邪 s</td>
+                <td align="center"></td>
+                <td align="left"></td>
+            </tr>
+            <tr>
+                <td>Retroflex</td>
+                <td align="center">知 d</td>
+                <td align="center">徹 t</td>
+                <td align="center">澄 d</td>
+                <td align="center">娘 n</td>
+                <td align="left"></td>
+            </tr>
+            <tr>
+                <td>Retroflex Affricate</td>
+                <td align="center">莊 j</td>
+                <td align="center">初 c</td>
+                <td align="center">崇 j</td>
+                <td align="center"></td>
+                <td align="left"></td>
+            </tr>
+            <tr>
+                <td>Retroflex Fricative</td>
+                <td align="center">生 s</td>
+                <td align="center"></td>
+                <td align="center">俟 s</td>
+                <td align="center"></td>
+                <td align="center"></td>
+            </tr>
+            <tr>
+                <td>Palatal</td>
+                <td align="center">章 j</td>
+                <td align="center">昌 c</td>
+                <td align="center">常 j</td>
+                <td align="center">日 n</td>
+                <td align="center">以 y</td>
+            </tr>
+            <tr>
+                <td>Palatal Fricative</td>
+                <td align="center">書 s</td>
+                <td align="center"></td>
+                <td align="center">船 s</td>
+                <td align="center"></td>
+                <td align="center"></td>
+            </tr>
+            <tr>
+                <td>Velar</td>
+                <td align="center">見 g</td>
+                <td align="center">溪 k</td>
+                <td align="center">群 g</td>
+                <td align="center">疑 ∅</td>
+                <td align="center">云* ∅</td>
+            </tr>
+            <tr>
+                <td>Velar Fricative</td>
+                <td align="center">曉 h</td>
+                <td align="center"></td>
+                <td align="center">匣 h</td>
+                <td align="center"></td>
+                <td align="center"></td>
+            </tr>
+            <tr>
+                <td>Laryngeal</td>
+                <td align="center">影 ∅</td>
+                <td align="center"></td>
+                <td align="center"></td>
+                <td align="center"></td>
+                <td align="left"></td>
+            </tr>
+        </tbody>
+    </table>
+    *: The original phonetic value for this initial is uncertain.
+    <p>Classical Chinese classification of characters by rime 
+		(which indicate vowel quality, with “outer” rimes signifying open vowels while “inner” rimes signifying mid or closed vowels), 
+		rounding (with “open” rimes signifying unrounded and “closed” signifying rounded vowels", 
+		“division” (a 1-4 classification based on degree of palatalization), 
+		and final consonants (of which there were multiple). 
+		While final consonants are fairly straight forward, 
+		the other factors are not as straightforward, 
+		and their correspondences are given in the table below.</p>
+		<table>
+			<thead>
+			  <tr>
+				<th colspan="2" rowspan="2">Approx. <br>Middle Chinese<br> vowel value</th>
+				<th colspan="4">1st Div</th>
+				<th colspan="4">2nd Div</th>
+				<th colspan="4">3rd Div</th>
+				<th colspan="4">4th Div</th>
+			  </tr>
+			  <tr>
+				<th colspan="2">Open</th>
+				<th colspan="2">Closed</th>
+				<th colspan="2">Open</th>
+				<th colspan="2">Closed</th>
+				<th colspan="2">Open</th>
+				<th colspan="2">Closed</th>
+				<th colspan="2">Open</th>
+				<th colspan="2">Closed</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>果</td>
+				<td>/a/</td>
+				<td>歌</td>
+				<td>a</td>
+				<td>戈</td>
+				<td>wa</td>
+				<td colspan="4"></td>
+				<td>戈</td>
+				<td>ya</td>
+				<td>戈</td>
+				<td>wa</td>
+				<td colspan="4"></td>
+			  </tr>
+			  <tr>
+				<td>假</td>
+				<td>/a:/</td>
+				<td colspan="4"></td>
+				<td>麻</td>
+				<td>a</td>
+				<td>麻</td>
+				<td>wa</td>
+				<td>麻</td>
+				<td>ya</td>
+				<td></td>
+				<td></td>
+				<td colspan="4"></td>
+			  </tr>
+			  <tr>
+				<td>蟹</td>
+				<td>/aj/</td>
+				<td>咍, <br>泰</td>
+				<td>ay</td>
+				<td>灰, <br>泰</td>
+				<td>way</td>
+				<td>皆, <br>夬,<br> 佳</td>
+				<td>ay</td>
+				<td>皆, <br>夬, <br>佳</td>
+				<td>way</td>
+				<td>祭</td>
+				<td>ey</td>
+				<td>祭</td>
+				<td>wey</td>
+				<td>齊, <br>祭</td>
+				<td>ey</td>
+				<td>齊, <br>祭</td>
+				<td>wey</td>
+			  </tr>
+			  <tr>
+				<td>效</td>
+				<td>/aw/</td>
+				<td>豪</td>
+				<td>aw</td>
+				<td colspan="2"></td>
+				<td>肴</td>
+				<td>aw</td>
+				<td colspan="2"></td>
+				<td>宵</td>
+				<td>yaw</td>
+				<td colspan="2"></td>
+				<td>蕭</td>
+				<td>yaw</td>
+				<td colspan="2"></td>
+			  </tr>
+			  <tr>
+				<td>咸</td>
+				<td>/am/</td>
+				<td>覃, <br>談</td>
+				<td>am</td>
+				<td colspan="2"></td>
+				<td>咸,<br> 銜</td>
+				<td>am</td>
+				<td colspan="2"></td>
+				<td>鹽, <br>嚴</td>
+				<td>em</td>
+				<td>凡</td>
+				<td>om</td>
+				<td>添</td>
+				<td>em</td>
+				<td colspan="2"></td>
+			  </tr>
+			  <tr>
+				<td>山</td>
+				<td>/an/</td>
+				<td>寒</td>
+				<td>an</td>
+				<td>桓</td>
+				<td>wan</td>
+				<td>山, <br>刪</td>
+				<td>an</td>
+				<td>山,<br> 刪</td>
+				<td>wan</td>
+				<td>元,<br> 仙</td>
+				<td>an</td>
+				<td>元, <br>仙</td>
+				<td>wan</td>
+				<td>仙,<br> 先</td>
+				<td>en</td>
+				<td>仙,<br> 先</td>
+				<td>wen</td>
+			  </tr>
+			  <tr>
+				<td>宕</td>
+				<td>/aŋ/</td>
+				<td>唐</td>
+				<td>ang</td>
+				<td>唐</td>
+				<td>wang</td>
+				<td colspan="4"></td>
+				<td>陽</td>
+				<td>ang</td>
+				<td>陽</td>
+				<td>wang</td>
+				<td colspan="4"></td>
+			  </tr>
+			  <tr>
+				<td>江</td>
+				<td>/auŋ/</td>
+				<td colspan="4" rowspan="2"></td>
+				<td>江</td>
+				<td>ang</td>
+				<td colspan="2"></td>
+				<td colspan="4"></td>
+				<td colspan="4"></td>
+			  </tr>
+			  <tr>
+				<td>梗</td>
+				<td>/aiŋ/</td>
+				<td>庚, <br>耕</td>
+				<td>eng</td>
+				<td>庚,<br>耕</td>
+				<td>ong</td>
+				<td>庚,<br> 清</td>
+				<td>eng</td>
+				<td>庚,<br> 清</td>
+				<td>eng</td>
+				<td>青</td>
+				<td>eng</td>
+				<td>青</td>
+				<td>eng</td>
+			  </tr>
+			  <tr>
+				<td>遇</td>
+				<td>/ə/</td>
+				<td>模</td>
+				<td>o</td>
+				<td colspan="2"></td>
+				<td colspan="4" rowspan="9"></td>
+				<td>魚</td>
+				<td>o</td>
+				<td>虞</td>
+				<td>u</td>
+				<td colspan="4" rowspan="9"></td>
+			  </tr>
+			  <tr>
+				<td rowspan="2">止</td>
+				<td rowspan="2">/i/</td>
+				<td colspan="4" rowspan="2"></td>
+				<td rowspan="2">支, <br>微, <br>之, <br>脂</td>
+				<td rowspan="2">i</td>
+				<td>支, <br>微</td>
+				<td>wi</td>
+			  </tr>
+			  <tr>
+				<td>脂</td>
+				<td>yuy</td>
+			  </tr>
+			  <tr>
+				<td>流</td>
+				<td>/əw/</td>
+				<td>侯</td>
+				<td>ow</td>
+				<td colspan="2"></td>
+				<td>尤,<br> 幽</td>
+				<td>yu</td>
+				<td colspan="2"></td>
+			  </tr>
+			  <tr>
+				<td>深</td>
+				<td>/əm/</td>
+				<td colspan="4"></td>
+				<td>侵</td>
+				<td>im</td>
+				<td colspan="2"></td>
+			  </tr>
+			  <tr>
+				<td rowspan="2">臻</td>
+				<td rowspan="2">/ən/</td>
+				<td rowspan="2">痕</td>
+				<td rowspan="2">on</td>
+				<td rowspan="2">魂</td>
+				<td rowspan="2">on</td>
+				<td rowspan="2">臻, <br>眞, <br>欣</td>
+				<td rowspan="2">in</td>
+				<td>諄, <br>眞</td>
+				<td>yun</td>
+			  </tr>
+			  <tr>
+				<td>文</td>
+				<td>un</td>
+			  </tr>
+			  <tr>
+				<td>曾</td>
+				<td>/əŋ/</td>
+				<td>登</td>
+				<td>eng</td>
+				<td>登</td>
+				<td>ong</td>
+				<td>蒸</td>
+				<td>eng</td>
+				<td>蒸</td>
+				<td>ong</td>
+			  </tr>
+			  <tr>
+				<td>通</td>
+				<td>/əuŋ/</td>
+				<td>東, <br>冬</td>
+				<td>ong</td>
+				<td colspan="2"></td>
+				<td>東,<br> 鍾</td>
+				<td>ong</td>
+				<td colspan="2"></td>
+			  </tr>
+			</tbody>
+		</table>
+
+       <p>As expressed in earlier documentation, this rule is subject to change as needed, 
+		based on whichever fits the needs of the Manmino community better.</p>
+    <h3 id="loaning-from-sanskrit">3.2 Loaning from Sanskrit</h3>
+    <p>Sanskrit has been independently loaned into different languages across East Asia differently, 
+		and as such it requires a standard loaning method into Manmino as well, 
+		especially as Sanskrit becomes more important in Manmino.</p>
+    <p>The simplest method will be to initially render Sanskrit where possible, 
+		and, when necessary, simplify as minimally as feasible using rules established for Pali simplification of Sanskrit 
+		with modifications made for Manmino phonology. 
+		Some items of note in conversion of Sanskrit words into Manmino:</p>
+    <ul>
+		<li>Vowels</li>
+        <ul>
+			<li>Vowel length is ignored.</li>
+			<li>Diphthongs are preserved.</li>
+			<li>Final vowel can be dropped if legal in Manmino.</li>		
+        </ul>
+		<li>Consonants in general</li>
+		<ul>
+			<li>Aspiration is ignored for both voiced and voiceless stops.</li>
+			<li>Consonants do not go through Sanskrit to Pali consonant gemination unless necessary to be legal in Manmino pholology.</li>
+			<li>In consonant clusters, voiced consonants are to go through devoicing before attempting to proceed further
+				with Pali simplification. For example, “udvigna” would become “utwikna” in Manmino, not “ubiga”</li>
+		</ul>
+        <li>Nasals</li>
+		<ul>
+			<li>Sanskrit /ṃ/ can become /ŋ/ if descendant is more recognizable with that sound.</li>
+			<li>/m/ becomes /w/ if needed to preserve another consonant.</li>
+	        <li>The nominative marker “-n” is dropped in Manmino.</li>
+		</ul>
+		<li>Fricatives</li>
+		<ul>
+			<li>/v/ becomes /w/ when preceding a front vowel such as /i/ or /e/, or when needed to preserve another
+				consonant. Otherwise, it becomes /b/.</li>
+			<li>/j/ and /c/ followed by another consonant gain a vowel /i/ after itself.</li>
+			<li>All Sanskrit sibilants in consonant clusters are considered to be /s/.</li>
+			<li>All Sanskrit fricatives followed by another consonant and not part of one of the above cases are dropped.</li>
+		</ul>
+        <li>Liquids</li>
+		<ul>
+			<li>Sanskrit /kl/ goes to /kil/.</li>
+			<li>Invervocalic Sanskrit /ṛ/ goes to /a/, /i/, or /u/ depending on the following vowel.</li>
+			<li>All Sanskrit liquids are dropped when between a preceding consonant and a vowel.</li>
+			<li>Manmino does not allow laterals or alveolar consonant to merge with each other.</li>
+		</ul>
+    </ul>
+    <h3 id="loaning-from-latin">3.3 Loaning from Latin</h3>
+	<p>Although not a language native to the Manmino realm, Greek and Latin are highly influential languages in the modern day
+	 as a language upon which many modern concepts initially from the west comes from. 
+	 However, because there is a mix of different European influences that dilute understanding of where a given word comes from, 
+	 it makes identifying the roots of a given Latin-based word more difficult than it needs to be. 
+	 As such, Manmino has a standard set of shorthands that should inform how Latin-based loanwords should be loaned.
+	 </p>	
+	 <ul>
+		<li>Latin <em>-Vs</em> suffixes (with "V" standing in for any vowel) go to <em>-i</em>, and if the vowel can be dropped legally in Manmino, it is dropped. The following are a few examples:</li>
+		<ul>
+			<li>Latin suffix <em>-aris</em> (English "-ary") goes to <em>-ali</em>.</li>
+			<li>Latin suffix <em>-bilis</em> (English "-ble") goes to <em>-bili</em>.</li>
+			<li>Latin suffix <em>-eus</em> (English "-eous") goes to <em>-i</em>.</li>
+			<li>Latin suffix <em>-ens</em> (English "-ent") goes to <em>-en</em>.</li>
+			<li>Latin suffix <em>-ivus</em> (English "-ive") goes to <em>-ifi</em>.</li>
+			<li>Latin suffix <em>-icus</em> (English "-ic") goes to <em>-ik</em>.</li>
+			<li>Latin suffix <em>-tas</em> (English "-ty") goes to <em>-ti</em>.</li>
+		</ul>
+		<li>Latin suffix <em>-tio</em> and <em>-sio</em> goes to <em>-si</em>.</li>
+		<li>Latin "r" as an initial is mapped to "l", and when as an onglide, it is mapped to "w".
+		<li>Latin "v" as an initial is mapped to "w" when used as an onglide, "b" before an "a", "e", or "o", and "f" before an "e" or "i".</li>
+	</ul>
+    <h3 id="loaning-words-from-other-languages">3.3 Loaning Words from Other Languages</h3>
+    <p>Manmino, despite having a highly technical description, 
+		does not aim to a fully prescribed language but a flexible protocol for natural communication. 
+		As such, these rules are best understood to be guidelines that can be interpreted freely as needed by speakers of Manmino. 
+		Speakers of Manmino should periodically formalize new conventions and record in or redact from this section the new conventions in the future, 
+		but these are some rules to consider.</p>
+    <p>Filler vowels, vowels inserted to break up consonant clusters incompatible with Manmino, 
+		in this context can be either <em>i</em>, <em>a</em>, or <em>u</em>, 
+		depending on whether the core vowel of the original syllable was an unrounded front vowel, a middle vowel, or a rear or rounded vowel.</p>
+    <p>Consonant conversion should follow conventions set by other languages for the specific word being loaned, 
+		but it is generally recommended <em>v</em> goes to <em>b</em> or <em>w</em> instead of <em>f</em> , 
+		and <em>z</em> goes to either <em>j</em> or <em>s</em>. 
+		However, these are merely recommendations: as long as the loans are recognizable, any conversion is legal.</p>
+    <h2 id="grammar">4. Grammar</h2>
+    <h3 id="general-syntax">4.1 General Syntax</h3>
+    <p>Manmino is a left-branching language with SOV preference free word order. 
+		Put simply, any clause that modifies another clause should be come before the clause it modifies. 
+		Furthermore, Manmino is a topic marking language and a pro-drop language; 
+		if an argument of a phrase can be deduced from the context, it can be dropped without issue. 
+		Inflectional particles can be dropped if contextually clear, 
+		but otherwise they must be present to prevent ambiguity.</p>
+    <h3 id="honorifics">4.2 Honorifics</h3>
+    <p>In Manmino, there are three degrees of marking honorifics to consider. 
+		First is the respectful honorific level.
+        In Manmino, one may mark respect for a referent by not using personal pronouns or names and instead using titles.
+        If the referent is the subject of a phrase, the honorific marker <em>-si-</em> should be used in the verb 
+		(See <a href="#verb-modifiers">2.2 Verb Modifiers</a>). 
+		The second degree of honorifics is neutral, which is unmarked. 
+		The last degree of honorifics is intimate, 
+		which involves the use of the intimate pronouns <em>kun</em>, <em>nyang</em>, <em>ini</em>, 
+		or a nickname in place of a formal name or title.</p>
+    <h3 id="numbers">4.3 Numbers</h3>
+    <p>In Manmino, numbers are used to mark abstract value, quantities, or place in a list (ordinal numbers).
+        Abstract values are expressed either in their isolated Sanskrit form (for numbers 0-10) 
+		or as a compound formed from Sinitic roots (any other numbers). 
+		Quantities are expressed the same way, but they must be followed by a counter word, and then a <em>-ji</em> to associate it to a noun. 
+		The counter <em>hway</em> is used for the amount of an action, 
+		<em>gay</em> is used for countable inanimate nouns, 
+		<em>dow</em> is used for animals, 
+		and <em>meng</em> is used for people. 
+		Ordinal numbers use <em>ban</em>.</p>
+	<footer>
+		<p><em></em></p>
+		
+	</footer>
+	
+</body>
+
+</html>
