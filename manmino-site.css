@@ -6,25 +6,25 @@
 	--nc-bg-1:#F2EFEF;
 	--nc-bg-2:#E8E5E5;
 	--nc-bg-3:#D8D6D6;
-	--nc-lk-1:#36C9C5;
-	--nc-lk-2:#0366D6;
+	--nc-lk-1:#2FBCBC;
+	--nc-lk-2:#006CD8;
 	--nc-lk-tx:#FFFFFF;
-	--nc-ac-1:#D6D600;
-	--nc-ac-tx:#EFEFF2
+	--nc-ac-1:#D8D800;
+	--nc-ac-tx:#F2EFEF;
 	}
 	
 @media (prefers-color-scheme:dark){
 	:root{
 		--nc-tx-1:#F2EFEF;
-		--nc-tx-2:#E5DEDE;
+		--nc-tx-2:#E8E5E5;
 		--nc-bg-1:#0C0C0C;
 		--nc-bg-2:#191919;
 		--nc-bg-3:#262626;
-		--nc-lk-1:#185957;
-		--nc-lk-2:#001E3F;
+		--nc-lk-1:#1F7F7F;
+		--nc-lk-2:#003F7F;
 		--nc-lk-tx:#FFFFFF;
-		--nc-ac-1:#3F3F00;
-		--nc-ac-tx:#EFEFF2;
+		--nc-ac-1:#7F7F00;
+		--nc-ac-tx:#0C0C0C;
 		}
 	}
 *{margin:0;padding:0}
