@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manmino: 文法説明書</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-	<link rel="stylesheet" href="https://manmino.github.io/manmino-site.css">
-	<script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manmino: 文法説明書</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://manmino.github.io/manmino-site.css">
+<script>
 		// Get the button:
 		let mybutton = document.getElementById("myBtn");
-
 		// When the user clicks on the button, scroll to the top of the document
 		function topFunction() {
 		  document.body.scrollTop = 0; // For Safari
@@ -21,1271 +18,1975 @@
 		} 
 	</script>
 </head>
-<button onclick	="topFunction()" id="myBtn" title="Go to top" class='no-print'> ▲ </button> 
-
+<button onclick="topFunction()" id="myBtn" title="Go to top" class='no-print'> ▲ </button>
 <body>
-	<header>
-    	    <h1><a href="https://manmino.github.io/index.html">Manmino</a></h1>
-		<p>みんなの<ruby>言語<rt>げんご</rt></ruby></p>
-	</header>
-	<h1>万民語文法説明書</h1>
-		<p>第2版</p>
-	<fieldset>
+<header>
+<h1><a href="https://manmino.github.io/index.html">Manmino</a></h1>
+<p>
+	みんなの<ruby>言語<rt>げんご</rt></ruby>
+</p>
+</header>
+<h1>万民語文法説明書</h1>
+<p>
+	第2版
+</p>
+<fieldset>
 	<legend><strong>目次:</strong></legend>
-		<ol start="0">
-			<li><a href="#foreword">序文</a></li>
-			<li><a href="#the-alphabet-and-sound-system">文字と音声</a><br>
-				1.1 <a href="#the-consonants">子音</a><br>
-				1.2 <a href="#the-vowels">母音</a><br>
-				1.3 <a href="#phonology-explanation">音韻</a></li>
-			<li><a href="#particles">助詞</a><br>
-				2.1 <a href="#noun-particles">名詞助詞</a><br>
-				2.2 <a href="#verb-modifiers">動詞助詞</a><br>
-				2.3 <a href="#word-function-modifiers">機能変形詞</a><br>
-				2.4 <a href="#independent-particles">独立助詞</a><br>
-				2.5. <a href="#pronouns">代名詞</a></li>
-			<li><a href="#vocabulary">語彙</a><br>
-				3.1 <a href="#loaning-from-classical-chinese">漢文から来た語彙</a><br>
-				3.2 <a href="#loaning-from-sanskrit">サンスクリットから来た語彙</a><br>
-				3.3 <a href="#loaning-from-latin">ラテン語から来た語彙</a><br>
-				3.4 <a href="#loaning-words-from-other-languages">他の言語から来た語彙</a></li>
-			<li><a href="#grammar">文法</a><br>
-				4.1 <a href="#general-syntax">全般的な統語論</a><br>
-				4.2 <a href="#honorifics">尊敬語</a><br>
-				4.3 <a href="#numbers">数字</a></li>
-		</ol>
-	</fieldset>
-    <h2 id="foreword">0. 序文</h2>
-    <p>
-	    万民語は日本からミャンマー、モンゴルからインドネシアに至る多様でありながら
-	    確実に相互に繋がっている東アジア諸国のギャップを埋めるために考案された東アジア補助言語である。
-	    万民語は特定のグループを過度に優遇することなく普遍性をバランスよく維持する音韻再考、
-	    構造的柔軟性が高い単純な膠着的かつ分析的なSOV構造、
-	    そして古代中国語、サンスクリット語など歴史的および現代的に重要な多くの言語からバランスよく語彙を借用し、
-	    東アジアの人々が使いやすくかつニュアンスのある言語を目指している。
-    </p>
-    <p>
-	    万民語が志向する目的は歴史的緊張と競争を克服すること、
-	    英語よりも簡単にアクセスできる国際的なコミュニケーションのプラットフォームを提供すること、
-	    そして政府、文化、言語などの障壁を越え、東アジア地域で情報とアイデアの自由な流れを促進し、
-	    特定の団体が東アジアの芸術および知的環境を支配するのを防ぐことである。
-    </p>
-    <p>
-	    一百年前、ある理想主義的な汎アジア主義者が言った。
-	    【夫合成散敗、万古常定之理也。】（
-	   	 <ruby>夫<rt>そ</rt></ruby>れ、
-    	   	 <ruby>合<rt>あ</rt></ruby>はば
-    	   	 <ruby>成<rt>しょう</rt></ruby>じ、
-    	   	 <ruby>散<rt>ち</rt></ruby>らば
-    	   	 <ruby>敗<rt>はい</rt></ruby>す、
-    	   	 <ruby>万<rt>まん</rt></ruby>
-		<ruby>古<rt>こ</rt></ruby>
-		<ruby>常<rt>じょう</rt></ruby>
-		<ruby>定<rt>てい</rt></ruby>
-		<ruby>之<rt>の</rt></ruby>
-		<ruby>理<rt>ことわり</rt></ruby>なり。） 
-	    チーム万民語はこの言語を学び使用することを通じて、東アジアの人々が
-	    共に成功的に協力し、偉大な芸術と知的成果を創造し共有できることを望んでいる。
-    </p>
-<h2 id="the-alphabet-and-sound-system">1. 文字と音声</h2>
-		<p>
-			万民語は東アジアと東南アジアの両方に馴染みのあるラテンアルファベット（万民語ではLatin Aksala、またはLatin Munji）で書かれる。
-			特定の状況でラテンアルファベットが使用できない場合には、
-			万民語のために特別に設計された類似アブギダであるManmino Aksalaを選択的に使用することができる。
-		</p>
-		<p>万民語ラテンアルファベットは以下の文字を使用する:</p>
-		<p>A B C D E F G H I J K L M N O P S T U W Y</p>
-		<p>a b c d e f g h i j k l m n o p s t u w y ’</p>
-	<h3 id="the-consonants">1.1 子音</h3>
-		<p>万民語には以下の子音が使用される</p>
-		<table>
-		    <thead>
-		        <tr>
-		            <th></th>
-		            <th align="center">両唇音</th>
-		            <th align="center">舌頂音</th>
-		            <th align="center">硬口蓋音</th>
-		            <th align="center">軟口蓋音</th>
-		            <th align="center">声門音</th>
-		        </tr>
-		    </thead>
-		    <tbody>
-		        <tr>
-		            <td>鼻音</td>
-		            <td align="center">m</td>
-		            <td align="center">n</td>
-		            <td align="center"></td>
-		            <td align="center">ng /ŋ/<sup>1</sup></td>
-		            <td align="center"></td>
-		        </tr>
-		        <tr>
-		            <td>強破裂音<sup>2</sup></td>
-		            <td align="center">p /p<sup>h</sup>/</td>
-		            <td align="center">t /t<sup>h</sup>/</td>
-		            <td align="center"></td>
-		            <td align="center">k /k<sup>h</sup>/</td>
-		            <td align="center">’ /ʔ/<sup>3</sup></td>
-		        </tr>
-		        <tr>
-		            <td>弱破裂音</td>
-		            <td align="center">b</td>
-		            <td align="center">d</td>
-		            <td align="center"></td>
-		            <td align="center">g</td>
-		            <td align="center"></td>
-		        </tr>
-		        <tr>
-		            <td>強破擦音</td>
-		            <td align="center"></td>
-		            <td align="center"></td>
-		            <td align="center">c /tɕ<sup>h</sup>/</td>
-		            <td align="center"></td>
-		            <td align="center"></td>
-		        </tr>
-		        <tr>
-		            <td>弱破擦音</td>
-		            <td align="center"></td>
-		            <td align="center"></td>
-		            <td align="center">j /dʑ/</td>
-		            <td align="center"></td>
-		            <td align="center"></td>
-		        </tr>
-		        <tr>
-		            <td>摩擦音</td>
-		            <td align="center">f /ɸ ~ f/</td>
-		            <td align="center">s /ɕ/</td>
-		            <td align="center"></td>
-		            <td align="center"></td>
-		            <td align="center">h /x ∼ h/</td>
-		        </tr>
-		        <tr>
-		            <td>側音</td>
-		            <td align="center"></td>
-		            <td align="center">l</td>
-		            <td align="center"></td>
-		            <td align="center"></td>
-		        </tr>
-		        <tr>
-		            <td>半母音</td>
-		            <td align="center"></td>
-		            <td align="center"></td>
-		            <td align="center">y /j/</td>
-		            <td align="center">w</td>
-		            <td align="center"></td>
-		        </tr>
-		    </tbody>
-		</table>
-		<ol>
-		    <li>音素[ŋ]は初声として使えない。</li>
-		    <li>東アジアで強音と弱音を区別する方法がいくつかあるため、ここでは詳細に定義しない。</li>
-		    <li>声門破裂音は語の区別のために選択的に使用できるため、音韻的でないと考えられることがある。</li>
-		    <li>⟨s⟩は⟨y⟩や⟨i⟩の前では硬口蓋音化されて[ɕ]と発音される。</li>
-		    <li>万民語の子音の中で鼻音[m]、[n]、[ŋ]、声門破裂音を除く破裂音[p]、[t]、[k]、そして側面音[l]のみが終声として使用される。</li>
-		    <li>その他のラテン文字で使用される文字は固有名詞に使用できる。</li>
-		</ol>
-
-	<h3 id="the-vowels">1.2 母音</h3>
-		<p>万民語には次の5つの母音がある: a, e, i, o, u. 万民語はまた、以下の二重母音および三重母音を許容する。</p>
-		<table>
-		    <thead>
-		        <tr>
-		            <th></th>
-		            <th>-∅<sup>1</sup></th>
-		            <th>-w</th>
-		            <th>-y</th>
-		        </tr>
-		    </thead>
-		    <tbody>
-		        <tr>
-		            <td>a-</td>
-		            <td></td>
-		            <td>aw</td>
-		            <td>ay</td>
-		        </tr>
-		        <tr>
-		            <td>wa-</td>
-		            <td>wa</td>
-		            <td>waw</td>
-		            <td>way</td>
-		        </tr>
-		        <tr>
-		            <td>ya-</td>
-		            <td>ya</td>
-		            <td>yaw</td>
-		            <td>yay</td>
-		        </tr>
-		        <tr>
-		            <td>o-</td>
-		            <td></td>
-		            <td>ow</td>
-		            <td>oy</td>
-		        </tr>
-		        <tr>
-		            <td>yo-</td>
-		            <td>yo</td>
-		            <td>yow</td>
-		            <td></td>
-		        </tr>
-		        <tr>
-		            <td>e-</td>
-		            <td></td>
-		            <td>ew</td>
-		            <td>ey</td>
-		        </tr>
-		        <tr>
-		            <td>ye- <sup>2</sup></td>
-		            <td>ye</td>
-		            <td>yew</td>
-		            <td>yey</td>
-		        </tr>
-		        <tr>
-		            <td>we-</td>
-		            <td>we</td>
-		            <td></td>
-		            <td>wey</td>
-		        </tr>
-		        <tr>
-		            <td>yu-</td>
-		            <td>yu</td>
-		            <td></td>
-		            <td>yuy</td>
-		        </tr>
-		        <tr>
-		            <td>wi-</td>
-		            <td>wi</td>
-		            <td></td>
-		            <td></td>
-		        </tr>
-		    </tbody>
-		</table>
-		<ol>
-		    <li>⟨w⟩や⟨y⟩の後には子音が来ることはできない。</li>
-		    <li>⟨ye⟩の前に唯一許可される子音は⟨s⟩である。</li>
-		</ol>
-<h3 id="phonology-explanation">1.3 音韻</h3>
-	<p>
-		全般的に、万民語の音韻システムは中立的に開発されました。
-		東アジア全域の20の主要言語の全体の音韻システムを収集した後、
-		各言語の音韻システムをカタログ化し、
-		その言語の話者数の立方根と同じ値を与えました。
-		その後、すべての音韻システムを合計し、
-		中央値を超える音素を追加し、残りを削除しました。
-	</p>
-	<p>
-		上記の音素を使用して、万民語はC1VC2音節構造を使用します。
-		C1には [ŋ] が含まれず、
-		C2は鼻音 [m]、[n]、[ŋ]、無声破裂音 [p]、[t]、[k]、および側面接近音 [l] に制限されます。
-		声門閉鎖音は注意深い発音でのみ必要なので、
-		一般的な使用ではほとんど無音素的に考えられることがあります。
-	</p>
-	<p>
-		より広い範囲の話者を収容し、迅速な発音を促進するために、
-		万民語は特定の二重文字の柔軟な接続音を許容します。
-		この規則は次のようになります：
-	</p>
-	<ul>
-		<li>
-			鼻音同化：
-			鼻音終声 ⟨m⟩、⟨n⟩、⟨ng⟩ が他の口蓋音または摩擦音の後に続く場合、
-			その鼻音終声は元の口蓋音の代わりに次の子音の口蓋音で発音されることができます。
-			例えば、二重文字 ⟨mk⟩ は [ŋk] として発音されることがあります。
-			この規則では硬口蓋音子音は歯茎音子音の一部と見なされます。
-  		</li>
-		<li>
-			二重破裂音同化：
-			破裂音終声子音 ⟨p⟩、⟨t⟩、⟨k⟩ が次の音節の初声として別の破裂音が来る場合、
-			終声子音は省略されることがあります。
-			この場合、次の最初の子音が有声音であればそれは強化されます。
-		</li>
-		<li>⟨ph⟩ 同化規則：子音組 ⟨ph⟩ は /f/ として発音されることがあります。</li>
-		<li>⟨ty/dy⟩ 硬口蓋化規則：二重文字 ⟨ty⟩ および ⟨dy⟩ はそれぞれ /tɕ/ および /dʑ/ として硬口蓋化されることがあります。</li>
-		<li>⟨kh⟩ 同化規則：子音組 ⟨kh⟩ は /h/ として発音されることがあります。</li>
-	</ul>
-	<p>混乱が生じた場合、仮母音を挿入するか、上記の規則を使用せずにゆっくりと話す方法で発音を明確にすることをお勧めします。</p>
-<h2 id="particles">2. 助詞</h2>
-		<p>
-			万民語では、名詞、動詞、形容詞、または副詞としての単語の機能は、
-			主に位置と接頭辞および接尾辞を通じて助詞によって識別されます。
-			したがって、万民語では単語は孤立した状態で名詞、動詞、修飾語に分類されるのではなく、
-			オブジェクトと概念、行動と現象、そして特性に分類されます。 
-			特定の単語の機能は周囲の助詞によって名詞、動詞、形容詞、または副詞として決定されます。
-		</p>
-    	<h3 id="noun-particles">2.1 名詞の助詞</h3>
-		<p>万民語の名詞は以下のような接尾助詞によって名詞の機能を決定されます。</p>
-	<table>
-	        <thead>
-	            <tr>
-	                <th align="center">助詞</th>
-	                <th align="center">機能</th>
-	                <th>説明</th>
-	            </tr>
-	        </thead>
-	        <tbody>
-	            <tr>
-	                <td align="center"><em>na</em></td>
-	                <td align="center">主題</td>
-	                <td>
-	                  名詞句を文の主題として表示します。すでに紹介されたアイデアを強調するために使用されます。<br>  
-			  この助詞は主格助詞に置き換わることが多いですが、<br><em>-lu</em>や<em>-ne</em>のような他の助詞に置き換わることもあります。
-	                </td>
-	            </tr>
-	            <tr>
-	                <td align="center"><em>ga</em></td>
-	                <td align="center">主格</td>
-	                <td>
-	                  名詞を文の主語として表示します。<br>
-	      		  一般的に単語を新しいアイデアとして具体的に表示する必要がある場合にのみ使用されます。
-	                </td>
-	            </tr>
-	            <tr>
-	                <td align="center"><em>lu</em></td>
-	                <td align="center">目的格</td>
-	                <td>
-	                  名詞を文の直接目的語として表示します。<br>
-			  語順が主語-目的語-動詞の場合は選択的ですが、それ以外の場合は必須です。
-	                </td>
-	            </tr>
-	            <tr>
-	                <td align="center"><em>ji*</em></td>
-	                <td align="center">所有格</td>
-	                <td>名詞を次の名詞句の所有者として表示します。</td>
-	            </tr>
-	            <tr>
-	                <td align="center"><em>ne</em><sup>1</sup></td>
-	                <td align="center">与格/道具格</td>
-	                <td>
-	                  名詞を文の間接目的語として表示します。<br>
-	                  日本語の「へ」や「に」に相当します。
-						      </td>
-	            </tr>
-	            <tr>
-	                <td align="center"><em>ne</em><sup>2</sup></td>
-	                <td align="center">受動行為者</td>
-	                <td>名詞を受動態構文で行為者として表示します。</td>
-	            </tr>
-				<tr>
-	                <td align="center"><em>bat</em></td>
-	                <td align="center">奪格</td>
-	                <td>
-				名詞を動詞の起源として表示します。<br>
-				日本語の「から」に相当します。
-	                </td>
-	            </tr>
-	            <tr>
-	                <td align="center"><em>bang</em></td>
-	                <td align="center">向格</td>
-	                <td>
-	                	名詞を動詞の目的地として表示します。<br>
-	      			日本語の「で」、「まで」に相当します。
-	                </td>
-	            </tr>
-				<tr>
-	                <td align="center"><em>la</em></td>
-	                <td align="center">引用格</td>
-	                <td>前の節を間接情報として表示します。</td>
-	            </tr>
-	        </tbody>
-	    	</table>
-		<p>*: <em>ji</em>はまた、単語の機能を変える機能もあります。2.3を参照してください。</p>
-		<p>
-			万民語の名詞は数や性別を考慮しないのが特徴です。 
-			万民語で複数形は名詞の重複または接尾辞<em>-tat</em>で強調することができます。
-		</p>
-	<h3 id="verb-modifiers">2.2 動詞の助詞</h3>
-    <p>
-      万民語の動詞はさまざまな様相を表すために選択的に助詞として接辞化され、次の順序で情報を伝えます。
-      </p>
-    <table>
-        <thead>
-            <tr>
-                <th align="center">態</th>
-                <th align="center">敬語</th>
-                <th align="center">時制-相</th>
-                <th align="center">法</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td align="center"><em>li / hi</em></td>
-                <td align="center"><em>si</em></td>
-                <td align="center"><em>jung / le / kalu</em></td>
-                <td align="center"><em>ya / ye / ka / ne</em></td>
-            </tr>
-        </tbody>
-    </table>
-    <ul>
-        <li>態</li>
-		<ul>
-			<li>受動 <em>li</em>は動詞を主語がもはや動作を行わず、動作が主語に対して行われている状態に変更します。</li>
-			<li>使役 <em>hi</em>は動詞を主語がもはや動作を自分に対して行わず、他の対象に対して行う状態に変更します。</li>
-    </ul>
-		<li>敬語 <em>si</em>は万民語の話者が主語に対して敬意を示す方法です。</li>
-		<li>時制-相</li>
-		<ul>
-			<li>進行形 <em>jung</em>は特定の時点で動作が行われていることを示します（表示されていない場合は現在と仮定されます）。</li>
-			<li>完了形 <em>le</em>は動作がすでに完了した行動であることを示します（通常、過去）。</li>
-			<li>展望形 <em>kalu</em>は動作がまだ起こっていないことを示し、仮定的または未来に起こる行動です。言語学ではこれを非現実相と呼びます。</li>
-			<li>
-        万民語では時制と様相が孤立している場合に強く区別されません。 
-        しかし、これらの助詞が重なると、最初の助詞は様相を、2番目の助詞は時制を示します。
-      </li>
-		</ul>
-        <li>法</li>
-		<ul>
-			<li>感嘆詞 <em>ya</em>は句を感嘆文として表示します。</li>
-			<li>疑問詞 <em>ka</em>は文を強い疑問文として表示します。</li>
-			<li>提案詞 <em>ne</em>は文を弱い疑問文または提案として表示します。</li>
-			<li>命令詞 <em>ye</em>は動詞を命令として表示します。</ul>
-    </ul>
-    <p>
-	    ここで万民語の以前のバージョンでは完了を表示する前に時制を表示しましたが、
-	    このシステムが借用された韓国語の時制重複システムをよりよく反映するために現在の形式に変更されたことを言及します。
-    </p>
-    <h3 id="word-function-modifiers">2.3 機能変形詞</h3>
-	<p>
-		先述した通り、万民語ではすべての基本単語が行動と現象、物体と概念、または属性に分類されます。
-		一般的にはそれぞれ動詞、名詞、および形容詞や副詞に該当しますが、
-		その単語が元の意味で最も自然な方法で使用されない場合があります。
-		この場合、単語は適切に機能するために通常は補助助詞や動詞を使用する必要があります。
-		このための補助助詞は次のようになります：
-	</p>
-	<table>
-	  <thead>
-	    <tr>
-	      <th align="center"></th>
-	      <th align="center">動詞</th>
-	      <th align="center">名詞</th>
-	      <th align="center">副詞</th>
-	      <th align="center">形容詞</th>
-	    </tr>
-	  </thead>
-	  <tbody>
-	    <tr>
-	      <td align="center">行動と現象</td>
-	      <td align="center">∅</td>
-	      <td align="center"><em>-em</em></td>
-	      <td align="center">∅<sup>1</sup></td>
-	      <td align="center">-<em>ji</em><sup>2</sup></td>
-	    </tr>
-	    <tr>
-	      <td align="center">物体と概念</td>
-	      <td align="center"><em>heng</em></td>
-	      <td align="center">∅</td>
-	      <td align="center"><em>-yang</em></td>
-	      <td align="center"><em>-dek</em></td>
-	    </tr>
-	    <tr>
-	      <td align="center">属性</td>
-	      <td align="center"><em>cey</em></td>
-	      <td align="center"><em>-em</em></td>
-	      <td align="center">∅</td>
-	      <td align="center">∅</td>
-	    </tr>
-	  </tbody>
-	</table>
-	<ol>
-	  <li>
-	    行動や現象、または行動や現象が主語となる構造が副詞節のように使用される場合、
-	    複数の動詞を修飾せずに並べて一つの動詞句を形成することができ、これは「動詞連鎖」として知られます。
-	  </li>
-	  <li>これは他の名詞句を説明する句（関係節）を作る方法です。</li>
+	<ol start="0">
+		<li><a href="#0-序文">序文</a></li>
+		<li><a href="#the-alphabet-and-sound-system">文字と音声</a><br>
+		 1.1 <a href="#the-consonants">子音</a><br>
+		 1.2 <a href="#the-vowels">母音</a><br>
+		 1.3 <a href="#phonology-explanation">音韻</a></li>
+		<li><a href="#particles">助詞</a><br>
+		 2.1 <a href="#noun-particles">名詞助詞</a><br>
+		 2.2 <a href="#verb-modifiers">動詞助詞</a><br>
+		 2.3 <a href="#word-function-modifiers">機能変形詞</a><br>
+		 2.4 <a href="#independent-particles">独立助詞</a><br>
+		 2.5. <a href="#pronouns">代名詞</a></li>
+		<li><a href="#vocabulary">語彙</a><br>
+		 3.1 <a href="#loaning-from-classical-chinese">漢文から来た語彙</a><br>
+		 3.2 <a href="#loaning-from-sanskrit">サンスクリットから来た語彙</a><br>
+		 3.3 <a href="#loaning-from-latin">ラテン語から来た語彙</a><br>
+		 3.4 <a href="#loaning-words-from-other-languages">他の言語から来た語彙</a></li>
+		<li><a href="#grammar">文法</a><br>
+		 4.1 <a href="#general-syntax">全般的な統語論</a><br>
+		 4.2 <a href="#honorifics">尊敬語</a><br>
+		 4.3 <a href="#numbers">数字</a></li>
 	</ol>
-	<p>
-	  ここで注目すべき点は以前のバージョンの万民語では物体と概念を示す単語を副詞で表示する助詞が -syang であったが、
-	  発音をより簡単にし、また古典的な中国語や日本語をより良く反映するために現在は -yang に変更されたことです。
-	  また、以前のバージョンの万民語では完了した行動を形容詞に変換するための別の助詞 -in がありましたが、
-	  これは -le-ji に置き換えられました。
-	  同様に、名詞で示された行動は -le-em または単純に -lem を介して完了を表示することができます。
-	</p>
-	<p>
-	  否定もまた、別の種類の単語機能修飾語であり、
-	  万民語では唯一の接頭辞として使用されるという点で非常に特異です。
-	  万民語では動詞を but- で否定し、形容詞と副詞を bi- で否定します。
-	  But-cey は bey に短縮することができます。
-	</p>
-<h3 id="independent-particles">2.4 独立助詞</h3>
+</fieldset>
+<h2 id="0-序文">0. 序文</h2>
 <p>
-    独立して機能する助詞もあり、これは特定の句に付かず、独立して働く。
-    こうした助詞は、節の間に配置される等位接続詞として機能したり、文の冒頭で句の機能を示すために使用することができる。
+	万民語は日本からミャンマー、モンゴルからインドネシアに至る多様でありながら確実に相互に繋がっている東アジア諸国のギャップを埋めるために考案された東アジア補助言語である。万民語は特定のグループを過度に優遇することなく普遍性をバランスよく維持する音韻目録、構造的柔軟性が高い単純な膠着的かつ分析的なSOV構造、そして古典中国語・サンスクリット語など歴史的および現代的に重要な多くの言語からバランスよく語彙を借用し、東アジアの人々が使いやすくかつニュアンスのある言語を目指している。
 </p>
-<p>万民語における等位接続詞は、二つの独立節を結ぶ接続詞である。</p>
+<p>
+	万民語が志向する目的は歴史的緊張と競争を克服すること、英語よりも容易にアクセスできる国際的なコミュニケーションの場を提供すること、そして政府・文化・言語などの障壁を越え、東アジア地域で情報とアイデアの自由な流れを促進し、特定の団体が東アジアの芸術および知的環境を支配するのを防ぐことである。
+</p>
+<p>
+	一百年前、ある理想主義的な汎アジア主義者が言った。【夫合成散敗、万古常定之理也。】チーム万民語はこの言語を学び使用することを通じて、東アジアの人々が共に成功的に協力し、偉大な芸術と知的成果を創造し共有できることを望んでいる。
+</p>
+<hr>
+<h2 id="1-文字と音声">1. 文字と音声</h2>
+<p>
+	万民語は東アジアと東南アジアの両方に馴染みのあるラテンアルファベット（万民語ではLatin Aksala、またはLatin Munji）で書かれる。特定の状況でラテンアルファベットが使用できない場合には、万民語のために特別に設計された類似アブギダであるManmino Aksalaを選択的に使用することができる。
+</p>
+<p>
+	万民語ラテンアルファベットは以下の文字を使用する:
+</p>
+<p>
+	A B C D E F G H I J K L M N O P S T U W Y
+</p>
+<p>
+	a b c d e f g h i j k l m n o p s t u w y &#39;
+</p>
+<h3 id="11-子音">1.1 子音</h3>
+<p>
+	万民語には以下の子音が使用される。
+</p>
 <table>
-    <thead>
-      <tr>
-        <th>等位 <br> 接続詞</th>
-        <th>説明</th>
-        <th>例</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td align="center"><em>i</em></td>
-        <td>累加接続詞。<br>「～と」と同じ。</td>
-        <td><em>A sik i ta sik.</em><br>私は食べ、彼は食べる。</td>
-      </tr>
-      <tr>
-        <td align="center"><em>nyak</em></td>
-        <td>仮定接続詞。<br>「～ば」と同じ。</td>
-        <td><em>A sik nyak ta sik.</em><br>私が食べれば、彼が食べる。</td>
-      </tr>
-      <tr>
-        <td align="center"><em>dan</em></td>
-        <td>対照接続詞。<br>「～だけど」と同じ。</td>
-        <td><em>A sik dan ta but sik.</em><br>私は食べるが、彼は食べない。</td>
-      </tr>
-      <tr>
-        <td align="center"><em>butdan</em></td>
-        <td>対照接続詞。<br>「～にもかかわらず」と同じ。</td>
-        <td><em>A sik butdan ta sik.</em><br>彼が食べるにもかかわらず、私は食べる。</td>
-      </tr>
-      <tr>
-        <td align="center"><em>syuy</em></td>
-        <td>譲歩接続詞。<br>「～であっても」と同じ。</td>
-        <td><em>A sik syuy ta sik.</em><br>彼が食べるであっても、私は食べる。</td>
-      </tr>
-      <tr>
-        <td align="center"><em>hok</em></td>
-        <td>選択接続詞。<br>「～か」と同じ。</td>
-        <td><em>A sik hok ta sik.</em><br>私は食べるか、彼が食べる。</td>
-      </tr>
-      <tr>
-        <td align="center"><em>pi</em></td>
-        <td>比較接続詞。<br>「～に比べて」と同じ。</td>
-        <td><em>A sik pi ta da sik.</em><br>私が食べるのに比べて、彼はより多く食べる。</td>
-      </tr>
-    </tbody>
+<thead>
+<tr>
+	<th>
+	</th>
+	<th>
+		両唇音
+	</th>
+	<th>
+		舌頂音
+	</th>
+	<th>
+		硬口蓋音
+	</th>
+	<th>
+		軟口蓋音
+	</th>
+	<th>
+		声門音
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		鼻音
+	</td>
+	<td>
+		m
+	</td>
+	<td>
+		n
+	</td>
+	<td>
+	</td>
+	<td>
+		ng /ŋ/¹
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		有気破裂音²
+	</td>
+	<td>
+		p /pʰ/
+	</td>
+	<td>
+		t /tʰ/
+	</td>
+	<td>
+	</td>
+	<td>
+		k /kʰ/
+	</td>
+	<td>
+		&#39; /ʔ/³
+	</td>
+</tr>
+<tr>
+	<td>
+		無気破裂音
+	</td>
+	<td>
+		b
+	</td>
+	<td>
+		d
+	</td>
+	<td>
+	</td>
+	<td>
+		g
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		有気破擦音
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		c /tɕʰ/
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		無気破擦音
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		j /dʑ/
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		摩擦音
+	</td>
+	<td>
+		f /ɸ～f/
+	</td>
+	<td>
+		s /ɕ/
+	</td>
+	<td>
+	</td>
+	<td>
+		h /x～h/
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		側音
+	</td>
+	<td>
+	</td>
+	<td>
+		l
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		半母音
+	</td>
+	<td>
+		w
+	</td>
+	<td>
+	</td>
+	<td>
+		y /j/
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+</tbody>
 </table>
-<p>万民語における従属接続詞は、一つの独立節を別の節（独立節または従属節）に結ぶ接続詞である。</p>
+<ol>
+	<li>音素 [ŋ] は初声として使えない。</li>
+	<li>東アジアで有気音と無気音を区別する方法がいくつかあるため、ここでは詳細に定義しない。</li>
+	<li>声門破裂音は語の区別のために選択的に使用できるため、音韻的でないと考えられることがある。</li>
+	<li>⟨s⟩ は ⟨y⟩ や ⟨i⟩ の前では硬口蓋音化されて [ɕ] と発音される。</li>
+	<li>万民語の子音の中で鼻音 [m]・[n]・[ŋ]、声門破裂音を除く無気破裂音 [p]・[t]・[k]、そして側音 [l] のみが終声として使用される。</li>
+	<li>その他のラテン文字は固有名詞に使用できる。</li>
+</ol>
+<h3 id="12-母音">1.2 母音</h3>
+<p>
+	万民語には次の5つの母音がある: a, e, i, o, u。万民語はまた、以下の二重母音および三重母音を許容する。
+</p>
 <table>
-    <thead>
-      <tr>
-        <th>従属 <br> 接続詞</th>
-        <th>説明</th>
-        <th>例</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td align="center"><em>hwa</em></td>
-        <td>累加接続詞。<br>「～と」と同じ。<br>二つの独立節を結ぶためには使用できない。</td>
-        <td><em>A sik hwa ta.</em><br>私は彼と食べる。</td>
-      </tr>
-      <tr>
-        <td align="center"><em>wi</em></td>
-        <td>目的接続詞。<br>「～のために」と同じ。</td>
-        <td><em>A sik wi ta.</em><br>私は彼のために食べる。</td>
-      </tr>
-      <tr>
-        <td align="center"><em>yu</em></td>
-        <td>原因接続詞。<br>「～のために」と同じ。</td>
-        <td><em>A sik yu ta sik.</em><br>私はそのために食べる。</td>
-      </tr>
-      <tr>
-        <td align="center"><em>geng</em></td>
-        <td>手段接続詞。<br>「～を通じて」と同じ。</td>
-        <td><em>A sik geng ta.</em><br>私はそれを通じて食べる。</td>
-      </tr>
-    </tbody>
+<thead>
+<tr>
+	<th>
+	</th>
+	<th>
+		-∅¹
+	</th>
+	<th>
+		-w
+	</th>
+	<th>
+		-y
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		a-
+	</td>
+	<td>
+	</td>
+	<td>
+		aw
+	</td>
+	<td>
+		ay
+	</td>
+</tr>
+<tr>
+	<td>
+		wa-
+	</td>
+	<td>
+		wa
+	</td>
+	<td>
+		waw
+	</td>
+	<td>
+		way
+	</td>
+</tr>
+<tr>
+	<td>
+		ya-
+	</td>
+	<td>
+		ya
+	</td>
+	<td>
+		yaw
+	</td>
+	<td>
+		yay
+	</td>
+</tr>
+<tr>
+	<td>
+		o-
+	</td>
+	<td>
+	</td>
+	<td>
+		ow
+	</td>
+	<td>
+		oy
+	</td>
+</tr>
+<tr>
+	<td>
+		yo-
+	</td>
+	<td>
+		yo
+	</td>
+	<td>
+		yow
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		e-
+	</td>
+	<td>
+	</td>
+	<td>
+		ew
+	</td>
+	<td>
+		ey
+	</td>
+</tr>
+<tr>
+	<td>
+		ye-²
+	</td>
+	<td>
+		ye
+	</td>
+	<td>
+		yew
+	</td>
+	<td>
+		yey
+	</td>
+</tr>
+<tr>
+	<td>
+		we-
+	</td>
+	<td>
+		we
+	</td>
+	<td>
+	</td>
+	<td>
+		wey
+	</td>
+</tr>
+<tr>
+	<td>
+		yu-
+	</td>
+	<td>
+		yu
+	</td>
+	<td>
+	</td>
+	<td>
+		yuy
+	</td>
+</tr>
+<tr>
+	<td>
+		wi-
+	</td>
+	<td>
+		wi
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+</tbody>
 </table>
+<ol>
+	<li>⟨w⟩ や ⟨y⟩ の後には子音が来ることはできない。</li>
+	<li>⟨ye⟩ の前に唯一許可される子音は ⟨s⟩ である。</li>
+</ol>
+<h3 id="13-音韻">1.3 音韻</h3>
 <p>
-    機能助詞も <em>but-</em> で否定することができる。 
-    この場合、次の文が主語と次の動詞句の関係を実用的に明確にすることが想定される。
-</p>
-
-<h3 id="pronouns">2.5 代名詞</h3>
-<p>
-    万民語は簡単な代名詞体系を持っている。 
-    人称代名詞としては万民語の1人称代名詞 a、2人称代名詞 ni、そして3人称代名詞 taがある。 
-    また、kun、nyang、iniという性別と親密さを示す代替他人称代名詞もある。 
-    それぞれ男性、女性、中性に対応する。
+	全般的に、万民語の音韻体系は中立的に開発された。東アジア全域の20の主要言語の全音韻体系を収集した後、各言語の音韻体系をカタログ化し、その言語の話者数の立方根と同じ重みを与えた。その後、すべての重みを合計し、中央値を超える音素を採用し、残りを除外した。
 </p>
 <p>
-    万民語は他の代名詞を生成するためのモジュール式システムを持つ。 
-    万民語代名詞は以下の指示パラメータを持つ： 
-    自人称近接 ko、他人称近接 co、遠隔 yo、疑問 ha、特定 hok、普遍 man、否定 mu、代替 ta。 
-    これらは指示対象の名詞クラスを指定するため、接尾辞を選択的に付けることができる。 
-    非人間対象は -ka、人間は -nin、時間は -si、場所は -di、理由は -yu、方法は -i で接尾辞化される。 
-    多くの普遍代名詞は、漢字語圏で既に広く使用される単語のため、標準対象指定接尾辞を使用しない点が注目される。
-</p>
-
-<table>
-    <thead>
-        <tr>
-            <th></th>
-            <th>自人称近接</th>
-            <th>他人称近接</th>
-            <th>遠隔</th>
-            <th>疑問</th>
-            <th>特定</th>
-            <th>普遍</th>
-            <th>否定</th>
-            <th>代替</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td></td>
-            <td>‘これ’</td>
-            <td>‘それ’</td>
-            <td>‘あれ’</td>
-            <td>‘どれ’</td>
-            <td>‘特定’</td>
-            <td>‘すべて’</td>
-            <td>‘何も’</td>
-            <td>‘別の’</td>
-        </tr>
-        <tr>
-            <td>基礎</td>
-            <td><em>ko</em></td>
-            <td><em>co</em></td>
-            <td><em>yo</em></td>
-            <td><em>ha</em></td>
-            <td><em>hok</em></td>
-            <td><em>man</em></td>
-            <td><em>mu</em></td>
-            <td><em>ta</em></td>
-        </tr>
-        <tr>
-            <td>物体</td>
-            <td><em>koko</em></td>
-            <td><em>coko</em></td>
-            <td><em>yoko</em></td>
-            <td><em>haka</em></td>
-            <td><em>hokko</em></td>
-            <td><em>manmut*</em></td>
-            <td><em>muku</em></td>
-            <td><em>taka</em></td>
-        </tr>
-        <tr>
-            <td>人間</td>
-            <td><em>konin</em></td>
-            <td><em>conin</em></td>
-            <td><em>yonin</em></td>
-            <td><em>hanin</em></td>
-            <td><em>hoknin</em></td>
-            <td><em>manmin*</em></td>
-            <td><em>munin</em></td>
-            <td><em>tanin</em></td>
-        </tr>
-        <tr>
-            <td>時間</td>
-            <td><em>kosi</em></td>
-            <td><em>cosi</em></td>
-            <td><em>yosi</em></td>
-            <td><em>hasi</em></td>
-            <td><em>hoksi</em></td>
-            <td><em>syangsi*</em></td>
-            <td><em>musi</em></td>
-            <td><em>tasi</em></td>
-        </tr>
-        <tr>
-            <td>場所</td>
-            <td><em>kodi</em></td>
-            <td><em>codi</em></td>
-            <td><em>yodi</em></td>
-            <td><em>hadi</em></td>
-            <td><em>hokdi</em></td>
-            <td><em>manbang*</em></td>
-            <td><em>mudi</em></td>
-            <td><em>tadi</em></td>
-        </tr>
-        <tr>
-            <td>理由</td>
-            <td><em>koyu</em></td>
-            <td><em>coyu</em></td>
-            <td><em>yoyu</em></td>
-            <td><em>hayu</em></td>
-            <td><em>hokyu</em></td>
-            <td><em>manyu</em></td>
-            <td><em>muyu</em></td>
-            <td><em>tayu</em></td>
-        </tr>
-        <tr>
-            <td>方法</td>
-            <td><em>ko’i</em></td>
-            <td><em>co’i</em></td>
-            <td><em>yo’i</em></td>
-            <td><em>ha’i</em></td>
-            <td><em>hok’i</em></td>
-            <td><em>man’i</em></td>
-            <td><em>mu’i</em></td>
-            <td><em>ta’i</em></td>
-        </tr>
-    </tbody>
-</table>
-
-
-<h2 id="vocabulary">3. 語彙</h2>
-<p>
-	万民語の語彙は様々な言語から来る。
-	一部の単語は事前に定義されているが、
-	万民語は一般的に開放型の語彙を持っており、
-	どの言語からでも単語を取り込むことができる。
-	ただし、個別の言語でのみ使用される単語よりも広く認識されている単語が好まれ、
-	最も基本的な単語を除いては単音節単語を避けるべきである。
-	単語の出典は六つの異なるカテゴリーに分かれており、
-	状況に応じて異なる出典言語を使用する必要がある。
-	これらの推奨事項は厳格な規則と見なされるべきではなく、
-	言語の必要に応じて柔軟に解釈されるべきである。
+	上記の音素を用いて、万民語はC1VC2音節構造を採用する。C1には [ŋ] が含まれず、C2は鼻音 [m]・[n]・[ŋ]、無気破裂音 [p]・[t]・[k]、および側音 [l] に限定される。声門破裂音は注意深い発音でのみ必要とされるため、一般的な使用ではほぼ無音素的と見なされることがある。
 </p>
 <p>
-	第一のカテゴリーは漢語起源の単語である。
-	一般的に、これは漢王朝から唐王朝時代の中国の口語であった古典中国語に由来する単語を意味し、
-	中国、日本、韓国、ベトナムの伝統的な文語共用語であった。
-	道教、儒教、政治、外交、経済などの問題については漢語カテゴリーから単語を借用することが推奨され、
-	植物や動物の名前については漢語カテゴリーからの語彙を避けることが推奨される。
-	また、他の言語に由来しない新しい単語を作る際には、
-	万民語の使用者は古典漢語の単語を作る既存の慣例に従って漢語の語根を使用することが圧縮性を考慮して推奨される。
-</p>
-<p>
-	第二のカテゴリーはサンスクリット語起源の単語である。
-	サンスクリット語が母語の南アジアは万民語の直接的な範囲には含まれないが、
-	東南アジアの多くの言語は仏教によりサンスクリット語とパーリ語を権威ある言語と見なす。
-	儒教圏であるベトナム、中国、韓国、日本でもサンスクリット語が一部の語彙に影響を与えたため、
-	サンスクリット語は万民語世界で重要な言語であり、その包括を説明する。
-	万民語の使用者は特にインドの宗教や哲学に関連する語彙についてはサンスクリット語から単語を借用することが推奨される。
-</p>
-<p>
-	第三のカテゴリーは韓国語や日本語起源の単語である。
-	韓国語と日本語は証明された関係はないが、文法で多くの類似点を共有しており、
-	一部の語彙でも類似点を共有することでよく知られているため、
-	一つのカテゴリーと見なされる。
-	このカテゴリーから単語をどのように適応させるかについての具体的な規則はない。
-	これは共有する同類語が非常に不規則であり、
-	明確な規則を作ることができないためである。
-	万民語の使用者は温帯気候の自然に関連する語彙が必要な時や、
-	韓国語と日本語の間に同類語が見られる場合にこのカテゴリーからの単語を使用することが推奨される。
-</p>
-<p>
-	第四のカテゴリーはオーストロアジア起源の単語である。
-	ほかの学問的な文脈での「オーストロアジア」という用語の一般的な使用とは異なり、
-	万民語の議論ではオーストロアジアがタイ、ラオス、カンボジア、ミャンマーを含む大陸東南アジアを意味する。
-	大陸東南アジア、つまりオーストロアジアは、
-	様々な言語が遺伝的理由や交流によって単語を共有する語彙同調帯を形成する。
-	韓国語-日本語語彙同調帯の場合と同様に、
-	この語彙同調帯の共有される同類語も非常に不規則であり、
-	借用の規則を明確にすることができない。
-	万民語の使用者は熱帯気候の自然に関連する語彙が必要な時や、
-	オーストロアジア言語間で同類語が見られる場合にこのカテゴリーからの単語を使用することが推奨される。
-</p>
-<p>
-	第五のカテゴリーはオーストロネシア起源の単語である。
-	オーストロネシア語族は海洋東南アジアの大部分で支配的な言語族であり、
-	今日ではインドネシア、フィリピン、マレーシア、ブルネイ、台湾、シンガポールなど多くの国にまたがっている。
-	オーストロネシア語族の言語はしばしば同族語を共有するため、可能な場合には共有語彙を使用することが推奨される。
-	特に航海や自然界に関連する問題においてである。
-</p>
-<p>
-	第六のカテゴリーは外来起源の単語である。
-	これらの単語はアラビア語、スペイン語、英語など万民語の領域外で主に使用される言語から来る単語であり、
-	一般的には情報時代の技術やアブラハム系宗教などアジアで土着化されていない単語を指す。
-	この特定の範囲外では万民語の出典言語に適した単語がない場合を除き、これらの単語を使用することは推奨されない。
-</p>
-<h3 id="loaning-from-classical-chinese">3.1 古典中国語から来た語彙</h3>
-<p>
-	古典中国語に由来する単語や、
-	古典中国語で使用された過程を通じて新しく作られた単語は、
-	単一の現代言語の発音のみを基にして借用されるべきではありません。
-	代わりに、ほぼすべての現代の読みが由来する唐代中国語の発音の簡略化されたバージョンに基づいて借用されるべきです。
-</p>
-<p>
-	古典中国語ではほとんどの頻繁に使用される漢字は初声子音と「運母」に分類されており、
-	運母は母音と終声子音の組み合わせです。
-	この情報は『切韻』や『韻鏡』のような文献に記録されています。
-	最初の表には古典中国語の初声と現代の万民語の子音値の対応関係が示されています。
-</p>
-
-<table>
-	<thead>
-		<tr>
-			<th></th>
-			<th align="center">平声</th>
-			<th align="center">有気音</th>
-			<th align="center">有声音</th>
-			<th align="center">鼻音</th>
-			<th align="left">半母音</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>両唇音</td>
-			<td align="center">幫 b</td>
-			<td align="center">滂 p</td>
-			<td align="center">並 b</td>
-			<td align="center">明 m</td>
-			<td align="left"></td>
-		</tr>
-		<tr>
-			<td>歯茎音</td>
-			<td align="center">端 d</td>
-			<td align="center">透 t</td>
-			<td align="center">定 d</td>
-			<td align="center">泥 n</td>
-			<td align="left"></td>
-		</tr>
-		<tr>
-			<td>歯茎破擦音</td>
-			<td align="center">精 j</td>
-			<td align="center">清 c</td>
-			<td align="center">從 j</td>
-			<td align="center"></td>
-			<td align="left"></td>
-		</tr>
-		<tr>
-			<td>歯茎摩擦音</td>
-			<td align="center">心 s</td>
-			<td align="center"></td>
-			<td align="center">邪 s</td>
-			<td align="center"></td>
-			<td align="left"></td>
-		</tr>
-		<tr>
-			<td>巻舌音</td>
-			<td align="center">知 d</td>
-			<td align="center">徹 t</td>
-			<td align="center">澄 d</td>
-			<td align="center">娘 n</td>
-			<td align="left"></td>
-		</tr>
-		<tr>
-			<td>巻舌破擦音</td>
-			<td align="center">莊 j</td>
-			<td align="center">初 c</td>
-			<td align="center">崇 j</td>
-			<td align="center"></td>
-			<td align="left"></td>
-		</tr>
-		<tr>
-			<td>巻舌摩擦音</td>
-			<td align="center">生 s</td>
-			<td align="center"></td>
-			<td align="center">俟 s</td>
-			<td align="center"></td>
-			<td align="center"></td>
-		</tr>
-		<tr>
-			<td>硬口蓋音</td>
-			<td align="center">章 j</td>
-			<td align="center">昌 c</td>
-			<td align="center">常 j</td>
-			<td align="center">日 n</td>
-			<td align="center">以 y</td>
-		</tr>
-		<tr>
-			<td>硬口蓋摩擦音</td>
-			<td align="center">書 s</td>
-			<td align="center"></td>
-			<td align="center">船 s</td>
-			<td align="center"></td>
-			<td align="center"></td>
-		</tr>
-		<tr>
-			<td>軟口蓋音</td>
-			<td align="center">見 g</td>
-			<td align="center">溪 k</td>
-			<td align="center">群 g</td>
-			<td align="center">疑 ∅</td>
-			<td align="center">云* ∅</td>
-		</tr>
-		<tr>
-			<td>軟口蓋摩擦音</td>
-			<td align="center">曉 h</td>
-			<td align="center"></td>
-			<td align="center">匣 h</td>
-			<td align="center"></td>
-			<td align="center"></td>
-		</tr>
-		<tr>
-			<td>声門音</td>
-			<td align="center">影 ∅</td>
-			<td align="center"></td>
-			<td align="center"></td>
-			<td align="center"></td>
-			<td align="left"></td>
-		</tr>
-	</tbody>
-</table>
-*: この初声の元々の音価は不安定でした。
-<p>
-	古典中国語では漢字を運母で分類する方法は次のとおりです：
-	運母：「外部」運母は開音節を、「内部」運母は閉音節を意味します。
-   	円唇性：「開いた」運母は非円唇母音を、「閉じた」運母は円唇母音を意味します。
-   	等：硬口蓋化の程度により1-4等に分類されます。
-   	終声子音：いくつかの種類があります。
-	終声子音は比較的簡単ですが、他の要素はそれほど単純ではありません。それらの対応関係は下の表に示されています。
-</p>
-		<table>
-			<thead>
-			  <tr>
-			<th colspan="2" rowspan="2">再構された<br>中世中国語<br>母音</th>
-			<th colspan="4">1等</th>
-			<th colspan="4">2等</th>
-			<th colspan="4">3等</th>
-			<th colspan="4">4等</th>
-		</tr>
-		<tr>
-			<th colspan="2">開口</th>
-			<th colspan="2">閉口</th>
-			<th colspan="2">開口</th>
-			<th colspan="2">閉口</th>
-			<th colspan="2">開口</th>
-			<th colspan="2">閉口</th>
-			<th colspan="2">開口</th>
-			<th colspan="2">閉口</th>
-			  </tr>
-			</thead>
-			<tbody>
-			  <tr>
-				<td>果</td>
-				<td>/a/</td>
-				<td>歌</td>
-				<td>a</td>
-				<td>戈</td>
-				<td>wa</td>
-				<td colspan="4"></td>
-				<td>戈</td>
-				<td>ya</td>
-				<td>戈</td>
-				<td>wa</td>
-				<td colspan="4"></td>
-			  </tr>
-			  <tr>
-				<td>假</td>
-				<td>/a:/</td>
-				<td colspan="4"></td>
-				<td>麻</td>
-				<td>a</td>
-				<td>麻</td>
-				<td>wa</td>
-				<td>麻</td>
-				<td>ya</td>
-				<td></td>
-				<td></td>
-				<td colspan="4"></td>
-			  </tr>
-			  <tr>
-				<td>蟹</td>
-				<td>/aj/</td>
-				<td>咍, <br>泰</td>
-				<td>ay</td>
-				<td>灰, <br>泰</td>
-				<td>way</td>
-				<td>皆, <br>夬,<br> 佳</td>
-				<td>ay</td>
-				<td>皆, <br>夬, <br>佳</td>
-				<td>way</td>
-				<td>祭</td>
-				<td>ey</td>
-				<td>祭</td>
-				<td>wey</td>
-				<td>齊, <br>祭</td>
-				<td>ey</td>
-				<td>齊, <br>祭</td>
-				<td>wey</td>
-			  </tr>
-			  <tr>
-				<td>效</td>
-				<td>/aw/</td>
-				<td>豪</td>
-				<td>aw</td>
-				<td colspan="2"></td>
-				<td>肴</td>
-				<td>aw</td>
-				<td colspan="2"></td>
-				<td>宵</td>
-				<td>yaw</td>
-				<td colspan="2"></td>
-				<td>蕭</td>
-				<td>yaw</td>
-				<td colspan="2"></td>
-			  </tr>
-			  <tr>
-				<td>咸</td>
-				<td>/am/</td>
-				<td>覃, <br>談</td>
-				<td>am</td>
-				<td colspan="2"></td>
-				<td>咸,<br> 銜</td>
-				<td>am</td>
-				<td colspan="2"></td>
-				<td>鹽, <br>嚴</td>
-				<td>em</td>
-				<td>凡</td>
-				<td>om</td>
-				<td>添</td>
-				<td>em</td>
-				<td colspan="2"></td>
-			  </tr>
-			  <tr>
-				<td>山</td>
-				<td>/an/</td>
-				<td>寒</td>
-				<td>an</td>
-				<td>桓</td>
-				<td>wan</td>
-				<td>山, <br>刪</td>
-				<td>an</td>
-				<td>山,<br> 刪</td>
-				<td>wan</td>
-				<td>元,<br> 仙</td>
-				<td>an</td>
-				<td>元, <br>仙</td>
-				<td>wan</td>
-				<td>仙,<br> 先</td>
-				<td>en</td>
-				<td>仙,<br> 先</td>
-				<td>wen</td>
-			  </tr>
-			  <tr>
-				<td>宕</td>
-				<td>/aŋ/</td>
-				<td>唐</td>
-				<td>ang</td>
-				<td>唐</td>
-				<td>wang</td>
-				<td colspan="4"></td>
-				<td>陽</td>
-				<td>ang</td>
-				<td>陽</td>
-				<td>wang</td>
-				<td colspan="4"></td>
-			  </tr>
-			  <tr>
-				<td>江</td>
-				<td>/auŋ/</td>
-				<td colspan="4" rowspan="2"></td>
-				<td>江</td>
-				<td>ang</td>
-				<td colspan="2"></td>
-				<td colspan="4"></td>
-				<td colspan="4"></td>
-			  </tr>
-			  <tr>
-				<td>梗</td>
-				<td>/aiŋ/</td>
-				<td>庚, <br>耕</td>
-				<td>eng</td>
-				<td>庚,<br>耕</td>
-				<td>ong</td>
-				<td>庚,<br> 清</td>
-				<td>eng</td>
-				<td>庚,<br> 清</td>
-				<td>eng</td>
-				<td>青</td>
-				<td>eng</td>
-				<td>青</td>
-				<td>eng</td>
-			  </tr>
-			  <tr>
-				<td>遇</td>
-				<td>/ə/</td>
-				<td>模</td>
-				<td>o</td>
-				<td colspan="2"></td>
-				<td colspan="4" rowspan="9"></td>
-				<td>魚</td>
-				<td>o</td>
-				<td>虞</td>
-				<td>u</td>
-				<td colspan="4" rowspan="9"></td>
-			  </tr>
-			  <tr>
-				<td rowspan="2">止</td>
-				<td rowspan="2">/i/</td>
-				<td colspan="4" rowspan="2"></td>
-				<td rowspan="2">支, <br>微, <br>之, <br>脂</td>
-				<td rowspan="2">i</td>
-				<td>支, <br>微</td>
-				<td>wi</td>
-			  </tr>
-			  <tr>
-				<td>脂</td>
-				<td>yuy</td>
-			  </tr>
-			  <tr>
-				<td>流</td>
-				<td>/əw/</td>
-				<td>侯</td>
-				<td>ow</td>
-				<td colspan="2"></td>
-				<td>尤,<br> 幽</td>
-				<td>yu</td>
-				<td colspan="2"></td>
-			  </tr>
-			  <tr>
-				<td>深</td>
-				<td>/əm/</td>
-				<td colspan="4"></td>
-				<td>侵</td>
-				<td>im</td>
-				<td colspan="2"></td>
-			  </tr>
-			  <tr>
-				<td rowspan="2">臻</td>
-				<td rowspan="2">/ən/</td>
-				<td rowspan="2">痕</td>
-				<td rowspan="2">on</td>
-				<td rowspan="2">魂</td>
-				<td rowspan="2">on</td>
-				<td rowspan="2">臻, <br>眞, <br>欣</td>
-				<td rowspan="2">in</td>
-				<td>諄, <br>眞</td>
-				<td>yun</td>
-			  </tr>
-			  <tr>
-				<td>文</td>
-				<td>un</td>
-			  </tr>
-			  <tr>
-				<td>曾</td>
-				<td>/əŋ/</td>
-				<td>登</td>
-				<td>eng</td>
-				<td>登</td>
-				<td>ong</td>
-				<td>蒸</td>
-				<td>eng</td>
-				<td>蒸</td>
-				<td>ong</td>
-			  </tr>
-			  <tr>
-				<td>通</td>
-				<td>/əuŋ/</td>
-				<td>東, <br>冬</td>
-				<td>ong</td>
-				<td colspan="2"></td>
-				<td>東,<br> 鍾</td>
-				<td>ong</td>
-				<td colspan="2"></td>
-			  </tr>
-			</tbody>
-		</table>
-
-       <p>
-	       この文法ガイドでは以前に述べたように、これらの規則は必要に応じて変更される可能性があり、
-	       これは万民語コミュニティの必要性に応じて行われるべきです。
-       </p>
-<h3 id="loaning-from-sanskrit">3.2 サンスクリットから来た語彙</h3>
-<p>
-	サンスクリット語は東アジアのさまざまな言語にそれぞれ独立して借用されたため、
-	万民語でも標準の借用方法が必要です。
-	特にサンスクリット語が万民語で重要性を増すにつれ、
-	標準化された借用方法が求められます。
-</p>
-<p>
-	最も簡単な方法は可能な限りサンスクリット語をそのまま表記し、
-	必要な場合には万民語の音韻論に合わせて変形しつつ、
-	パーリ語の規則を用いてサンスクリット語を最小限に単純化することです。
-	サンスクリット語の単語を万民語に変換する際の注意点は次の通りです。
+	より広範な話者を収容し、発音の流暢さを促進するために、万民語は特定の二重文字における柔軟な音連接を許容する。その規則は以下の通りである：
 </p>
 <ul>
-	<li>母音</li>
-		<ul>
-			<li>母音の長さは無視されます。</li>
-			<li>二重母音は保存されます。</li>
-			<li>万民語で許可される場合、最後の母音は省略されることがあります。</li>		
-		</ul>
-	<li>子音全般</li>
-		<ul>
-			<li>有声および無声破裂音に対する気息音は無視されます。</li>
-			<li>子音は万民語の音韻論に適合する限り、サンスクリット語からパーリ語への子音の重複は行われません。</li>
-			<li>子音群では有声子音がまず無声化され、その後パーリ語の単純化が試みられます。例えば、「udvigna」は万民語では「ubiga」ではなく「utwikna」となります。</li>
-		</ul>
-	<li>鼻音</li>
-		<ul>	
-			<li>サンスクリット語の /ṃ/ はその子音がその音としてより認識される場合、/ŋ/ になることがあります。</li>
-			<li>/m/ は他の子音を保持するために必要な場合、/w/ になります。</li>
-			<li>主格標識の「-n」は万民語では省略されます。</li>
-		</ul>
-	<li>摩擦音</li>
-		<ul>
-			<li>/v/ は前に母音 /i/ または /e/ がある場合や、他の子音を保持するために必要な場合、/w/ になります。それ以外の場合は /b/ になります。</li>
-			<li>他の子音の後に来る /j/ および /c/ はその後に母音 /i/ を追加で持ちます。</li>
-			<li>子音群内のすべてのサンスクリット語の歯擦音は /s/ と見なされます。</li>
-			<li>上記のケースに該当しない他の子音の後に来るすべてのサンスクリット語の摩擦音は省略されます。</li>
-		</ul>
-	<li>流音</li>
-		<ul>
-			<li>サンスクリット語の /kl/ は /kil/ になります。</li>
-			<li>母音の間にあるサンスクリット語の /ṛ/ 後続の母音に応じて /a/、/i/、または /u/ になります。</li>
-			<li>母音の前の他の子音の間にあるすべてのサンスクリット語の液音は省略されます。</li>
-			<li>万民語は側音や歯茎音が互いに結合することを許しません。</li>
-		</ul>
+	<li><strong>鼻音同化：</strong> 鼻音終声 ⟨m⟩・⟨n⟩・⟨ng⟩ の後に異なる調音位置の破裂音または破擦音が続く場合、その鼻音終声は元の調音位置の代わりに次の子音の調音位置で発音されることができる。例えば、二重文字 ⟨mk⟩ は [ŋk] として発音されることがある。なお、この規則では硬口蓋音子音は歯茎音子音の一部と見なされる。</li>
+	<li><strong>二重破裂音同化：</strong> 破裂音終声 ⟨p⟩・⟨t⟩・⟨k⟩ の後に次の音節の初声として別の破裂音が続く場合、終声子音は省略されることがある。この場合、次の初声子音が有気音であればそれはさらに強化される。</li>
+	<li><strong>⟨ph⟩ 同化規則：</strong> 子音連続 ⟨ph⟩ は /f/ として発音されることがある。</li>
+	<li><strong>⟨ty/dy⟩ 硬口蓋化規則：</strong> 二重文字 ⟨ty⟩ および ⟨dy⟩ はそれぞれ /tɕ/ および /dʑ/ として硬口蓋化されることがある。</li>
+	<li><strong>⟨kh⟩ 同化規則：</strong> 子音連続 ⟨kh⟩ は /h/ として発音されることがある。</li>
 </ul>
-<h3 id="loaning-from-latin">3.3 ラテン語から来た語彙</h3>
+<p>
+	混乱が生じた場合は、挿入母音を加えるか、上記の規則を用いずにゆっくりと発音することで明確にすることが推奨される。
+</p>
+<hr>
+<h2 id="2-助詞">2. 助詞</h2>
+<p>
+	万民語では、名詞・動詞・形容詞・副詞としての単語の機能は、主に語順と接頭辞および接尾辞を通じた助詞によって識別される。したがって、万民語では単語は孤立した状態で名詞・動詞・修飾語に分類されるのではなく、物体と概念、行動と現象、そして属性に分類される。特定の単語の機能は、周囲の助詞によって名詞・動詞・形容詞・副詞として決定される。
+</p>
+<h3 id="21-名詞助詞">2.1 名詞助詞</h3>
+<p>
+	万民語の名詞は以下のような接尾助詞によって機能を決定される。
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+		助詞
+	</th>
+	<th>
+		機能
+	</th>
+	<th>
+		説明
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		<em>na</em>
+	</td>
+	<td>
+		主題
+	</td>
+	<td>
+		名詞句を文の主題として表示する。すでに導入された概念を強調する際に用いられる。この助詞は主格助詞に置き換わることが多いが、_-lu_ や <em>-ne</em> のような他の助詞に置き換わることもある。
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>ga</em>
+	</td>
+	<td>
+		主格
+	</td>
+	<td>
+		名詞を文の主語として表示する。一般的に、その語を新たな情報として具体的に提示する必要がある場合にのみ用いられる。
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>lu</em>
+	</td>
+	<td>
+		目的格
+	</td>
+	<td>
+		名詞を文の直接目的語として表示する。語順が主語-目的語-動詞の場合は省略可能だが、それ以外の場合は必須である。
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>ji*</em>
+	</td>
+	<td>
+		所有格
+	</td>
+	<td>
+		名詞を次の名詞句の所有者として表示する。
+	</td>
+</tr>
+<tr>
+	<td>
+		_ne_¹
+	</td>
+	<td>
+		与格/道具格
+	</td>
+	<td>
+		名詞を文の間接目的語として表示する。日本語の「へ」や「に」に相当する。
+	</td>
+</tr>
+<tr>
+	<td>
+		_ne_²
+	</td>
+	<td>
+		受動行為者
+	</td>
+	<td>
+		名詞を受動態構文における行為者として表示する。
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>bat</em>
+	</td>
+	<td>
+		奪格
+	</td>
+	<td>
+		名詞を動作の起点として表示する。日本語の「から」に相当する。
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>bang</em>
+	</td>
+	<td>
+		向格
+	</td>
+	<td>
+		名詞を動作の目的地として表示する。日本語の「で」「まで」に相当する。
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>la</em>
+	</td>
+	<td>
+		引用格
+	</td>
+	<td>
+		前の節を間接情報として表示する。
+	</td>
+</tr>
+</tbody>
+</table>
+<p>
+	*: <em>ji</em> はまた、単語の機能を変える役割も持つ。2.3を参照。
+</p>
+<p>
+	万民語の名詞は数や性別を考慮しないのが特徴である。複数を表す際は、名詞の重複または接尾辞 <em>-tat</em> によって強調することができる。
+</p>
+<h3 id="22-動詞助詞">2.2 動詞助詞</h3>
+<p>
+	万民語の動詞は様々な相を表すために選択的に接辞化され、以下の順序で情報を伝える。
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+		態
+	</th>
+	<th>
+		敬語
+	</th>
+	<th>
+		時制-相
+	</th>
+	<th>
+		法
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		<em>li / hi</em>
+	</td>
+	<td>
+		<em>si</em>
+	</td>
+	<td>
+		<em>jung / le / kalu</em>
+	</td>
+	<td>
+		<em>ya / ye / ka / ne</em>
+	</td>
+</tr>
+</tbody>
+</table>
+<ul>
+	<li>
 	<p>
-		たとえ万民語圏の言語ではないとしても、
-		ギリシャ語とラテン語は現代西洋に由来する多くの現代概念の基礎となる非常に影響力のある言語です。
-		しかし、さまざまなヨーロッパの影響が混ざり合っているため、
-		特定の単語の出典を理解するのが混乱を招き、
-		ラテン語ベースの単語の語源を把握するのが必要以上に難しくなっています。
-		したがって、万民語はラテン語ベースの借用語がどのように借用されるべきかについての標準変換規則を持っています。
-	</p>	
+		<strong>態</strong>
+	</p>
 	<ul>
-		<li>ラテン語 <em>-Vs</em> 接尾辞（Vは任意の母音を表す）は <em>-i</em> に変わり、万民語でその母音を省略しても音節が成立する場合は省略されます。以下はその例です。</li>
-		<ul>
-			<li>ラテン語接尾辞 -aris（英語の "-ary"）は -ali になります。</li>
-			<li>ラテン語接尾辞 -bilis（英語の "-ble"）は -bili になります。</li>
-			<li>ラテン語接尾辞 -eus（英語の "-eous"）は -i になります。</li>
-			<li>ラテン語接尾辞 -ens（英語の "-ent"）は -en になります。</li>
-			<li>ラテン語接尾辞 -ivus（英語の "-ive"）は -ifi になります。</li>
-			<li>ラテン語接尾辞 -icus（英語の "-ic"）は -ik になります。</li>
-			<li>ラテン語接尾辞 -tas（英語の "-ty"）は -ti になります。</li>
-		</ul>
-		<li>ラテン語接尾辞 -tio および -sio は -si になります。</li>
-		<li>ラテン語の "r" は語頭では l、語中では母音の間にあれば w になります。</li>
-		<li>ラテン語の "v" は a、e、o の前では b、e、i の前では f、語中では母音の間にあれば w になります。</li>
+		<li>受動 <em>li</em> は、動詞を「主語が動作を行う」状態から「主語に対して動作が行われる」状態に変更する。</li>
+		<li>使役 <em>hi</em> は、動詞を「主語が自ら動作を行う」状態から「他の対象に動作を行わせる」状態に変更する。</li>
 	</ul>
-<h3 id="loaning-words-from-other-languages">3.4 他の言語から来た語彙</h3>
+	</li>
+	<li>
 	<p>
-		万民語は非常に技術的な説明を持っているにもかかわらず、
-		完全に規定された言語というよりも、
-		自然なコミュニケーションのための柔軟なプロトコルを志向しています。
-		したがって、これらの規則は万民語の使用者が必要に応じて自由に解釈できる指針と理解するのが最良です。
-		万民語の使用者は定期的に新しい慣例を公式化し、
-		このセクションに新しい慣例を記録したり削除したりする必要がありますが、
-		以下は考慮すべきいくつかの規則です。
+		<strong>敬語</strong><em>si</em> は、万民語話者が主語に対して敬意を示す手段である。
 	</p>
+	</li>
+	<li>
 	<p>
-		万民語と互換性のない子音群を分離するために挿入される補助母音は <em>i</em>、<em>a</em>、または <em>u</em> であり、
-		これは元の音節の核となる母音が非円唇前舌母音か中舌母音か後舌母音または円唇母音であるかに依存します。
+		<strong>時制-相</strong>
 	</p>
+	<ul>
+		<li>進行形 <em>jung</em> は、特定の時点において動作が進行中であることを示す（明示されていない場合は現在時点と解釈される）。</li>
+		<li>完了形 <em>le</em> は、動作がすでに完了していることを示す（通常は過去を表す）。</li>
+		<li>展望形 <em>kalu</em> は、動作がまだ起きていないことを示し、仮定的または未来の行為を表す。言語学ではこれを非現実相（イリアリス）と呼ぶ。</li>
+		<li>万民語では、これらの接辞が単独で用いられる場合、時制と相は厳密に区別されない。ただし、これらの助詞が重なる場合は、最初の助詞が相を、2番目の助詞が時制を示す。</li>
+	</ul>
+	</li>
+	<li>
 	<p>
-		子音の変換は特定の借用語に対して他の言語が設定した慣例に従うべきですが、
-		一般的には v は f の代わりに b または w に、z は j または s に変換することが推奨されます。
-		しかし、これらの推奨事項はあくまで参考用であり、借用語が認識可能であればどのような変換も許容されます。
+		<strong>法</strong>
 	</p>
-
-<h2 id="grammar">4. 文法</h2>
-	<h3 id="general-syntax">4.1 一般的な構文</h3>
-		<p>
-			万民語はSOVを好む自由語順の左分岐言語です。
-			簡単に言えば、他の節を修飾する節は修飾される節の前に来る必要があります。
-			また、万民語は主題を示す言語であり、文法的な省略を許容する言語です。
-			句の項が文脈から推論できる場合、それは省略することができます。
-			屈折助詞も文脈上明確であれば省略できますが、
-			そうでなければ曖昧さを避けるために必ず含めなければなりません。
-		</p>
-	<h3 id="honorifics">4.2 敬語</h3>
-		<p>
-			万民語には三つの敬語レベルがあります。
-			第一は尊敬語です。
-			万民語では参照対象に対する尊敬を示すために人称代名詞や名前を使用せず、その代わりに職名を使用することができます。
-			参照対象が句の主語である場合、動詞に敬語表示 -si- を使用する必要があります
-			（<a href="#verb-modifiers">2.2 動詞修飾語を参照</a>）。
-			第二の敬語レベルは中立語で、特に表示はされません。
-			最後の敬語レベルは非格式語で、公式な名前や職名の代わりに親しい代名詞 kun、nyang、ini またはニックネームを使用することが含まれます。
-		</p>
-	<h3 id="numbers">4.3 数字</h3>
-		<p>
-			万民語では数字は抽象的な値、数量、またはリスト内の位置（序数）を示すために使用されます。
-			抽象的な値はサンスクリット語の形（数字0-10）で表現されるか、
-			漢語の語根からなる複合語で表現されます（その他の数字）。
-			数量も同じ方法で表現されますが、後ろに単位語が続き、
-			名詞と関連付けるために -ji を付けなければなりません。
-			動作の量を示す単位語は hway、数えられる無生物名詞の単位語は gay、動物の単位語は dow、人間の単位語は meng です。
-			序数は ban を使用します。
-		</p>
-
-</body>
-</html>
+	<ul>
+		<li>感嘆詞 <em>ya</em> は、文を感嘆文として表示する。</li>
+		<li>疑問詞 <em>ka</em> は、文を直接疑問文として表示する。</li>
+		<li>提案詞 <em>ne</em> は、文を軟らかい疑問または提案として表示する。</li>
+		<li>命令詞 <em>ye</em> は、動詞を命令として表示する。</li>
+	</ul>
+	</li>
+</ul>
+<p>
+	なお、以前の万民語では完了の前に時制を示していたが、このシステムが借用された韓国語の時制重複システムをより忠実に反映するために現在の形式に変更された。
+</p>
+<h3 id="23-機能変形詞">2.3 機能変形詞</h3>
+<p>
+	先述の通り、万民語のすべての基本語彙は行動と現象、物体と概念、または属性に分類される。これらは一般的にそれぞれ動詞・名詞・形容詞・副詞に対応するが、単語が本来の意味から外れた用法で使用される場合がある。この場合、単語が適切に機能するためには通常、補助的な助詞や動詞を使用する必要がある。そのための補助助詞は以下の通りである：
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+	</th>
+	<th>
+		動詞
+	</th>
+	<th>
+		名詞
+	</th>
+	<th>
+		副詞
+	</th>
+	<th>
+		形容詞
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		行動と現象
+	</td>
+	<td>
+		∅
+	</td>
+	<td>
+		<em>-em</em>
+	</td>
+	<td>
+		∅¹
+	</td>
+	<td>
+		_-ji_²
+	</td>
+</tr>
+<tr>
+	<td>
+		物体と概念
+	</td>
+	<td>
+		<em>heng</em>
+	</td>
+	<td>
+		∅
+	</td>
+	<td>
+		<em>-yang</em>
+	</td>
+	<td>
+		<em>-dek</em>
+	</td>
+</tr>
+<tr>
+	<td>
+		属性
+	</td>
+	<td>
+		<em>cey</em>
+	</td>
+	<td>
+		<em>-em</em>
+	</td>
+	<td>
+		∅
+	</td>
+	<td>
+		∅
+	</td>
+</tr>
+</tbody>
+</table>
+<ol>
+	<li>行動や現象を表す語、またはそれが主語となる構造が副詞節のように使用される場合、複数の動詞を修飾なしで並べて一つの動詞句を形成することができる。これは「動詞連鎖」として知られる。</li>
+	<li>これは他の名詞句を修飾する句（関係節）を構成する方法である。</li>
+</ol>
+<p>
+	注目すべき点として、以前の万民語では物体と概念を表す語を副詞として機能させる助詞が <em>-syang</em> であったが、発音を容易にし、かつ古典中国語や日本語をより適切に反映するために現在は <em>-yang</em> に変更された。また、以前の万民語では完了した行動を形容詞に変換するための助詞 <em>-in</em> が別途存在したが、現在は <em>-le-ji</em> に置き換えられた。同様に、名詞として示された行動の完了は <em>-le-em</em> または短縮形 <em>-lem</em> によって表すことができる。
+</p>
+<p>
+	否定もまた別種の機能変形の一つであり、万民語において唯一の接頭辞として使用される点で際立っている。動詞の否定には _but-<em>、形容詞・副詞の否定には <em>bi-</em> を用いる。_but-cey</em> は <em>bey</em> に短縮することができる。
+</p>
+<h3 id="24-独立助詞">2.4 独立助詞</h3>
+<p>
+	独立して機能する助詞もあり、これは特定の句に付かず、独立して働く。こうした助詞は、節の間に配置される等位接続詞として機能したり、文の冒頭で句の機能を示すために使用することができる。
+</p>
+<p>
+	万民語における等位接続詞は、二つの独立節を結ぶ接続詞である。
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+		等位接続詞
+	</th>
+	<th>
+		説明
+	</th>
+	<th>
+		例
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		<em>i</em>
+	</td>
+	<td>
+		累加接続詞。「～と」と同じ。
+	</td>
+	<td>
+		<em>A sik i ta sik.</em> 私は食べ、彼は食べる。
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>nyak</em>
+	</td>
+	<td>
+		仮定接続詞。「～ば」と同じ。
+	</td>
+	<td>
+		<em>A sik nyak ta sik.</em> 私が食べれば、彼が食べる。
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>dan</em>
+	</td>
+	<td>
+		対照接続詞。「～だけど」と同じ。
+	</td>
+	<td>
+		<em>A sik dan ta but sik.</em> 私は食べるが、彼は食べない。
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>butdan</em>
+	</td>
+	<td>
+		対照接続詞。「～にもかかわらず」と同じ。
+	</td>
+	<td>
+		<em>A sik butdan ta sik.</em> 彼が食べるにもかかわらず、私は食べる。
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>syuy</em>
+	</td>
+	<td>
+		譲歩接続詞。「～であっても」と同じ。
+	</td>
+	<td>
+		<em>A sik syuy ta sik.</em> 彼が食べるであっても、私は食べる。
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>hok</em>
+	</td>
+	<td>
+		選択接続詞。「～か」と同じ。
+	</td>
+	<td>
+		<em>A sik hok ta sik.</em> 私は食べるか、彼が食べる。
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>pi</em>
+	</td>
+	<td>
+		比較接続詞。「～に比べて」と同じ。
+	</td>
+	<td>
+		<em>A sik pi ta da sik.</em> 私が食べるのに比べて、彼はより多く食べる。
+	</td>
+</tr>
+</tbody>
+</table>
+<p>
+	万民語における従属接続詞は、一つの独立節を別の節（独立節または従属節）に結ぶ接続詞である。
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+		従属接続詞
+	</th>
+	<th>
+		説明
+	</th>
+	<th>
+		例
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		<em>hwa</em>
+	</td>
+	<td>
+		累加接続詞。「～と」と同じ。二つの独立節を結ぶためには使用できない。
+	</td>
+	<td>
+		<em>A sik hwa ta.</em> 私は彼と食べる。
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>wi</em>
+	</td>
+	<td>
+		目的接続詞。「～のために」と同じ。
+	</td>
+	<td>
+		<em>A sik wi ta.</em> 私は彼のために食べる。
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>yu</em>
+	</td>
+	<td>
+		原因接続詞。「～のために」と同じ。
+	</td>
+	<td>
+		<em>A sik yu ta sik.</em> 私はそのために食べる。
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>geng</em>
+	</td>
+	<td>
+		手段接続詞。「～を通じて」と同じ。
+	</td>
+	<td>
+		<em>A sik geng ta.</em> 私はそれを通じて食べる。
+	</td>
+</tr>
+</tbody>
+</table>
+<p>
+	機能助詞も <em>but-</em> で否定することができる。この場合、次の文が主語と次の動詞句の関係を実用的に明確にすることが想定される。
+</p>
+<h3 id="25-代名詞">2.5 代名詞</h3>
+<p>
+	万民語は簡単な代名詞体系を持っている。人称代名詞としては1人称代名詞 _a_、2人称代名詞 <em>ni_、そして3人称代名詞 <em>ta</em> がある。また、_kun_・_nyang_・_ini</em> という性別と親密さを示す代替他人称代名詞もある。それぞれ男性・女性・中性に対応する。
+</p>
+<p>
+	万民語は他の代名詞を生成するためのモジュール式システムを持つ。万民語代名詞は以下の指示パラメータを持つ：自人称近接 _ko_、他人称近接 _co_、遠隔 _yo_、疑問 _ha_、特定 _hok_、普遍 _man_、否定 _mu_、代替 _ta_。これらは指示対象の名詞クラスを指定するため、接尾辞を選択的に付けることができる。非人間対象は _-ka_、人間は _-nin_、時間は _-si_、場所は _-di_、理由は _-yu_、方法は <em>-i</em> で接尾辞化される。多くの普遍代名詞は漢字語圏で既に広く使用される単語のため、標準対象指定接尾辞を使用しない点が注目される。
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+	</th>
+	<th>
+		自人称近接
+	</th>
+	<th>
+		他人称近接
+	</th>
+	<th>
+		遠隔
+	</th>
+	<th>
+		疑問
+	</th>
+	<th>
+		特定
+	</th>
+	<th>
+		普遍
+	</th>
+	<th>
+		否定
+	</th>
+	<th>
+		代替
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+	</td>
+	<td>
+		「これ」
+	</td>
+	<td>
+		「それ」
+	</td>
+	<td>
+		「あれ」
+	</td>
+	<td>
+		「どれ」
+	</td>
+	<td>
+		「特定」
+	</td>
+	<td>
+		「すべて」
+	</td>
+	<td>
+		「何も」
+	</td>
+	<td>
+		「別の」
+	</td>
+</tr>
+<tr>
+	<td>
+		基礎
+	</td>
+	<td>
+		<em>ko</em>
+	</td>
+	<td>
+		<em>co</em>
+	</td>
+	<td>
+		<em>yo</em>
+	</td>
+	<td>
+		<em>ha</em>
+	</td>
+	<td>
+		<em>hok</em>
+	</td>
+	<td>
+		<em>man</em>
+	</td>
+	<td>
+		<em>mu</em>
+	</td>
+	<td>
+		<em>ta</em>
+	</td>
+</tr>
+<tr>
+	<td>
+		物体
+	</td>
+	<td>
+		<em>koko</em>
+	</td>
+	<td>
+		<em>coko</em>
+	</td>
+	<td>
+		<em>yoko</em>
+	</td>
+	<td>
+		<em>haka</em>
+	</td>
+	<td>
+		<em>hokko</em>
+	</td>
+	<td>
+		<em>manmut*</em>
+	</td>
+	<td>
+		<em>muku</em>
+	</td>
+	<td>
+		<em>taka</em>
+	</td>
+</tr>
+<tr>
+	<td>
+		人間
+	</td>
+	<td>
+		<em>konin</em>
+	</td>
+	<td>
+		<em>conin</em>
+	</td>
+	<td>
+		<em>yonin</em>
+	</td>
+	<td>
+		<em>hanin</em>
+	</td>
+	<td>
+		<em>hoknin</em>
+	</td>
+	<td>
+		<em>manmin*</em>
+	</td>
+	<td>
+		<em>munin</em>
+	</td>
+	<td>
+		<em>tanin</em>
+	</td>
+</tr>
+<tr>
+	<td>
+		時間
+	</td>
+	<td>
+		<em>kosi</em>
+	</td>
+	<td>
+		<em>cosi</em>
+	</td>
+	<td>
+		<em>yosi</em>
+	</td>
+	<td>
+		<em>hasi</em>
+	</td>
+	<td>
+		<em>hoksi</em>
+	</td>
+	<td>
+		<em>syangsi*</em>
+	</td>
+	<td>
+		<em>musi</em>
+	</td>
+	<td>
+		<em>tasi</em>
+	</td>
+</tr>
+<tr>
+	<td>
+		場所
+	</td>
+	<td>
+		<em>kodi</em>
+	</td>
+	<td>
+		<em>codi</em>
+	</td>
+	<td>
+		<em>yodi</em>
+	</td>
+	<td>
+		<em>hadi</em>
+	</td>
+	<td>
+		<em>hokdi</em>
+	</td>
+	<td>
+		<em>manbang*</em>
+	</td>
+	<td>
+		<em>mudi</em>
+	</td>
+	<td>
+		<em>tadi</em>
+	</td>
+</tr>
+<tr>
+	<td>
+		理由
+	</td>
+	<td>
+		<em>koyu</em>
+	</td>
+	<td>
+		<em>coyu</em>
+	</td>
+	<td>
+		<em>yoyu</em>
+	</td>
+	<td>
+		<em>hayu</em>
+	</td>
+	<td>
+		<em>hokyu</em>
+	</td>
+	<td>
+		<em>manyu</em>
+	</td>
+	<td>
+		<em>muyu</em>
+	</td>
+	<td>
+		<em>tayu</em>
+	</td>
+</tr>
+<tr>
+	<td>
+		方法
+	</td>
+	<td>
+		<em>ko&#39;i</em>
+	</td>
+	<td>
+		<em>co&#39;i</em>
+	</td>
+	<td>
+		<em>yo&#39;i</em>
+	</td>
+	<td>
+		<em>ha&#39;i</em>
+	</td>
+	<td>
+		<em>hok&#39;i</em>
+	</td>
+	<td>
+		<em>man&#39;i</em>
+	</td>
+	<td>
+		<em>mu&#39;i</em>
+	</td>
+	<td>
+		<em>ta&#39;i</em>
+	</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="3-語彙">3. 語彙</h2>
+<p>
+	万民語の語彙は様々な言語から来る。一部の単語は事前に定義されているが、万民語は一般的に開放型の語彙を持っており、どの言語からでも単語を取り込むことができる。ただし、個別の言語でのみ使用される単語よりも広く認識されている単語が好まれ、最も基本的な単語を除いては単音節語を避けるべきである。単語の出典は六つのカテゴリーに分かれており、状況に応じて異なる出典言語を使用する必要がある。これらの推奨事項は厳格な規則と見なされるべきではなく、言語の必要に応じて柔軟に解釈されるべきである。
+</p>
+<p>
+	第一のカテゴリーは漢語起源の単語である。一般的に、これは漢王朝から唐王朝時代の中国の口語であった古典中国語に由来する単語を意味し、中国・日本・韓国・ベトナムの伝統的な文語共用語であった。道教・儒教・政治・外交・経済などについては漢語カテゴリーから単語を借用することが推奨され、植物や動物の名前については漢語カテゴリーからの語彙を避けることが推奨される。また、他の言語に由来しない新しい単語を作る際には、古典漢語の造語慣例に従って漢語の語根を使用することが、簡潔さの観点から推奨される。
+</p>
+<p>
+	第二のカテゴリーはサンスクリット語起源の単語である。サンスクリット語が母語の南アジアは万民語の直接的な範囲には含まれないが、東南アジアの多くの言語は仏教によりサンスクリット語とパーリ語を権威ある言語と見なす。儒教圏であるベトナム・中国・韓国・日本でもサンスクリット語が一部の語彙に影響を与えたため、サンスクリット語は万民語世界で重要な言語である。万民語の使用者はインドの宗教や哲学に関連する語彙についてはサンスクリット語から単語を借用することが推奨される。
+</p>
+<p>
+	第三のカテゴリーは韓国語や日本語起源の単語である。韓国語と日本語は証明された系統関係はないが、文法で多くの類似点を共有しており、一部の語彙でも類似点を共有することが知られているため、一つのカテゴリーと見なされる。このカテゴリーから単語をどのように適応させるかについての具体的な規則はない。これは共有する同族語が非常に不規則であり、明確な規則を設定することができないためである。万民語の使用者は温帯気候の自然に関連する語彙が必要な時や、韓国語と日本語の間に同族語が見られる場合にこのカテゴリーから単語を使用することが推奨される。
+</p>
+<p>
+	第四のカテゴリーはオーストロアジア起源の単語である。他の学術的な文脈での「オーストロアジア」という用語の一般的な使用とは異なり、万民語の議論ではオーストロアジアがタイ・ラオス・カンボジア・ミャンマーを含む大陸東南アジアを意味する。大陸東南アジア、つまりオーストロアジアは、様々な言語が遺伝的理由や接触によって単語を共有する語彙同調帯を形成する。万民語の使用者は熱帯気候の自然に関連する語彙が必要な時や、オーストロアジア言語間で同族語が見られる場合にこのカテゴリーから単語を使用することが推奨される。
+</p>
+<p>
+	第五のカテゴリーはオーストロネシア起源の単語である。オーストロネシア語族は海洋東南アジアの大部分で支配的な言語族であり、今日ではインドネシア・フィリピン・マレーシア・ブルネイ・台湾・シンガポールなど多くの国にまたがっている。オーストロネシア語族の言語はしばしば同族語を共有するため、可能な場合には共有語彙を使用することが推奨される。特に航海や自然界に関連する事項においてである。
+</p>
+<p>
+	第六のカテゴリーは外来起源の単語である。これらはアラビア語・スペイン語・英語など万民語の領域外で主に使用される言語から来る単語であり、一般的には情報時代の技術やアブラハム系宗教などアジアで土着化されていない概念を指す。この特定の範囲外では万民語の出典言語に適した単語がない場合を除き、これらの単語を使用することは推奨されない。
+</p>
+<h3 id="31-古典中国語から来た語彙">3.1 古典中国語から来た語彙</h3>
+<p>
+	古典中国語に由来する単語、または古典中国語で使用された造語法によって新たに作られた単語は、単一の現代語の発音のみに基づいて借用されるべきではない。代わりに、ほぼすべての現代の読みの祖形である唐代中国語の発音を簡略化したものに基づいて借用されるべきである。
+</p>
+<p>
+	古典中国語では、頻繁に使用される漢字のほとんどが声母（初声子音）と「韻母」によって分類されており、韻母は母音と終声子音の組み合わせである。この情報は『切韻』や『韻鏡』のような文献に記録されている。以下の最初の表には、古典中国語の声母と万民語の対応子音値を示す。
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+	</th>
+	<th>
+		全清
+	</th>
+	<th>
+		次清
+	</th>
+	<th>
+		全濁
+	</th>
+	<th>
+		鼻音
+	</th>
+	<th>
+		半母音
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		両唇音
+	</td>
+	<td>
+		幫 b
+	</td>
+	<td>
+		滂 p
+	</td>
+	<td>
+		並 b
+	</td>
+	<td>
+		明 m
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		歯茎音
+	</td>
+	<td>
+		端 d
+	</td>
+	<td>
+		透 t
+	</td>
+	<td>
+		定 d
+	</td>
+	<td>
+		泥 n
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		歯茎破擦音
+	</td>
+	<td>
+		精 j
+	</td>
+	<td>
+		清 c
+	</td>
+	<td>
+		從 j
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		歯茎摩擦音
+	</td>
+	<td>
+		心 s
+	</td>
+	<td>
+	</td>
+	<td>
+		邪 s
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		巻舌音
+	</td>
+	<td>
+		知 d
+	</td>
+	<td>
+		徹 t
+	</td>
+	<td>
+		澄 d
+	</td>
+	<td>
+		娘 n
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		巻舌破擦音
+	</td>
+	<td>
+		莊 j
+	</td>
+	<td>
+		初 c
+	</td>
+	<td>
+		崇 j
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		巻舌摩擦音
+	</td>
+	<td>
+		生 s
+	</td>
+	<td>
+	</td>
+	<td>
+		俟 s
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		硬口蓋音
+	</td>
+	<td>
+		章 j
+	</td>
+	<td>
+		昌 c
+	</td>
+	<td>
+		常 j
+	</td>
+	<td>
+		日 n
+	</td>
+	<td>
+		以 y
+	</td>
+</tr>
+<tr>
+	<td>
+		硬口蓋摩擦音
+	</td>
+	<td>
+		書 s
+	</td>
+	<td>
+	</td>
+	<td>
+		船 s
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		軟口蓋音
+	</td>
+	<td>
+		見 g
+	</td>
+	<td>
+		溪 k
+	</td>
+	<td>
+		群 g
+	</td>
+	<td>
+		疑 ∅
+	</td>
+	<td>
+		云* ∅
+	</td>
+</tr>
+<tr>
+	<td>
+		軟口蓋摩擦音
+	</td>
+	<td>
+		曉 h
+	</td>
+	<td>
+	</td>
+	<td>
+		匣 h
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		声門音
+	</td>
+	<td>
+		影 ∅
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+</tbody>
+</table>
+<p>
+	*: この声母の元々の音価は不安定であった。
+</p>
+<p>
+	古典中国語では漢字を韻母で分類する方法は次の通りである。韻母の「外転」は開音節を、「内転」は閉音節を意味する。円唇性：「開口」の韻母は非円唇母音を、「合口」の韻母は円唇母音を意味する。等：硬口蓋化の程度により1〜4等に分類される。終声子音：いくつかの種類がある。終声子音は比較的単純だが、他の要素はそれほど単純ではない。それらの対応関係は下の表に示されている。
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+		再構された中世中国語母音
+	</th>
+	<th>
+		1等 開口
+	</th>
+	<th>
+		1等 合口
+	</th>
+	<th>
+		2等 開口
+	</th>
+	<th>
+		2等 合口
+	</th>
+	<th>
+		3等 開口
+	</th>
+	<th>
+		3等 合口
+	</th>
+	<th>
+		4等 開口
+	</th>
+	<th>
+		4等 合口
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		果 /a/
+	</td>
+	<td>
+		歌 a
+	</td>
+	<td>
+		戈 wa
+	</td>
+	<td>
+	</td>
+	<td>
+		戈 ya
+	</td>
+	<td>
+	</td>
+	<td>
+		戈 wa
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		假 /a:/
+	</td>
+	<td>
+		麻 a
+	</td>
+	<td>
+	</td>
+	<td>
+		麻 wa
+	</td>
+	<td>
+	</td>
+	<td>
+		麻 ya
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		蟹 /aj/
+	</td>
+	<td>
+		咍、泰 ay
+	</td>
+	<td>
+		灰、泰 way
+	</td>
+	<td>
+		皆、夬、佳 ay
+	</td>
+	<td>
+		皆、夬、佳 way
+	</td>
+	<td>
+		祭 ey
+	</td>
+	<td>
+		祭 wey
+	</td>
+	<td>
+		齊、祭 ey
+	</td>
+	<td>
+		齊、祭 wey
+	</td>
+</tr>
+<tr>
+	<td>
+		效 /aw/
+	</td>
+	<td>
+		豪 aw
+	</td>
+	<td>
+	</td>
+	<td>
+		肴 aw
+	</td>
+	<td>
+	</td>
+	<td>
+		宵 yaw
+	</td>
+	<td>
+	</td>
+	<td>
+		蕭 yaw
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		咸 /am/
+	</td>
+	<td>
+		覃、談 am
+	</td>
+	<td>
+	</td>
+	<td>
+		咸、銜 am
+	</td>
+	<td>
+	</td>
+	<td>
+		鹽、嚴 em
+	</td>
+	<td>
+		凡 om
+	</td>
+	<td>
+		添 em
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		山 /an/
+	</td>
+	<td>
+		寒 an
+	</td>
+	<td>
+		桓 wan
+	</td>
+	<td>
+		山、刪 an
+	</td>
+	<td>
+		山、刪 wan
+	</td>
+	<td>
+		元、仙 an
+	</td>
+	<td>
+		元、仙 wan
+	</td>
+	<td>
+		仙、先 en
+	</td>
+	<td>
+		仙、先 wen
+	</td>
+</tr>
+<tr>
+	<td>
+		宕 /aŋ/
+	</td>
+	<td>
+		唐 ang
+	</td>
+	<td>
+		唐 wang
+	</td>
+	<td>
+	</td>
+	<td>
+		陽 ang
+	</td>
+	<td>
+	</td>
+	<td>
+		陽 wang
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		江 /auŋ/
+	</td>
+	<td>
+		江 ang
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		梗 /aiŋ/
+	</td>
+	<td>
+		庚、耕 eng
+	</td>
+	<td>
+		庚、耕 ong
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		庚、清 eng
+	</td>
+	<td>
+		庚、清 eng
+	</td>
+	<td>
+		青 eng
+	</td>
+	<td>
+		青 eng
+	</td>
+</tr>
+<tr>
+	<td>
+		遇 /ə/
+	</td>
+	<td>
+		模 o
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		魚 o
+	</td>
+	<td>
+		虞 u
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		止 /i/
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		支、微、之、脂 i
+	</td>
+	<td>
+		支、微 wi
+	</td>
+	<td>
+	</td>
+	<td>
+		脂 yuy
+	</td>
+</tr>
+<tr>
+	<td>
+		流 /əw/
+	</td>
+	<td>
+		侯 ow
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		尤、幽 yu
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		深 /əm/
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		侵 im
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		臻 /ən/
+	</td>
+	<td>
+		痕 on
+	</td>
+	<td>
+		魂 on
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		臻、眞、欣 in
+	</td>
+	<td>
+		諄、眞 yun
+	</td>
+	<td>
+	</td>
+	<td>
+		文 un
+	</td>
+</tr>
+<tr>
+	<td>
+		曾 /əŋ/
+	</td>
+	<td>
+		登 eng
+	</td>
+	<td>
+		登 ong
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		蒸 eng
+	</td>
+	<td>
+		蒸 ong
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		通 /əuŋ/
+	</td>
+	<td>
+		東、冬 ong
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		東、鍾 ong
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+</tbody>
+</table>
+<p>
+	本文法ガイドで先述した通り、これらの規則は必要に応じて変更される可能性があり、その変更は万民語コミュニティの必要性に応じて行われるべきである。
+</p>
+<h3 id="32-サンスクリットから来た語彙">3.2 サンスクリットから来た語彙</h3>
+<p>
+	サンスクリット語は東アジアの様々な言語にそれぞれ独立して借用されてきたため、万民語においても標準的な借用方法が必要である。特にサンスクリット語が万民語で重要性を増すにつれ、標準化された借用方法が求められる。
+</p>
+<p>
+	最も簡便な方法は、可能な限りサンスクリット語をそのまま表記し、必要な場合には万民語の音韻体系に合わせて調整しながら、パーリ語の規則を用いて最低限の単純化を行うことである。サンスクリット語の語を万民語に変換する際の要点は以下の通りである。
+</p>
+<ul>
+	<li>
+	<p>
+		<strong>母音</strong>
+	</p>
+	<ul>
+		<li>母音の長さは無視される。</li>
+		<li>二重母音は保持される。</li>
+		<li>万民語の音韻論で許容される場合、語末の母音は省略されることがある。</li>
+	</ul>
+	</li>
+	<li>
+	<p>
+		<strong>子音全般</strong>
+	</p>
+	<ul>
+		<li>有声・無声を問わず破裂音の気息は無視される。</li>
+		<li>子音は万民語の音韻体系に適合する限り、サンスクリット語からパーリ語への子音重複（ジェミネーション）は行われない。</li>
+		<li>子音群では、まず有声子音が無声化され、その後パーリ語の規則による単純化が試みられる。例えば、「udvigna」は万民語では「ubiga」ではなく「utwikna」となる。</li>
+	</ul>
+	</li>
+	<li>
+	<p>
+		<strong>鼻音</strong>
+	</p>
+	<ul>
+		<li>サンスクリット語の /ṃ/ は、後続の子音の調音位置がより自然に認識される場合、/ŋ/ になることがある。</li>
+		<li>/m/ は他の子音を保持するために必要な場合、/w/ になる。</li>
+		<li>主格標識の「-n」は万民語では省略される。</li>
+	</ul>
+	</li>
+	<li>
+	<p>
+		<strong>摩擦音</strong>
+	</p>
+	<ul>
+		<li>/v/ は、直前に母音 /i/ または /e/ がある場合、あるいは他の子音を保持するために必要な場合は /w/ になる。それ以外の場合は /b/ になる。</li>
+		<li>他の子音の後に来る /j/ および /c/ は、後続の母音として /i/ を追加する。</li>
+		<li>子音群内のサンスクリット語の歯擦音はすべて /s/ と見なされる。</li>
+		<li>上記のいずれにも該当しない、他の子音の後に来るサンスクリット語の摩擦音はすべて省略される。</li>
+	</ul>
+	</li>
+	<li>
+	<p>
+		<strong>流音</strong>
+	</p>
+	<ul>
+		<li>サンスクリット語の /kl/ は /kil/ になる。</li>
+		<li>母音間に現れるサンスクリット語の /ṛ/ は、後続の母音に応じて /a/・/i/・/u/ になる。</li>
+		<li>母音の前、他の子音の間に現れるサンスクリット語の流音はすべて省略される。</li>
+		<li>万民語は側音と歯茎音が互いに結合することを許さない。</li>
+	</ul>
+	</li>
+</ul>
+<h3 id="33-ラテン語から来た語彙">3.3 ラテン語から来た語彙</h3>
+<p>
+	万民語の範囲外の言語ではあるが、ギリシャ語とラテン語は現代西洋に由来する多くの概念の基礎をなす極めて影響力の高い言語である。しかし、さまざまなヨーロッパの影響が混在しているため、特定の単語の出典を把握することが困難になっており、ラテン語系の語彙の語源を理解することが必要以上に難しくなっている。そのため、万民語にはラテン語系の借用語をどのように借用するかについての標準変換規則がある。
+</p>
+<ul>
+	<li>ラテン語の <em>-Vs</em> 接尾辞（V は任意の母音）は <em>-i</em> に変換され、万民語においてその母音を省略しても音節が成立する場合は省略される。以下にその例を示す。
+	<ul>
+		<li>ラテン語接尾辞 -aris（英語の &quot;-ary&quot;）は -ali になる。</li>
+		<li>ラテン語接尾辞 -bilis（英語の &quot;-ble&quot;）は -bili になる。</li>
+		<li>ラテン語接尾辞 -eus（英語の &quot;-eous&quot;）は -i になる。</li>
+		<li>ラテン語接尾辞 -ens（英語の &quot;-ent&quot;）は -en になる。</li>
+		<li>ラテン語接尾辞 -ivus（英語の &quot;-ive&quot;）は -ifi になる。</li>
+		<li>ラテン語接尾辞 -icus（英語の &quot;-ic&quot;）は -ik になる。</li>
+		<li>ラテン語接尾辞 -tas（英語の &quot;-ty&quot;）は -ti になる。</li>
+	</ul>
+	</li>
+	<li>ラテン語接尾辞 <em>-tio</em> および <em>-sio</em> は <em>-si</em> になる。</li>
+	<li>ラテン語の &quot;r&quot; は語頭では _l_、語中で母音間に現れる場合は <em>w</em> になる。</li>
+	<li>ラテン語の &quot;v&quot; は <em>a_・_e_・_o</em> の前では <em>b_、_i</em> の前では _f_、語中で母音間に現れる場合は <em>w</em> になる。</li>
+</ul>
+<h3 id="34-他の言語から来た語彙">3.4 他の言語から来た語彙</h3>
+<p>
+	万民語は非常に詳細な規則を持っているにもかかわらず、完全に規定された言語というよりも、自然なコミュニケーションのための柔軟なプロトコルを志向している。したがって、これらの規則は万民語の使用者が必要に応じて自由に解釈できる指針と理解するのが最良である。万民語の使用者は定期的に新しい慣例を公式化し、このセクションに新しい慣例を記録したり削除したりする必要があるが、以下は考慮すべきいくつかの規則である。
+</p>
+<p>
+	万民語と適合しない子音群を分解するために挿入される挿入母音は <em>i_・_a_・_u</em> であり、これは元の音節核の母音が非円唇前舌母音か、中舌母音か、後舌・円唇母音であるかによって決まる。
+</p>
+<p>
+	子音の変換は特定の借用語に対して他言語が設定した慣例に従うべきだが、一般的には <em>v</em> は <em>b</em> または <em>w</em> に、<em>z</em> は <em>j</em> または <em>s</em> に変換することが推奨される。ただし、これらの推奨事項はあくまで参考であり、借用語が認識可能であればいかなる変換も許容される。
+</p>
+<hr>
+<h2 id="4-文法">4. 文法</h2>
+<h3 id="41-一般的な統語論">4.1 一般的な統語論</h3>
+<p>
+	万民語はSOVを基本語順とする自由語順の左分岐言語である。端的に言えば、他の節を修飾する節は、修飾される節の前に置かれなければならない。また、万民語は主題卓越型の言語であり、文法的な省略を許容する。句の項が文脈から推論可能な場合は省略することができる。格助詞も文脈上明確であれば省略できるが、そうでなければ曖昧さを避けるために必ず含めなければならない。
+</p>
+<h3 id="42-尊敬語">4.2 尊敬語</h3>
+<p>
+	万民語には三つの敬語レベルがある。第一は尊敬語である。万民語では参照対象への敬意を示すために人称代名詞や名前を用いず、代わりに職名を使用することができる。参照対象が節の主語である場合、動詞に敬語標識 <em>-si-</em> を使用しなければならない（<a href="#verb-modifiers">2.2 動詞助詞参照</a>）。第二の敬語レベルは中立語であり、特別な標示はされない。最後の敬語レベルは非格式語であり、公式な名前や職名の代わりに親称代名詞 <em>kun_・_nyang_・_ini</em> またはニックネームを使用することが含まれる。
+</p>
+<h3 id="43-数字">4.3 数字</h3>
+<p>
+	万民語において、数字は抽象的な値、数量、またはリスト内の位置（序数）を示すために使用される。抽象的な値はサンスクリット語由来の形式（0〜10）で表現されるか、漢語の語根による複合語で表現される（その他の数字）。数量も同様の方法で表現されるが、後ろに助数詞が続き、名詞と関連づけるために <em>-ji</em> を付加しなければならない。動作の量を示す助数詞は _hway_、数えられる無生物名詞の助数詞は _gay_、動物の助数詞は _dow_、人間の助数詞は <em>meng</em> である。序数には <em>ban</em> を使用する。
+</p>
