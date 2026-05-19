@@ -1,0 +1,1996 @@
+<!DOCTYPE html>
+<html lang="vt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manmino: 文法说明书</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+	<link rel="stylesheet" href="https://manmino.github.io/manmino-site.css">
+	<script>
+		// Get the button:
+		let mybutton = document.getElementById("myBtn");
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		} 
+	</script>
+</head>
+<button onclick	="topFunction()" id="myBtn" title="Go to top" class='no-print'> ▲ </button> 
+
+<body>
+	<header>
+    	    <h1><a href="https://manmino.github.io/index.html">Manmino</a></h1>
+		<p>Ngôn ngữ Phụ trợ của Châu Á</p>
+	</header>
+	<h1>Ngữ pháp tiếng Manmino</h1>
+		<p><em>Ấn bản thứ 2</em></p>
+</header>
+	<fieldset>
+	<p>
+	<p>
+	<strong>Mục lục:</strong>
+</p>
+<ol start="0">
+	<li><a href="#foreword">Lời mở đầu</a></li>
+	<li><a href="#the-alphabet-and-sound-system">Bảng chữ cái và hệ thống âm thanh</a>
+	1.1 <a href="#the-consonants">Phụ âm</a>
+	1.2 <a href="#the-vowels">Nguyên âm</a>
+	1.3 <a href="#phonology-explanation">Âm vị học</a></li>
+	<li><a href="#particles">Trợ từ</a>
+	2.1 <a href="#noun-particles">Trợ từ danh từ</a>
+	2.2 <a href="#verb-modifiers">Trợ từ động từ</a>
+	2.3 <a href="#word-function-modifiers">Từ biến đổi chức năng</a>
+	2.4 <a href="#independent-particles">Trợ từ độc lập</a>
+	2.5 <a href="#pronouns">Đại từ</a></li>
+	<li><a href="#vocabulary">Từ vựng</a>
+	3.1 <a href="#loaning-from-classical-chinese">Từ vựng vay mượn từ văn ngôn</a>
+	3.2 <a href="#loaning-from-sanskrit">Từ vựng vay mượn từ tiếng Phạn</a>
+	3.3 <a href="#loaning-from-latin">Từ vựng vay mượn từ tiếng Latinh</a>
+	3.4 <a href="#loaning-words-from-other-languages">Từ vựng vay mượn từ các ngôn ngữ khác</a></li>
+	<li><a href="#grammar">Ngữ pháp</a>
+	4.1 <a href="#general-syntax">Cú pháp tổng quát</a>
+	4.2 <a href="#honorifics">Kính ngữ</a>
+	4.3 <a href="#numbers">Số từ</a></li>
+</ol>
+<hr>
+<h2 id="0-lời-mở-đầu">0. Lời mở đầu</h2>
+<p>
+	Vạn Dân Ngữ (Manmino) là ngôn ngữ phụ trợ Đông Á được hình thành nhằm thu hẹp khoảng cách giữa các quốc gia Đông Á đa dạng nhưng gắn kết mật thiết, trải dài từ Nhật Bản đến Myanmar, từ Mông Cổ đến Indonesia. Vạn Dân Ngữ sở hữu kho âm vị cân bằng, không ưu ái quá mức bất kỳ nhóm nào; cấu trúc SOV chắp dính và phân tích đơn giản với tính linh hoạt cấu trúc cao; và vay mượn từ vựng một cách cân bằng từ nhiều ngôn ngữ quan trọng về mặt lịch sử lẫn hiện đại như văn ngôn Hán cổ và tiếng Phạn — nhằm trở thành ngôn ngữ dễ sử dụng và giàu sắc thái biểu đạt cho người dân Đông Á.
+</p>
+<p>
+	Mục tiêu của Vạn Dân Ngữ là vượt qua những căng thẳng và cạnh tranh lịch sử; cung cấp nền tảng giao tiếp quốc tế dễ tiếp cận hơn tiếng Anh; và vượt qua các rào cản về chính phủ, văn hóa, ngôn ngữ để thúc đẩy luồng thông tin và tư tưởng tự do trong khu vực Đông Á, ngăn ngừa bất kỳ nhóm nào thống trị môi trường nghệ thuật và tri thức của khu vực.
+</p>
+<p>
+	Một trăm năm trước, một nhà Liên Á lý tưởng chủ nghĩa đã nói:【夫合成散敗，萬古常定之理也。】Chúng tôi — đội ngũ Vạn Dân Ngữ — hy vọng rằng thông qua việc học và sử dụng ngôn ngữ này, chúng ta — người dân Đông Á — có thể cùng nhau hợp tác thành công, sáng tạo và chia sẻ những thành tựu nghệ thuật và tri thức vĩ đại.
+</p>
+<hr>
+<h2 id="1-bảng-chữ-cái-và-hệ-thống-âm-thanh">1. Bảng chữ cái và hệ thống âm thanh</h2>
+<p>
+	Vạn Dân Ngữ được viết bằng bảng chữ cái Latinh (trong Vạn Dân Ngữ gọi là Latin Aksala hay Latin Munji), vốn quen thuộc với cả Đông Á và Đông Nam Á. Trong những trường hợp không thể sử dụng bảng chữ cái Latinh, có thể tùy chọn sử dụng Manmino Aksala — một hệ thống chữ viết tương tự abugida được thiết kế riêng cho Vạn Dân Ngữ.
+</p>
+<p>
+	Bảng chữ cái Latinh của Vạn Dân Ngữ sử dụng các chữ cái sau:
+</p>
+<p>
+	A B C D E F G H I J K L M N O P S T U W Y
+</p>
+<p>
+	a b c d e f g h i j k l m n o p s t u w y &#39;
+</p>
+<h3 id="11-phụ-âm">1.1 Phụ âm</h3>
+<p>
+	Vạn Dân Ngữ sử dụng các phụ âm sau:
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+	</th>
+	<th>
+		Âm môi
+	</th>
+	<th>
+		Âm lưỡi
+	</th>
+	<th>
+		Âm ngạc cứng
+	</th>
+	<th>
+		Âm ngạc mềm
+	</th>
+	<th>
+		Âm thanh hầu
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		Âm mũi
+	</td>
+	<td>
+		m
+	</td>
+	<td>
+		n
+	</td>
+	<td>
+	</td>
+	<td>
+		ng /ŋ/¹
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Âm tắc mạnh²
+	</td>
+	<td>
+		p /pʰ/
+	</td>
+	<td>
+		t /tʰ/
+	</td>
+	<td>
+	</td>
+	<td>
+		k /kʰ/
+	</td>
+	<td>
+		&#39; /ʔ/³
+	</td>
+</tr>
+<tr>
+	<td>
+		Âm tắc yếu
+	</td>
+	<td>
+		b
+	</td>
+	<td>
+		d
+	</td>
+	<td>
+	</td>
+	<td>
+		g
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Âm tắc xát mạnh
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		c /tɕʰ/
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Âm tắc xát yếu
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		j /dʑ/
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Âm xát
+	</td>
+	<td>
+		f /ɸ～f/
+	</td>
+	<td>
+		s /ɕ/
+	</td>
+	<td>
+	</td>
+	<td>
+		h /x～h/
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Âm bên
+	</td>
+	<td>
+	</td>
+	<td>
+		l
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Bán nguyên âm
+	</td>
+	<td>
+		w
+	</td>
+	<td>
+	</td>
+	<td>
+		y /j/
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+</tbody>
+</table>
+<ol>
+	<li>Âm vị [ŋ] không thể đứng ở vị trí âm đầu.</li>
+	<li>Do trong khu vực Đông Á có nhiều phương thức phân biệt âm tắc mạnh và yếu, định nghĩa chi tiết không được quy định ở đây.</li>
+	<li>Âm tắc thanh hầu có thể được sử dụng tùy chọn để phân biệt các từ, do đó đôi khi được coi là không mang tính âm vị.</li>
+	<li>⟨s⟩ được ngạc hóa thành [ɕ] khi đứng trước ⟨y⟩ hoặc ⟨i⟩.</li>
+	<li>Trong số các phụ âm của Vạn Dân Ngữ, chỉ có âm mũi [m], [n], [ŋ]; âm tắc vô thanh phi thanh hầu [p], [t], [k]; và âm bên [l] mới có thể đứng ở vị trí âm cuối.</li>
+	<li>Các chữ cái Latinh khác có thể được sử dụng cho danh từ riêng.</li>
+</ol>
+<h3 id="12-nguyên-âm">1.2 Nguyên âm</h3>
+<p>
+	Vạn Dân Ngữ có năm nguyên âm đơn: a, e, i, o, u. Ngoài ra, Vạn Dân Ngữ cho phép các nguyên âm đôi và nguyên âm ba sau đây:
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+	</th>
+	<th>
+		-∅¹
+	</th>
+	<th>
+		-w
+	</th>
+	<th>
+		-y
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		a-
+	</td>
+	<td>
+	</td>
+	<td>
+		aw
+	</td>
+	<td>
+		ay
+	</td>
+</tr>
+<tr>
+	<td>
+		wa-
+	</td>
+	<td>
+		wa
+	</td>
+	<td>
+		waw
+	</td>
+	<td>
+		way
+	</td>
+</tr>
+<tr>
+	<td>
+		ya-
+	</td>
+	<td>
+		ya
+	</td>
+	<td>
+		yaw
+	</td>
+	<td>
+		yay
+	</td>
+</tr>
+<tr>
+	<td>
+		o-
+	</td>
+	<td>
+	</td>
+	<td>
+		ow
+	</td>
+	<td>
+		oy
+	</td>
+</tr>
+<tr>
+	<td>
+		yo-
+	</td>
+	<td>
+		yo
+	</td>
+	<td>
+		yow
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		e-
+	</td>
+	<td>
+	</td>
+	<td>
+		ew
+	</td>
+	<td>
+		ey
+	</td>
+</tr>
+<tr>
+	<td>
+		ye-²
+	</td>
+	<td>
+		ye
+	</td>
+	<td>
+		yew
+	</td>
+	<td>
+		yey
+	</td>
+</tr>
+<tr>
+	<td>
+		we-
+	</td>
+	<td>
+		we
+	</td>
+	<td>
+	</td>
+	<td>
+		wey
+	</td>
+</tr>
+<tr>
+	<td>
+		yu-
+	</td>
+	<td>
+		yu
+	</td>
+	<td>
+	</td>
+	<td>
+		yuy
+	</td>
+</tr>
+<tr>
+	<td>
+		wi-
+	</td>
+	<td>
+		wi
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+</tbody>
+</table>
+<ol>
+	<li>Sau ⟨w⟩ và ⟨y⟩ không thể có phụ âm.</li>
+	<li>Phụ âm duy nhất được phép đứng trước ⟨ye⟩ là ⟨s⟩.</li>
+</ol>
+<h3 id="13-âm-vị-học">1.3 Âm vị học</h3>
+<p>
+	Nhìn chung, hệ thống âm vị của Vạn Dân Ngữ được phát triển theo hướng trung lập. Sau khi thu thập toàn bộ hệ thống âm vị của 20 ngôn ngữ chủ yếu trên khắp Đông Á, mỗi hệ thống được phân loại và gán trọng số bằng căn bậc ba số lượng người nói của ngôn ngữ đó. Sau đó, tất cả các trọng số được cộng lại; các âm vị vượt ngưỡng trung vị được giữ lại và phần còn lại bị loại bỏ.
+</p>
+<p>
+	Dựa trên các âm vị nêu trên, Vạn Dân Ngữ sử dụng cấu trúc âm tiết C1VC2. C1 không bao gồm [ŋ]; C2 bị giới hạn ở âm mũi [m], [n], [ŋ]; âm tắc vô thanh phi thanh hầu [p], [t], [k]; và âm bên [l]. Âm tắc thanh hầu hầu như được coi là không mang tính âm vị trong sử dụng thông thường, vì chỉ cần thiết trong phát âm cẩn thận.
+</p>
+<p>
+	Để phù hợp với phạm vi người nói rộng hơn và thúc đẩy tốc độ phát âm, Vạn Dân Ngữ cho phép nối âm linh hoạt ở một số tổ hợp hai chữ cái. Các quy tắc cụ thể như sau:
+</p>
+<ul>
+	<li><strong>Đồng hóa âm mũi:</strong> Khi âm cuối mũi ⟨m⟩, ⟨n⟩, ⟨ng⟩ đứng trước âm tắc hoặc âm tắc xát có vị trí cấu âm khác, âm cuối mũi đó có thể được phát âm theo vị trí cấu âm của phụ âm tiếp theo thay vì vị trí cấu âm ban đầu. Ví dụ, tổ hợp ⟨mk⟩ có thể được phát âm là [ŋk]. Trong quy tắc này, phụ âm ngạc cứng được coi là một phần của nhóm phụ âm lưỡi.</li>
+	<li><strong>Đồng hóa âm tắc đôi:</strong> Khi âm cuối tắc ⟨p⟩, ⟨t⟩, ⟨k⟩ đứng trước một âm tắc khác ở vị trí âm đầu của âm tiết tiếp theo, âm cuối có thể được lược bỏ. Trong trường hợp này, nếu âm đầu tiếp theo là âm mạnh thì âm đó được tăng cường thêm.</li>
+	<li><strong>Quy tắc đồng hóa ⟨ph⟩:</strong> Tổ hợp phụ âm ⟨ph⟩ có thể được phát âm là /f/.</li>
+	<li><strong>Quy tắc ngạc hóa ⟨ty/dy⟩:</strong> Tổ hợp ⟨ty⟩ và ⟨dy⟩ có thể được ngạc hóa thành /tɕ/ và /dʑ/ tương ứng.</li>
+	<li><strong>Quy tắc đồng hóa ⟨kh⟩:</strong> Tổ hợp phụ âm ⟨kh⟩ có thể được phát âm là /h/.</li>
+</ul>
+<p>
+	Khi xảy ra nhầm lẫn, nên chèn nguyên âm đệm hoặc phát âm chậm mà không áp dụng các quy tắc trên để làm rõ cách phát âm.
+</p>
+<hr>
+<h2 id="2-trợ-từ">2. Trợ từ</h2>
+<p>
+	Trong Vạn Dân Ngữ, chức năng của từ với tư cách là danh từ, động từ, tính từ hay trạng từ được xác định chủ yếu qua vị trí từ và qua các trợ từ dưới dạng tiền tố và hậu tố. Do đó, trong Vạn Dân Ngữ, từ ngữ không được phân loại độc lập thành danh từ, động từ hay từ bổ nghĩa, mà được phân loại thành vật thể và khái niệm, hành động và hiện tượng, và thuộc tính. Chức năng cụ thể của một từ — là danh từ, động từ, tính từ hay trạng từ — được xác định bởi các trợ từ xung quanh.
+</p>
+<h3 id="21-trợ-từ-danh-từ">2.1 Trợ từ danh từ</h3>
+<p>
+	Chức năng của danh từ trong Vạn Dân Ngữ được xác định bởi các hậu tố trợ từ sau:
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+		Trợ từ
+	</th>
+	<th>
+		Chức năng
+	</th>
+	<th>
+		Giải thích
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		<em>na</em>
+	</td>
+	<td>
+		Chủ đề
+	</td>
+	<td>
+		Đánh dấu ngữ danh từ là chủ đề của câu. Dùng để nhấn mạnh một khái niệm đã được đề cập trước đó. Trợ từ này thường được thay thế bởi trợ từ chủ cách, nhưng cũng có thể được thay thế bởi các trợ từ khác như <em>-lu</em> hay <em>-ne</em>.
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>ga</em>
+	</td>
+	<td>
+		Chủ cách
+	</td>
+	<td>
+		Đánh dấu danh từ là chủ ngữ của câu. Thường chỉ được dùng khi cần trình bày từ đó như một thông tin mới cụ thể.
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>lu</em>
+	</td>
+	<td>
+		Tân cách
+	</td>
+	<td>
+		Đánh dấu danh từ là tân ngữ trực tiếp của câu. Có thể lược bỏ khi trật tự từ là chủ ngữ-tân ngữ-động từ, nhưng bắt buộc trong các trường hợp khác.
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>ji*</em>
+	</td>
+	<td>
+		Sở hữu cách
+	</td>
+	<td>
+		Đánh dấu danh từ là chủ sở hữu của ngữ danh từ tiếp theo.
+	</td>
+</tr>
+<tr>
+	<td>
+		_ne_¹
+	</td>
+	<td>
+		Tặng cách/Công cụ cách
+	</td>
+	<td>
+		Đánh dấu danh từ là tân ngữ gián tiếp của câu, hoặc là đối tượng thụ hưởng và mục tiêu của hành động.
+	</td>
+</tr>
+<tr>
+	<td>
+		_ne_²
+	</td>
+	<td>
+		Tác nhân bị động
+	</td>
+	<td>
+		Đánh dấu danh từ là tác nhân trong cấu trúc bị động.
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>bat</em>
+	</td>
+	<td>
+		Xuất xứ cách
+	</td>
+	<td>
+		Đánh dấu danh từ là điểm xuất phát hoặc nguồn gốc của hành động.
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>bang</em>
+	</td>
+	<td>
+		Hướng đích cách
+	</td>
+	<td>
+		Đánh dấu danh từ là điểm đến hoặc đích đến của hành động.
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>la</em>
+	</td>
+	<td>
+		Dẫn ngữ cách
+	</td>
+	<td>
+		Đánh dấu mệnh đề trước là thông tin gián tiếp.
+	</td>
+</tr>
+</tbody>
+</table>
+<p>
+	*: <em>ji</em> còn có chức năng biến đổi chức năng của từ. Xem mục 2.3.
+</p>
+<p>
+	Danh từ trong Vạn Dân Ngữ không biến đổi theo số lượng hay giới tính. Số nhiều có thể được nhấn mạnh bằng cách lặp lại danh từ hoặc thêm hậu tố <em>-tat</em>.
+</p>
+<h3 id="22-trợ-từ-động-từ">2.2 Trợ từ động từ</h3>
+<p>
+	Động từ trong Vạn Dân Ngữ có thể được tiếp tố hóa tùy chọn để biểu đạt các phạm trù khác nhau, theo thứ tự sau:
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+		Thái
+	</th>
+	<th>
+		Kính ngữ
+	</th>
+	<th>
+		Thì-Thể
+	</th>
+	<th>
+		Thức
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		<em>li / hi</em>
+	</td>
+	<td>
+		<em>si</em>
+	</td>
+	<td>
+		<em>jung / le / kalu</em>
+	</td>
+	<td>
+		<em>ya / ye / ka / ne</em>
+	</td>
+</tr>
+</tbody>
+</table>
+<ul>
+	<li>
+	<p>
+		<strong>Thái</strong>
+	</p>
+	<ul>
+		<li>Bị động <em>li</em> biến đổi động từ sang trạng thái chủ ngữ không còn thực hiện hành động mà hành động được thực hiện lên chủ ngữ.</li>
+		<li>Sai khiến <em>hi</em> biến đổi động từ sang trạng thái chủ ngữ không còn tự thực hiện hành động mà khiến đối tượng khác thực hiện.</li>
+	</ul>
+	</li>
+	<li>
+	<p>
+		<strong>Kính ngữ</strong><em>si</em> là phương thức người dùng Vạn Dân Ngữ biểu đạt sự tôn kính đối với chủ ngữ.
+	</p>
+	</li>
+	<li>
+	<p>
+		<strong>Thì-Thể</strong>
+	</p>
+	<ul>
+		<li>Tiến hành thể <em>jung</em> biểu đạt rằng hành động đang diễn ra tại một thời điểm cụ thể (nếu không có dấu hiệu thì, thể, mặc định là hiện tại).</li>
+		<li>Hoàn thành thể <em>le</em> biểu đạt rằng hành động đã hoàn tất (thường là quá khứ).</li>
+		<li>Phi thực thể <em>kalu</em> biểu đạt rằng hành động chưa xảy ra, là hành động giả định hoặc tương lai. Trong ngôn ngữ học, đây được gọi là thể phi thực (irrealis).</li>
+		<li>Trong Vạn Dân Ngữ, khi thì và thể đứng độc lập, ranh giới giữa hai phạm trù này không được phân biệt rõ ràng. Tuy nhiên, khi các trợ từ này được chồng lên nhau, trợ từ đầu tiên biểu đạt thể (thể tướng) và trợ từ thứ hai biểu đạt thì.</li>
+	</ul>
+	</li>
+	<li>
+	<p>
+		<strong>Thức</strong>
+	</p>
+	<ul>
+		<li>Cảm thán từ <em>ya</em> đánh dấu câu là câu cảm thán.</li>
+		<li>Nghi vấn từ <em>ka</em> đánh dấu câu là câu hỏi trực tiếp.</li>
+		<li>Đề nghị từ <em>ne</em> đánh dấu câu là câu hỏi nhẹ hoặc đề nghị.</li>
+		<li>Mệnh lệnh từ <em>ye</em> đánh dấu động từ là mệnh lệnh.</li>
+	</ul>
+	</li>
+</ul>
+<p>
+	Cần lưu ý rằng phiên bản trước của Vạn Dân Ngữ biểu đạt thì trước rồi mới đến hoàn thành thể, nhưng đã được chuyển sang hình thức hiện tại để phản ánh trung thực hơn hệ thống chồng thì được vay mượn từ tiếng Hàn.
+</p>
+<h3 id="23-từ-biến-đổi-chức-năng">2.3 Từ biến đổi chức năng</h3>
+<p>
+	Như đã đề cập, toàn bộ từ vựng cơ bản của Vạn Dân Ngữ được phân loại thành hành động và hiện tượng, vật thể và khái niệm, hoặc thuộc tính — tương ứng thông thường với động từ, danh từ, và tính từ hay trạng từ. Tuy nhiên, trong một số trường hợp, từ cần được sử dụng theo cách không tự nhiên nhất với nghĩa gốc của nó. Khi đó, từ thường cần sử dụng trợ từ phụ trợ hoặc động từ để phát huy đúng chức năng. Các trợ từ phụ trợ như sau:
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+	</th>
+	<th>
+		Động từ
+	</th>
+	<th>
+		Danh từ
+	</th>
+	<th>
+		Trạng từ
+	</th>
+	<th>
+		Tính từ
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		Hành động và hiện tượng
+	</td>
+	<td>
+		∅
+	</td>
+	<td>
+		<em>-em</em>
+	</td>
+	<td>
+		∅¹
+	</td>
+	<td>
+		_-ji_²
+	</td>
+</tr>
+<tr>
+	<td>
+		Vật thể và khái niệm
+	</td>
+	<td>
+		<em>heng</em>
+	</td>
+	<td>
+		∅
+	</td>
+	<td>
+		<em>-yang</em>
+	</td>
+	<td>
+		<em>-dek</em>
+	</td>
+</tr>
+<tr>
+	<td>
+		Thuộc tính
+	</td>
+	<td>
+		<em>cey</em>
+	</td>
+	<td>
+		<em>-em</em>
+	</td>
+	<td>
+		∅
+	</td>
+	<td>
+		∅
+	</td>
+</tr>
+</tbody>
+</table>
+<ol>
+	<li>Khi hành động hay hiện tượng, hoặc cấu trúc có hành động/hiện tượng làm chủ ngữ, được dùng như mệnh đề trạng ngữ, có thể nối tiếp nhiều động từ mà không cần bổ nghĩa, tạo thành một ngữ động từ — còn được gọi là &quot;nối tiếp động từ&quot; (verb serialization).</li>
+	<li>Đây là cách tạo mệnh đề quan hệ bổ nghĩa cho ngữ danh từ khác.</li>
+</ol>
+<p>
+	Đáng chú ý là trong phiên bản trước của Vạn Dân Ngữ, trợ từ biểu đạt vật thể và khái niệm chức năng trạng từ là <em>-syang</em>, nhưng đã được đổi thành <em>-yang</em> để đơn giản hóa phát âm và phản ánh tốt hơn văn ngôn và tiếng Nhật. Ngoài ra, trợ từ <em>-in</em> dùng để chuyển hành động đã hoàn thành sang tính từ cũng đã được thay thế bằng <em>-le-ji</em>. Tương tự, danh từ biểu đạt hành động có thể hiển thị hoàn thành qua <em>-le-em</em> hoặc dạng rút gọn <em>-lem</em>.
+</p>
+<p>
+	Phủ định cũng là một loại từ biến đổi chức năng, đặc biệt ở chỗ đây là tiền tố duy nhất trong Vạn Dân Ngữ. Động từ được phủ định bằng <em>but-</em>; tính từ và trạng từ được phủ định bằng <em>bi-</em>. <em>But-cey</em> có thể rút gọn thành <em>bey</em>.
+</p>
+<h3 id="24-trợ-từ-độc-lập">2.4 Trợ từ độc lập</h3>
+<p>
+	Một số trợ từ hoạt động độc lập, không gắn với bất kỳ ngữ cụ thể nào. Các trợ từ này có thể đóng vai trò liên từ đẳng lập giữa các mệnh đề, hoặc đứng đầu câu để chỉ định chức năng của một ngữ.
+</p>
+<p>
+	Liên từ đẳng lập trong Vạn Dân Ngữ dùng để nối hai mệnh đề độc lập:
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+		Liên từ đẳng lập
+	</th>
+	<th>
+		Giải thích
+	</th>
+	<th>
+		Ví dụ
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		<em>i</em>
+	</td>
+	<td>
+		Liên từ cộng thêm. Tương đương &quot;và&quot;.
+	</td>
+	<td>
+		<em>A sik i ta sik.</em> (Tôi ăn và anh ấy ăn.)
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>nyak</em>
+	</td>
+	<td>
+		Liên từ giả định. Tương đương &quot;nếu...thì&quot;.
+	</td>
+	<td>
+		<em>A sik nyak ta sik.</em> (Nếu tôi ăn thì anh ấy ăn.)
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>dan</em>
+	</td>
+	<td>
+		Liên từ tương phản. Tương đương &quot;nhưng&quot;.
+	</td>
+	<td>
+		<em>A sik dan ta but sik.</em> (Tôi ăn nhưng anh ấy không ăn.)
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>butdan</em>
+	</td>
+	<td>
+		Liên từ tương phản nhượng bộ. Tương đương &quot;mặc dù...vẫn&quot;.
+	</td>
+	<td>
+		<em>A sik butdan ta sik.</em> (Mặc dù anh ấy ăn, tôi vẫn ăn.)
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>syuy</em>
+	</td>
+	<td>
+		Liên từ nhượng bộ. Tương đương &quot;dù...vẫn&quot;.
+	</td>
+	<td>
+		<em>A sik syuy ta sik.</em> (Dù anh ấy ăn, tôi vẫn ăn.)
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>hok</em>
+	</td>
+	<td>
+		Liên từ lựa chọn. Tương đương &quot;hoặc&quot;.
+	</td>
+	<td>
+		<em>A sik hok ta sik.</em> (Tôi ăn hoặc anh ấy ăn.)
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>pi</em>
+	</td>
+	<td>
+		Liên từ so sánh. Tương đương &quot;so với&quot;.
+	</td>
+	<td>
+		<em>A sik pi ta da sik.</em> (So với tôi ăn, anh ấy ăn nhiều hơn.)
+	</td>
+</tr>
+</tbody>
+</table>
+<p>
+	Liên từ phụ thuộc trong Vạn Dân Ngữ dùng để nối một mệnh đề độc lập với một mệnh đề khác (độc lập hoặc phụ thuộc):
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+		Liên từ phụ thuộc
+	</th>
+	<th>
+		Giải thích
+	</th>
+	<th>
+		Ví dụ
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		<em>hwa</em>
+	</td>
+	<td>
+		Liên từ cộng thêm. Tương đương &quot;cùng với&quot;. Không dùng để nối hai mệnh đề độc lập.
+	</td>
+	<td>
+		<em>A sik hwa ta.</em> (Tôi ăn cùng với anh ấy.)
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>wi</em>
+	</td>
+	<td>
+		Liên từ mục đích. Tương đương &quot;vì/để&quot;.
+	</td>
+	<td>
+		<em>A sik wi ta.</em> (Tôi ăn vì anh ấy.)
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>yu</em>
+	</td>
+	<td>
+		Liên từ nguyên nhân. Tương đương &quot;do/vì lý do đó&quot;.
+	</td>
+	<td>
+		<em>A sik yu ta sik.</em> (Do lý do đó, tôi ăn.)
+	</td>
+</tr>
+<tr>
+	<td>
+		<em>geng</em>
+	</td>
+	<td>
+		Liên từ phương tiện. Tương đương &quot;thông qua&quot;.
+	</td>
+	<td>
+		<em>A sik geng ta.</em> (Tôi ăn thông qua anh ấy.)
+	</td>
+</tr>
+</tbody>
+</table>
+<p>
+	Trợ từ chức năng cũng có thể được phủ định bằng <em>but-</em>. Trong trường hợp này, mệnh đề tiếp theo được kỳ vọng sẽ làm rõ mối quan hệ giữa chủ ngữ và ngữ động từ tiếp theo.
+</p>
+<h3 id="25-đại-từ">2.5 Đại từ</h3>
+<p>
+	Vạn Dân Ngữ có hệ thống đại từ đơn giản. Đại từ nhân xưng gồm đại từ ngôi thứ nhất <em>a</em>, ngôi thứ hai <em>ni</em>, và ngôi thứ ba <em>ta</em>. Ngoài ra còn có các đại từ tha nhân thay thế biểu đạt giới tính và mức độ thân mật: <em>kun</em> (nam giới), <em>nyang</em> (nữ giới), và <em>ini</em> (trung tính).
+</p>
+<p>
+	Vạn Dân Ngữ có hệ thống mô-đun để tạo ra các đại từ khác. Đại từ trong Vạn Dân Ngữ có các tham số chỉ định sau: cận xưng ngôi nhất <em>ko</em>, cận xưng tha nhân <em>co</em>, viễn chỉ <em>yo</em>, nghi vấn <em>ha</em>, đặc định <em>hok</em>, phổ quát <em>man</em>, phủ định <em>mu</em>, đại thế <em>ta</em>. Các tham số này có thể tùy chọn thêm hậu tố để chỉ định loại danh từ được chỉ định. Hậu tố theo loại: vật thể phi nhân <em>-ka</em>, người <em>-nin</em>, thời gian <em>-si</em>, địa điểm <em>-di</em>, lý do <em>-yu</em>, phương thức <em>-i</em>. Đáng chú ý là nhiều đại từ phổ quát không sử dụng hậu tố chỉ định tiêu chuẩn vì các từ tương ứng đã được sử dụng rộng rãi trong vùng văn hóa Hán tự.
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+	</th>
+	<th>
+		Cận xưng ngôi nhất
+	</th>
+	<th>
+		Cận xưng tha nhân
+	</th>
+	<th>
+		Viễn chỉ
+	</th>
+	<th>
+		Nghi vấn
+	</th>
+	<th>
+		Đặc định
+	</th>
+	<th>
+		Phổ quát
+	</th>
+	<th>
+		Phủ định
+	</th>
+	<th>
+		Đại thế
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+	</td>
+	<td>
+		&quot;Này&quot;
+	</td>
+	<td>
+		&quot;Đó&quot;
+	</td>
+	<td>
+		&quot;Kia&quot;
+	</td>
+	<td>
+		&quot;Nào&quot;
+	</td>
+	<td>
+		&quot;Một/Nào đó&quot;
+	</td>
+	<td>
+		&quot;Tất cả&quot;
+	</td>
+	<td>
+		&quot;Không gì&quot;
+	</td>
+	<td>
+		&quot;Khác&quot;
+	</td>
+</tr>
+<tr>
+	<td>
+		Cơ sở
+	</td>
+	<td>
+		<em>ko</em>
+	</td>
+	<td>
+		<em>co</em>
+	</td>
+	<td>
+		<em>yo</em>
+	</td>
+	<td>
+		<em>ha</em>
+	</td>
+	<td>
+		<em>hok</em>
+	</td>
+	<td>
+		<em>man</em>
+	</td>
+	<td>
+		<em>mu</em>
+	</td>
+	<td>
+		<em>ta</em>
+	</td>
+</tr>
+<tr>
+	<td>
+		Vật thể
+	</td>
+	<td>
+		<em>koko</em>
+	</td>
+	<td>
+		<em>coko</em>
+	</td>
+	<td>
+		<em>yoko</em>
+	</td>
+	<td>
+		<em>haka</em>
+	</td>
+	<td>
+		<em>hokko</em>
+	</td>
+	<td>
+		<em>manmut*</em>
+	</td>
+	<td>
+		<em>muku</em>
+	</td>
+	<td>
+		<em>taka</em>
+	</td>
+</tr>
+<tr>
+	<td>
+		Người
+	</td>
+	<td>
+		<em>konin</em>
+	</td>
+	<td>
+		<em>conin</em>
+	</td>
+	<td>
+		<em>yonin</em>
+	</td>
+	<td>
+		<em>hanin</em>
+	</td>
+	<td>
+		<em>hoknin</em>
+	</td>
+	<td>
+		<em>manmin*</em>
+	</td>
+	<td>
+		<em>munin</em>
+	</td>
+	<td>
+		<em>tanin</em>
+	</td>
+</tr>
+<tr>
+	<td>
+		Thời gian
+	</td>
+	<td>
+		<em>kosi</em>
+	</td>
+	<td>
+		<em>cosi</em>
+	</td>
+	<td>
+		<em>yosi</em>
+	</td>
+	<td>
+		<em>hasi</em>
+	</td>
+	<td>
+		<em>hoksi</em>
+	</td>
+	<td>
+		<em>syangsi*</em>
+	</td>
+	<td>
+		<em>musi</em>
+	</td>
+	<td>
+		<em>tasi</em>
+	</td>
+</tr>
+<tr>
+	<td>
+		Địa điểm
+	</td>
+	<td>
+		<em>kodi</em>
+	</td>
+	<td>
+		<em>codi</em>
+	</td>
+	<td>
+		<em>yodi</em>
+	</td>
+	<td>
+		<em>hadi</em>
+	</td>
+	<td>
+		<em>hokdi</em>
+	</td>
+	<td>
+		<em>manbang*</em>
+	</td>
+	<td>
+		<em>mudi</em>
+	</td>
+	<td>
+		<em>tadi</em>
+	</td>
+</tr>
+<tr>
+	<td>
+		Lý do
+	</td>
+	<td>
+		<em>koyu</em>
+	</td>
+	<td>
+		<em>coyu</em>
+	</td>
+	<td>
+		<em>yoyu</em>
+	</td>
+	<td>
+		<em>hayu</em>
+	</td>
+	<td>
+		<em>hokyu</em>
+	</td>
+	<td>
+		<em>manyu</em>
+	</td>
+	<td>
+		<em>muyu</em>
+	</td>
+	<td>
+		<em>tayu</em>
+	</td>
+</tr>
+<tr>
+	<td>
+		Phương thức
+	</td>
+	<td>
+		<em>ko&#39;i</em>
+	</td>
+	<td>
+		<em>co&#39;i</em>
+	</td>
+	<td>
+		<em>yo&#39;i</em>
+	</td>
+	<td>
+		<em>ha&#39;i</em>
+	</td>
+	<td>
+		<em>hok&#39;i</em>
+	</td>
+	<td>
+		<em>man&#39;i</em>
+	</td>
+	<td>
+		<em>mu&#39;i</em>
+	</td>
+	<td>
+		<em>ta&#39;i</em>
+	</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="3-từ-vựng">3. Từ vựng</h2>
+<p>
+	Từ vựng của Vạn Dân Ngữ đến từ nhiều ngôn ngữ khác nhau. Một số từ đã được định nghĩa sẵn, nhưng nhìn chung Vạn Dân Ngữ có kho từ vựng mở, có thể tiếp nhận từ ngữ từ bất kỳ ngôn ngữ nào. Tuy nhiên, các từ được nhận biết rộng rãi được ưu tiên hơn các từ chỉ dùng trong một ngôn ngữ đơn lẻ; ngoài những từ cơ bản nhất, nên tránh các từ đơn âm tiết. Nguồn gốc từ vựng được chia thành sáu loại, và tùy tình huống cần sử dụng ngôn ngữ nguồn phù hợp. Các khuyến nghị này không nên được coi là quy tắc cứng nhắc mà nên được diễn giải linh hoạt theo nhu cầu của ngôn ngữ.
+</p>
+<p>
+	Loại thứ nhất là từ ngữ có nguồn gốc Hán. Nói chung, đây là các từ bắt nguồn từ văn ngôn — ngôn ngữ khẩu ngữ của Trung Quốc từ thời Hán đến thời Đường — vốn là văn tự chung truyền thống của Trung Quốc, Nhật Bản, Hàn Quốc và Việt Nam. Nên vay mượn từ loại Hán cho các vấn đề liên quan đến Đạo giáo, Nho giáo, chính trị, ngoại giao, kinh tế; và nên tránh từ loại Hán cho tên gọi thực vật và động vật. Ngoài ra, khi cần tạo từ mới không có nguồn gốc từ ngôn ngữ khác, nên dùng ngữ căn Hán theo các thông lệ tạo từ của văn ngôn để đảm bảo tính súc tích.
+</p>
+<p>
+	Loại thứ hai là từ ngữ có nguồn gốc tiếng Phạn. Mặc dù Nam Á — nơi tiếng Phạn là ngôn ngữ bản địa — không nằm trong phạm vi trực tiếp của Vạn Dân Ngữ, nhiều ngôn ngữ Đông Nam Á coi tiếng Phạn và Pali là ngôn ngữ có thẩm quyền do ảnh hưởng của Phật giáo. Tiếng Phạn cũng đã tác động đến một bộ phận từ vựng của các nước trong vùng Nho giáo như Việt Nam, Trung Quốc, Hàn Quốc và Nhật Bản, nên tiếng Phạn là ngôn ngữ quan trọng trong thế giới Vạn Dân Ngữ. Người dùng nên vay mượn từ tiếng Phạn đặc biệt đối với từ vựng liên quan đến tôn giáo và triết học Ấn Độ.
+</p>
+<p>
+	Loại thứ ba là từ ngữ có nguồn gốc tiếng Hàn và tiếng Nhật. Tiếng Hàn và tiếng Nhật không có quan hệ được chứng minh, nhưng chia sẻ nhiều điểm tương đồng về ngữ pháp và một phần từ vựng, nên được xếp vào một loại. Không có quy tắc cụ thể về cách thích nghi từ từ loại này do các từ đồng nguồn được chia sẻ rất không đều, không thể đặt ra quy tắc rõ ràng. Người dùng nên dùng từ loại này khi cần từ vựng về tự nhiên vùng khí hậu ôn đới hoặc khi có từ đồng nguồn giữa tiếng Hàn và tiếng Nhật.
+</p>
+<p>
+	Loại thứ tư là từ ngữ có nguồn gốc từ vùng Đông Nam Á lục địa. Khác với cách dùng thuật ngữ &quot;Đông Nam Á lục địa&quot; trong các ngữ cảnh học thuật khác, trong Vạn Dân Ngữ thuật ngữ này chỉ vùng Đông Nam Á lục địa bao gồm Thái Lan, Lào, Campuchia và Myanmar. Vùng Đông Nam Á lục địa hình thành khu vực đồng bộ từ vựng, nơi nhiều ngôn ngữ chia sẻ từ ngữ do quan hệ di truyền hoặc tiếp xúc. Tương tự trường hợp vùng đồng bộ Hàn-Nhật, các từ đồng nguồn ở đây cũng rất không đều, không thể đặt ra quy tắc vay mượn rõ ràng. Người dùng nên dùng từ loại này khi cần từ vựng về tự nhiên vùng khí hậu nhiệt đới hoặc khi có từ đồng nguồn giữa các ngôn ngữ trong vùng.
+</p>
+<p>
+	Loại thứ năm là từ ngữ có nguồn gốc từ ngữ hệ Nam Đảo. Ngữ hệ Nam Đảo chiếm ưu thế ở phần lớn Đông Nam Á hải đảo, trải dài qua Indonesia, Philippines, Malaysia, Brunei, Đài Loan, Singapore và nhiều quốc gia khác. Vì các ngôn ngữ Nam Đảo thường chia sẻ từ đồng nguồn, nên dùng từ vựng chung khi có thể, đặc biệt đối với các vấn đề liên quan đến hàng hải và thế giới tự nhiên.
+</p>
+<p>
+	Loại thứ sáu là từ ngữ có nguồn gốc ngoại lai. Đây là các từ đến từ các ngôn ngữ chủ yếu được sử dụng ngoài phạm vi Vạn Dân Ngữ — như tiếng Ả Rập, tiếng Tây Ban Nha, tiếng Anh — thường chỉ các khái niệm chưa bản địa hóa ở châu Á như công nghệ thời đại thông tin hay các tôn giáo Abraham. Ngoài phạm vi cụ thể này, không nên dùng các từ loại này trừ khi không tìm được từ phù hợp từ các ngôn ngữ nguồn của Vạn Dân Ngữ.
+</p>
+<h3 id="31-từ-vựng-vay-mượn-từ-văn-ngôn">3.1 Từ vựng vay mượn từ văn ngôn</h3>
+<p>
+	Các từ có nguồn gốc từ văn ngôn, hoặc được tạo mới theo quy trình của văn ngôn, không nên được vay mượn chỉ dựa trên cách phát âm của một ngôn ngữ hiện đại duy nhất. Thay vào đó, nên vay mượn dựa trên phiên bản giản lược của âm Đường đại — nguồn gốc của hầu hết các cách đọc hiện đại.
+</p>
+<p>
+	Trong văn ngôn, phần lớn các chữ Hán thường dùng được phân loại theo thanh mẫu và &quot;vận mẫu&quot; — tổ hợp của nguyên âm và phụ âm cuối. Thông tin này được ghi chép trong các tài liệu như <em>Thiết Vận</em> và <em>Vận Kính</em>. Bảng đầu tiên dưới đây thể hiện tương quan giữa thanh mẫu văn ngôn và giá trị phụ âm tương ứng trong Vạn Dân Ngữ:
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+	</th>
+	<th>
+		Toàn thanh
+	</th>
+	<th>
+		Thứ thanh
+	</th>
+	<th>
+		Toàn trọc
+	</th>
+	<th>
+		Âm mũi
+	</th>
+	<th>
+		Bán nguyên âm
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		Âm môi
+	</td>
+	<td>
+		幫 b
+	</td>
+	<td>
+		滂 p
+	</td>
+	<td>
+		並 b
+	</td>
+	<td>
+		明 m
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Âm lợi
+	</td>
+	<td>
+		端 d
+	</td>
+	<td>
+		透 t
+	</td>
+	<td>
+		定 d
+	</td>
+	<td>
+		泥 n
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Âm tắc xát lợi
+	</td>
+	<td>
+		精 j
+	</td>
+	<td>
+		清 c
+	</td>
+	<td>
+		從 j
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Âm xát lợi
+	</td>
+	<td>
+		心 s
+	</td>
+	<td>
+	</td>
+	<td>
+		邪 s
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Âm cuộn lưỡi
+	</td>
+	<td>
+		知 d
+	</td>
+	<td>
+		徹 t
+	</td>
+	<td>
+		澄 d
+	</td>
+	<td>
+		娘 n
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Âm tắc xát cuộn lưỡi
+	</td>
+	<td>
+		莊 j
+	</td>
+	<td>
+		初 c
+	</td>
+	<td>
+		崇 j
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Âm xát cuộn lưỡi
+	</td>
+	<td>
+		生 s
+	</td>
+	<td>
+	</td>
+	<td>
+		俟 s
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Âm ngạc cứng
+	</td>
+	<td>
+		章 j
+	</td>
+	<td>
+		昌 c
+	</td>
+	<td>
+		常 j
+	</td>
+	<td>
+		日 n
+	</td>
+	<td>
+		以 y
+	</td>
+</tr>
+<tr>
+	<td>
+		Âm xát ngạc cứng
+	</td>
+	<td>
+		書 s
+	</td>
+	<td>
+	</td>
+	<td>
+		船 s
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Âm ngạc mềm
+	</td>
+	<td>
+		見 g
+	</td>
+	<td>
+		溪 k
+	</td>
+	<td>
+		群 g
+	</td>
+	<td>
+		疑 ∅
+	</td>
+	<td>
+		云* ∅
+	</td>
+</tr>
+<tr>
+	<td>
+		Âm xát ngạc mềm
+	</td>
+	<td>
+		曉 h
+	</td>
+	<td>
+	</td>
+	<td>
+		匣 h
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Âm thanh hầu
+	</td>
+	<td>
+		影 ∅
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+</tbody>
+</table>
+<p>
+	*: Âm trị ban đầu của thanh mẫu này không ổn định.
+</p>
+<p>
+	Phương thức phân loại chữ Hán theo vận mẫu trong văn ngôn như sau: &quot;Ngoại chuyển&quot; chỉ âm tiết mở, &quot;nội chuyển&quot; chỉ âm tiết khép. Về tính tròn môi: vận mẫu &quot;khai khẩu&quot; chỉ nguyên âm không tròn môi, vận mẫu &quot;hợp khẩu&quot; chỉ nguyên âm tròn môi. Đẳng: phân loại từ 1 đến 4 theo mức độ ngạc hóa. Phụ âm cuối: có một số loại. Phụ âm cuối tương đối đơn giản, nhưng các yếu tố khác phức tạp hơn. Tương quan tương ứng được thể hiện trong bảng dưới đây:
+</p>
+<table>
+<thead>
+<tr>
+	<th>
+		Nguyên âm Trung cổ Hán ngữ được tái lập
+	</th>
+	<th>
+		Đẳng 1 khai khẩu
+	</th>
+	<th>
+		Đẳng 1 hợp khẩu
+	</th>
+	<th>
+		Đẳng 2 khai khẩu
+	</th>
+	<th>
+		Đẳng 2 hợp khẩu
+	</th>
+	<th>
+		Đẳng 3 khai khẩu
+	</th>
+	<th>
+		Đẳng 3 hợp khẩu
+	</th>
+	<th>
+		Đẳng 4 khai khẩu
+	</th>
+	<th>
+		Đẳng 4 hợp khẩu
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		Quả /a/
+	</td>
+	<td>
+		歌 a
+	</td>
+	<td>
+		戈 wa
+	</td>
+	<td>
+	</td>
+	<td>
+		戈 ya
+	</td>
+	<td>
+	</td>
+	<td>
+		戈 wa
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Giả /a:/
+	</td>
+	<td>
+		麻 a
+	</td>
+	<td>
+	</td>
+	<td>
+		麻 wa
+	</td>
+	<td>
+	</td>
+	<td>
+		麻 ya
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Giải /aj/
+	</td>
+	<td>
+		咍、泰 ay
+	</td>
+	<td>
+		灰、泰 way
+	</td>
+	<td>
+		皆、夬、佳 ay
+	</td>
+	<td>
+		皆、夬、佳 way
+	</td>
+	<td>
+		祭 ey
+	</td>
+	<td>
+		祭 wey
+	</td>
+	<td>
+		齊、祭 ey
+	</td>
+	<td>
+		齊、祭 wey
+	</td>
+</tr>
+<tr>
+	<td>
+		Hiệu /aw/
+	</td>
+	<td>
+		豪 aw
+	</td>
+	<td>
+	</td>
+	<td>
+		肴 aw
+	</td>
+	<td>
+	</td>
+	<td>
+		宵 yaw
+	</td>
+	<td>
+	</td>
+	<td>
+		蕭 yaw
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Hàm /am/
+	</td>
+	<td>
+		覃、談 am
+	</td>
+	<td>
+	</td>
+	<td>
+		咸、銜 am
+	</td>
+	<td>
+	</td>
+	<td>
+		鹽、嚴 em
+	</td>
+	<td>
+		凡 om
+	</td>
+	<td>
+		添 em
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Sơn /an/
+	</td>
+	<td>
+		寒 an
+	</td>
+	<td>
+		桓 wan
+	</td>
+	<td>
+		山、刪 an
+	</td>
+	<td>
+		山、刪 wan
+	</td>
+	<td>
+		元、仙 an
+	</td>
+	<td>
+		元、仙 wan
+	</td>
+	<td>
+		仙、先 en
+	</td>
+	<td>
+		仙、先 wen
+	</td>
+</tr>
+<tr>
+	<td>
+		Đãng /aŋ/
+	</td>
+	<td>
+		唐 ang
+	</td>
+	<td>
+		唐 wang
+	</td>
+	<td>
+	</td>
+	<td>
+		陽 ang
+	</td>
+	<td>
+	</td>
+	<td>
+		陽 wang
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Giang /auŋ/
+	</td>
+	<td>
+		江 ang
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Ngạnh /aiŋ/
+	</td>
+	<td>
+		庚、耕 eng
+	</td>
+	<td>
+		庚、耕 ong
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		庚、清 eng
+	</td>
+	<td>
+		庚、清 eng
+	</td>
+	<td>
+		青 eng
+	</td>
+	<td>
+		青 eng
+	</td>
+</tr>
+<tr>
+	<td>
+		Ngộ /ə/
+	</td>
+	<td>
+		模 o
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		魚 o
+	</td>
+	<td>
+		虞 u
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Chỉ /i/
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		支、微、之、脂 i
+	</td>
+	<td>
+		支、微 wi
+	</td>
+	<td>
+	</td>
+	<td>
+		脂 yuy
+	</td>
+</tr>
+<tr>
+	<td>
+		Lưu /əw/
+	</td>
+	<td>
+		侯 ow
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		尤、幽 yu
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Thâm /əm/
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		侵 im
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Trăn /ən/
+	</td>
+	<td>
+		痕 on
+	</td>
+	<td>
+		魂 on
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		臻、眞、欣 in
+	</td>
+	<td>
+		諄、眞 yun
+	</td>
+	<td>
+	</td>
+	<td>
+		文 un
+	</td>
+</tr>
+<tr>
+	<td>
+		Tằng /əŋ/
+	</td>
+	<td>
+		登 eng
+	</td>
+	<td>
+		登 ong
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		蒸 eng
+	</td>
+	<td>
+		蒸 ong
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+		Thông /əuŋ/
+	</td>
+	<td>
+		東、冬 ong
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+		東、鍾 ong
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+</tbody>
+</table>
+<p>
+	Như đã đề cập trong hướng dẫn ngữ pháp này, các quy tắc trên có thể được sửa đổi theo nhu cầu, và việc sửa đổi nên được thực hiện theo nhu cầu của cộng đồng Vạn Dân Ngữ.
+</p>
+<h3 id="32-từ-vựng-vay-mượn-từ-tiếng-phạn">3.2 Từ vựng vay mượn từ tiếng Phạn</h3>
+<p>
+	Vì tiếng Phạn đã được vay mượn độc lập vào nhiều ngôn ngữ Đông Á khác nhau, Vạn Dân Ngữ cũng cần có phương thức vay mượn chuẩn hóa. Khi tầm quan trọng của tiếng Phạn trong Vạn Dân Ngữ ngày càng tăng, nhu cầu về phương thức chuẩn hóa càng trở nên thiết yếu.
+</p>
+<p>
+	Phương thức đơn giản nhất là giữ nguyên tiếng Phạn ở mức tối đa, điều chỉnh khi cần thiết theo âm vị học của Vạn Dân Ngữ, đồng thời đơn giản hóa tối thiểu theo quy tắc Pali. Các lưu ý khi chuyển đổi từ tiếng Phạn sang Vạn Dân Ngữ như sau:
+</p>
+<ul>
+	<li>
+	<p>
+		<strong>Nguyên âm</strong>
+	</p>
+	<ul>
+		<li>Độ dài nguyên âm được bỏ qua.</li>
+		<li>Nguyên âm đôi được giữ nguyên.</li>
+		<li>Nguyên âm cuối có thể được lược bỏ nếu âm vị học Vạn Dân Ngữ cho phép.</li>
+	</ul>
+	</li>
+	<li>
+	<p>
+		<strong>Phụ âm nói chung</strong>
+	</p>
+	<ul>
+		<li>Âm bật hơi của âm tắc hữu thanh và vô thanh đều bị bỏ qua.</li>
+		<li>Phụ âm được thích nghi với âm vị học Vạn Dân Ngữ; không thực hiện trùng âm (gemination) từ tiếng Phạn sang Pali.</li>
+		<li>Trong tổ hợp phụ âm, âm hữu thanh trước tiên bị vô thanh hóa, sau đó thực hiện đơn giản hóa theo Pali. Ví dụ, &quot;udvigna&quot; trong Vạn Dân Ngữ trở thành &quot;utwikna&quot; chứ không phải &quot;ubiga&quot;.</li>
+	</ul>
+	</li>
+	<li>
+	<p>
+		<strong>Âm mũi</strong>
+	</p>
+	<ul>
+		<li>/ṃ/ trong tiếng Phạn có thể trở thành /ŋ/ khi phụ âm theo sau được nhận biết rõ hơn theo vị trí cấu âm đó.</li>
+		<li>/m/ trở thành /w/ khi cần thiết để bảo toàn phụ âm khác.</li>
+		<li>Dấu hiệu chủ cách &quot;-n&quot; được lược bỏ trong Vạn Dân Ngữ.</li>
+	</ul>
+	</li>
+	<li>
+	<p>
+		<strong>Âm xát</strong>
+	</p>
+	<ul>
+		<li>/v/ trở thành /w/ khi đứng sau nguyên âm /i/ hoặc /e/, hoặc khi cần để bảo toàn phụ âm khác; trong các trường hợp còn lại trở thành /b/.</li>
+		<li>/j/ và /c/ đứng sau phụ âm khác sẽ được thêm nguyên âm /i/ vào sau.</li>
+		<li>Tất cả âm xát sibilant trong tổ hợp phụ âm tiếng Phạn đều được coi là /s/.</li>
+		<li>Tất cả âm xát tiếng Phạn đứng sau phụ âm khác mà không thuộc các trường hợp trên đều bị lược bỏ.</li>
+	</ul>
+	</li>
+	<li>
+	<p>
+		<strong>Âm lỏng</strong>
+	</p>
+	<ul>
+		<li>/kl/ trong tiếng Phạn trở thành /kil/.</li>
+		<li>/ṛ/ trong tiếng Phạn giữa hai nguyên âm trở thành /a/, /i/ hoặc /u/ tùy theo nguyên âm theo sau.</li>
+		<li>Tất cả âm lỏng tiếng Phạn đứng giữa các phụ âm khác trước nguyên âm đều bị lược bỏ.</li>
+		<li>Vạn Dân Ngữ không cho phép âm bên và âm lợi kết hợp với nhau.</li>
+	</ul>
+	</li>
+</ul>
+<h3 id="33-từ-vựng-vay-mượn-từ-tiếng-latinh">3.3 Từ vựng vay mượn từ tiếng Latinh</h3>
+<p>
+	Mặc dù tiếng Hy Lạp và tiếng Latinh không thuộc phạm vi Vạn Dân Ngữ, chúng là những ngôn ngữ có ảnh hưởng rất lớn, là nền tảng của nhiều khái niệm hiện đại phương Tây. Tuy nhiên, do sự pha trộn của nhiều ảnh hưởng châu Âu khác nhau, việc hiểu nguồn gốc của một số từ trở nên phức tạp, làm cho việc nắm bắt từ nguyên của từ vựng gốc Latinh khó khăn hơn cần thiết. Do đó, Vạn Dân Ngữ có các quy tắc chuyển đổi chuẩn cho từ vựng vay mượn từ tiếng Latinh.
+</p>
+<ul>
+	<li>Hậu tố <em>-Vs</em> của tiếng Latinh (V là nguyên âm bất kỳ) chuyển thành <em>-i</em>; nguyên âm đó có thể được lược bỏ nếu âm tiết vẫn hợp lệ trong Vạn Dân Ngữ. Các ví dụ:
+	<ul>
+		<li>Hậu tố -aris (tiếng Anh &quot;-ary&quot;) trở thành -ali.</li>
+		<li>Hậu tố -bilis (tiếng Anh &quot;-ble&quot;) trở thành -bili.</li>
+		<li>Hậu tố -eus (tiếng Anh &quot;-eous&quot;) trở thành -i.</li>
+		<li>Hậu tố -ens (tiếng Anh &quot;-ent&quot;) trở thành -en.</li>
+		<li>Hậu tố -ivus (tiếng Anh &quot;-ive&quot;) trở thành -ifi.</li>
+		<li>Hậu tố -icus (tiếng Anh &quot;-ic&quot;) trở thành -ik.</li>
+		<li>Hậu tố -tas (tiếng Anh &quot;-ty&quot;) trở thành -ti.</li>
+	</ul>
+	</li>
+	<li>Hậu tố <em>-tio</em> và <em>-sio</em> trở thành <em>-si</em>.</li>
+	<li>&quot;r&quot; trong tiếng Latinh trở thành <em>l</em> ở đầu từ và <em>w</em> khi đứng giữa hai nguyên âm ở giữa từ.</li>
+	<li>&quot;v&quot; trong tiếng Latinh trở thành <em>b</em> trước <em>a</em>, <em>e</em>, <em>o</em>; trở thành <em>f</em> trước <em>i</em>; và trở thành <em>w</em> khi đứng giữa hai nguyên âm ở giữa từ.</li>
+</ul>
+<h3 id="34-từ-vựng-vay-mượn-từ-các-ngôn-ngữ-khác">3.4 Từ vựng vay mượn từ các ngôn ngữ khác</h3>
+<p>
+	Mặc dù Vạn Dân Ngữ có các mô tả rất kỹ thuật, ngôn ngữ này hướng đến vai trò là một giao thức giao tiếp tự nhiên linh hoạt hơn là một ngôn ngữ được quy định hoàn toàn. Do đó, các quy tắc này nên được hiểu như là hướng dẫn mà người dùng có thể diễn giải tự do theo nhu cầu. Người dùng nên định kỳ hệ thống hóa các quy ước mới và ghi chép hay loại bỏ chúng khỏi mục này; sau đây là một số quy tắc cần cân nhắc.
+</p>
+<p>
+	Nguyên âm đệm được chèn vào để tách các tổ hợp phụ âm không tương thích với Vạn Dân Ngữ là <em>i</em>, <em>a</em> hoặc <em>u</em>, tùy thuộc vào nguyên âm hạt nhân của âm tiết gốc là nguyên âm trước không tròn môi, nguyên âm giữa, hay nguyên âm sau hoặc tròn môi.
+</p>
+<p>
+	Việc chuyển đổi phụ âm nên tuân theo các quy ước mà ngôn ngữ khác đã thiết lập cho từng từ vay mượn; nhưng nói chung, nên chuyển đổi <em>v</em> thành <em>b</em> hoặc <em>w</em>, và <em>z</em> thành <em>j</em> hoặc <em>s</em>. Tuy nhiên, các khuyến nghị này chỉ mang tính tham khảo — bất kỳ cách chuyển đổi nào cũng được chấp nhận miễn là từ vay mượn vẫn được nhận biết.
+</p>
+<hr>
+<h2 id="4-ngữ-pháp">4. Ngữ pháp</h2>
+<h3 id="41-cú-pháp-tổng-quát">4.1 Cú pháp tổng quát</h3>
+<p>
+	Vạn Dân Ngữ là ngôn ngữ phân nhánh trái với trật tự từ tự do, ưu tiên SOV. Nói một cách đơn giản, mệnh đề bổ nghĩa cho mệnh đề khác phải đứng trước mệnh đề được bổ nghĩa. Ngoài ra, Vạn Dân Ngữ là ngôn ngữ nổi bật chủ đề và cho phép lược bỏ ngữ pháp. Thành phần của câu có thể được lược bỏ nếu có thể suy ra từ ngữ cảnh. Trợ từ cách cũng có thể được lược bỏ khi rõ ràng trong ngữ cảnh, nhưng phải được bao gồm khi cần thiết để tránh mơ hồ.
+</p>
+<h3 id="42-kính-ngữ">4.2 Kính ngữ</h3>
+<p>
+	Vạn Dân Ngữ có ba cấp độ kính ngữ. Cấp độ thứ nhất là tôn kính ngữ. Trong Vạn Dân Ngữ, để biểu đạt sự tôn kính với đối tượng được đề cập, có thể không dùng đại từ nhân xưng hay tên riêng mà thay bằng chức danh. Khi đối tượng được đề cập là chủ ngữ của mệnh đề, cần sử dụng kính ngữ đánh dấu <em>-si-</em> trên động từ (xem <a href="#verb-modifiers">2.2 Trợ từ động từ</a>). Cấp độ thứ hai là trung tính ngữ, không có đánh dấu đặc biệt. Cấp độ cuối cùng là phi chính thức ngữ, bao gồm việc dùng đại từ thân mật <em>kun</em>, <em>nyang</em>, <em>ini</em> hoặc biệt danh thay vì tên chính thức hay chức danh.
+</p>
+<h3 id="43-số-từ">4.3 Số từ</h3>
+<p>
+	Trong Vạn Dân Ngữ, số từ được dùng để biểu đạt giá trị trừu tượng, số lượng, hoặc vị trí trong danh sách (số thứ tự). Giá trị trừu tượng được biểu đạt bằng hình thức gốc Phạn (các chữ số 0-10) hoặc bằng từ ghép từ ngữ căn Hán (các chữ số còn lại). Số lượng cũng được biểu đạt theo cách tương tự, nhưng phải theo sau bằng loại từ và gắn thêm <em>-ji</em> để liên kết với danh từ. Loại từ cho số lần hành động là <em>hway</em>; loại từ cho danh từ vô tri có thể đếm được là <em>gay</em>; loại từ cho động vật là <em>dow</em>; loại từ cho người là <em>meng</em>. Số thứ tự dùng <em>ban</em>.
+</p>
