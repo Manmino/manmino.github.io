@@ -33,7 +33,18 @@
 			where Latin characters would not fit.
 		</p>
 	<h2 id="manmino-aksala">Manmino Aksala</h2>
-		<img></img>
+	<script>
+	    const darkModeMql = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
+		if (darkModeMql && darkModeMql.matches) 
+		{
+			document.getElementById("img").src = "https://github.com/Manmino/manmino.github.io/blob/main/manmino%20Aksala-dark.png";}
+			// dark mode
+		else 
+		{
+			document.getElementById("img").src = "https://github.com/Manmino/manmino.github.io/blob/main/manmino%20Aksala.png";
+			// light mode   
+	       }
+    </script>
 		<p>
 			Manmino Aksala is an abugida in the broad sense 
 			(a script in which vowels are written as marks attached to consonant letters), 
