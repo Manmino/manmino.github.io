@@ -21,6 +21,7 @@
 		} 
 	</script>
 </head>
+<body>
   <h1 id="manmino-scripts-manmino-aksala-tat-">Manmino Scripts (Manmino Aksala-tat)</h1>
 
 		<p>	
@@ -33,17 +34,17 @@
 			where Latin characters would not fit.
 		</p>
 	<h2 id="manmino-aksala">Manmino Aksala</h2>
+	<img id="img" alt="Manmino Aksala script chart" style="max-width:100%;">
 	<script>
-	    const darkModeMql = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
-		if (darkModeMql && darkModeMql.matches) 
-		{
-			document.getElementById("img").src = "https://manmino.github.io/manmino%20Aksala-dark.png";}
-			// dark mode
-		else 
-		{
-			document.getElementById("img").src = "https://manmino.github.io/manmino%20Aksala.png";
-			// light mode   
-	       }
+		const img = document.getElementById("img");
+		const darkModeMql = window.matchMedia("(prefers-color-scheme: dark)");
+		function updateImage() {
+  			img.src = darkModeMql.matches? 
+				"https://manmino.github.io/manmino%20Aksala-dark.png": "https://manmino.github.io/manmino%20Aksala.png";
+		}
+
+updateImage();
+darkModeMql.addEventListener("change", updateImage); // updates if the user switches themes
     </script>
 		<p>
 			Manmino Aksala is an abugida in the broad sense 
